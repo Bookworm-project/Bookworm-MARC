@@ -49,13 +49,21 @@ class LCClass(object):
         #LC classifications cannot include non-ascii characters, so we just coerce.
         lcclass = self.string.encode("ascii",'replace')
         #This regex defines an LC classification.
-        mymatch = re.match(r"^(?P<lc1>[A-Z]+) ?(?P<lc2>\d+)", lcclass)
+        mymatch = re.match(r"^(?P<lc1>[A-Z]+) ?(?P<lc2>[\.\d]+)", lcclass)
         if mymatch:
             returnt = {'lc0':lcclass[0],'lc1':mymatch.group('lc1'),'lc2':mymatch.group('lc2')}
             return returnt
         else:
             return(dict())
-
+        
+    def parse(self):
+        if self.field is None:
+            return dict()
+        else:
+            value = self.split()
+            value['lc_class_from_lc'] = self.from_loc()
+            return value
+        
 class F008(object):
     def __init__(self,record):
         self.f = record['008']
@@ -77,9 +85,13 @@ class Author(object):
     """
     def __init__(self,record):
         self.field = record
-        self.dates()
-        self.name()
-    def dates(self):
+        self.parse_dates()
+        
+    def parse_dates(self):
+        if self.field['d'] is None:
+            self.birth=None
+            self.death=None
+            return            
         try:
             (self.birth,self.death) = self.field['d'].split("-")
         except ValueError:
@@ -89,9 +101,9 @@ class Author(object):
         self.birth = normalize_year(self.birth)
         self.death = normalize_year(self.death)
     def name(self):
-        self.name=self.field['a']
-    def as_dict(self):
-        return {"name":self.name(),"birth":self.birth,"death":self.death}
+        return self.field.value()
+    def as_dict(self,prefix=""):
+        return {prefix + "name":self.name(),prefix + "birth":self.birth,prefix + "death":self.death}
 
 """
 From http://www.loc.gov/marc/bibliographic/bd260.html:
@@ -159,6 +171,7 @@ def normalize_year(year_string):
 # Monkeypatching some convenience functions onto pymarc.Record
 
 class BRecord(pymarc.Record):
+    
     def parse_authors(self):
         if hasattr(self,"authors"):
             return self.authors
@@ -167,13 +180,18 @@ class BRecord(pymarc.Record):
             author = Author(field)
             self.authors.append(author)
         return self.authors
-
+    def parse_lc_class(self):
+        classification = LCClass(self)
+        return classification.parse()
     def date(self):
         """
         Field 260 is the first place to look for year. But this can be
         overridden by field 945y in Hathi metadata.
         """
-        return normalize_year(self['260']['c'])
+        try:
+            return normalize_year(self['260']['c'])
+        except TypeError:
+            return normalize_year(self.pubyear())
     def first_publisher(self):
         return self['260']['b']
     def first_place(self):
@@ -192,9 +210,10 @@ class BRecord(pymarc.Record):
     def first_author(self):
         authors = self.parse_authors()
         try:
-            return authors[0].field.value()
+            return authors[0].as_dict(prefix="first_author_")
         except IndexError:
-            return None
+            return {}
+    
     def cntry(self):
         """
         The country field from MARC 008.
@@ -206,16 +225,40 @@ class BRecord(pymarc.Record):
         """
         a = F008(self)
         return a.cntry()
-    def bookworm_dicts(self):
+
+    def bookworm_dict(self):
         master_record = dict()
-        for field in ["date","title","first_author","first_publisher","first_place"]:
+        # Individual fields first.
+        for field in ["date","title","first_publisher","first_place"]:
             try:
                 val = getattr(self,field)()
             except AttributeError:
                 continue
             if val is not None:
                 master_record[field] = val
+        # Then methods that return dicts
+        dicts = [self.parse_lc_class()
+                 ,self.first_author()
+                 ]
+        for dicto in dicts:
+            for (k,v) in dicto.iteritems():
+                master_record[k] = v
+        return master_record
+        
+    def hathi_bookworm_dicts(self):
+        """
+        Hathi does use one record for one book; instead, it stores many volumes under a record. 
+        So we use field 974 to represent these.
 
+        Also, Hathi has permalinks, which MARC records may not.
+        """
+
+        # First, grab the normal MARC info.
+        master_record = self.bookworm_dict()
+
+        if "date" in master_record:
+            master_record["date_source"] = "008"
+        
         for field in self.get_fields('974'):
             """
             Each entry in 974 is a separate scan of a record.
@@ -225,19 +268,28 @@ class BRecord(pymarc.Record):
 
             for (k,v) in master_record.iteritems():
                 if v is not None:
-                    # Note this can overwrite publication year.
                     local_info[k] = v
+            
             for (k,v) in scan_data(field).iteritems():
                 if v is not None:
                     if k == "additional_title":
-                        local_info["title"] += ("-- " + v)
-                    else:
-                        local_info[k] = v
+                        local_info["title"] += ("--- " + v)
+                        # Don't overwrite the title, just append with a triple dash.
+                        continue
+                    elif k=="date" and "date" in master_record:
+                        # If we're overwriting the 008 field date, make a note of it
+                        # and stash the other date. Unlikely to be used.
+                        original = master_record["date"]
+                        if original != v and v is not None:
+                            local_info["date_source"] = "974"
+                            local_info["alternidate"] = original
+                    local_info[k] = v
+            local_info["permalink"] = "https://babel.hathitrust.org/cgi/pt?id=" + local_info["filename"]
             try:
-                local_info['searchstring'] = "<a href=%(filename)s>%(author)s,<em>%(title)s</em> (%(date)s)" % local_info
+                local_info["searchstring"] = "<a href=%(permalink)s>%(author)s,<em>%(title)s</em> (%(date)s)" % local_info
             except KeyError:
                 # There is no author; there should be a title, though
-                local_info['searchstring'] = "<a href=%(filename)s><em>%(title)s</em> (%(date)s)" % local_info
+                local_info['searchstring'] = "<a href=%(permalink)s><em>%(title)s</em> (%(date)s)" % local_info
             yield local_info
 
 def scan_data(field):
@@ -254,11 +306,12 @@ def scan_data(field):
     return {
         "libraryB":field['b'],
         "libraryC":field['c'],
-        "ingest_date":"-".join([field['d'][:4], field['d'][4:6], field['d'][6:8]]),
+        # Field 'd' is for when the rights were changed. Who cares?
+        #"ingest_date":"-".join([field['d'][:4], field['d'][4:6], field['d'][6:8]]),
         "scanner":field['s'],
         "filename":field['u'],
         "additional_title":field['z'],
-        "date":field['y']
+        "date":normalize_year(field['y'])
     }
 
 def subfield_reduce(subfields):
@@ -267,7 +320,12 @@ def subfield_reduce(subfields):
         subfields = [subfields]
     for subfield in subfields:
         value.append(subfield['code'])
-        value.append(subfield['#text'])
+        try:
+            value.append(subfield['#text'])
+        except KeyError:
+            # Some records have a code but no text. I'm assuming that
+            # means the space is just empty.
+            value.append("")
     return value
 
 def parse_record(entry):
@@ -283,7 +341,11 @@ def parse_record(entry):
     for field in entryRaw['datafield']:
         try:
             subfields = field['subfield']
-            fld = Field(tag=field['tag'],subfields=subfield_reduce(subfields),indicators=[field['ind1'], field['ind2']])
+            try:
+                fld = Field(tag=field['tag'],subfields=subfield_reduce(subfields),indicators=[field['ind1'], field['ind2']])
+            except KeyError:
+                # Sometimes 035 fields
+                raise
             rec.add_field(fld)
         except KeyError:
             try:
