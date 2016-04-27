@@ -46,6 +46,8 @@ class LCClass(object):
             return False
         return True
     def split(self):
+        if self.field is None or self.string is None:
+            return dict()
         #LC classifications cannot include non-ascii characters, so we just coerce.
         lcclass = self.string.encode("ascii",'replace')
         #This regex defines an LC classification.
