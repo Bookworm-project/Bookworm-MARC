@@ -193,14 +193,20 @@ class BRecord(pymarc.Record):
         except TypeError:
             return normalize_year(self.pubyear())
     def first_publisher(self):
-        return self['260']['b']
+        try:
+            return self['260']['b']
+        except:
+            return None
     def first_place(self):
-        return self['260']['a']
+        try:
+            return self['260']['a']
+        except:
+            return None
     def lccn(self):
         try:
             return self['010'].value()
         except:
-            raise
+            return None
     def author_age(self):
         try:
             self.parse_authors()
