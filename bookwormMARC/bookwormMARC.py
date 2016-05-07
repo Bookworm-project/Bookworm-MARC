@@ -66,19 +66,58 @@ class LCClass(object):
         
 class F008(object):
     def __init__(self,record):
-        self.f = record['008']
+        self.data = record['008'].data
+      
+    def cataloging_source(self):
+        return self.data[-1]
+    
+    def language(self):
+        return self.data[35:38]
+    
+    def literary_form(self):
+        return self.data[33]
+    
+    def government_document(self):
+        return self.data[28]
+
+    def target_audience(self):
+        return self.data[22]
+    
     def cntry(self):
         """
-        Is this fields 12-15, or 14-17?
+        The marc-country is in 15:18
         """
-        return self.f.value()[12:15]
-    def govt_publication(self):
-        # position 28
-        pass
-    def fiction(self):
-        pass
-        # Position 008
+        return self.data[15:18]
+    
+    def marc_record_created(self):
+        try:
+            yy = self.data[0:2]
+            mm = self.data[2:4]
+            dd = self.data[4:6]
+            # MARC fields are vulnerable to the Y2K bug.
+            if int(yy) < 30:
+                yyyy = "20" + yy
+            else:
+                yyyy = "19" + yy
+            return "-".join([yyyy,mm,dd])
+        except ValueError:
+            return None
+        
+    def as_dict(self):
+        value = dict()
 
+        for attribute in [
+            "marc_record_created"
+            , "language"
+            , "cntry" 
+            , "language"
+            , "cataloging_source"
+            , "government_document"
+         ]:
+            value[attribute] = getattr(self,attribute)()
+
+        return value
+        
 class Author(object):
     """
     A general purpose extraction class to handle a MARC author field.
@@ -168,10 +207,9 @@ def normalize_year(year_string):
     return int(y)
 
 
-# Monkeypatching some convenience functions onto pymarc.Record
+# Extending some convenience functions onto pymarc.Record
 
 class BRecord(pymarc.Record):
-    
     def parse_authors(self):
         if hasattr(self,"authors"):
             return self.authors
@@ -183,6 +221,9 @@ class BRecord(pymarc.Record):
     def parse_lc_class(self):
         classification = LCClass(self)
         return classification.parse()
+    def parse_008(self):
+        f008 = F008(self)
+        return f008.as_dict()
     def date(self):
         """
         Field 260 is the first place to look for year. But this can be
@@ -193,14 +234,31 @@ class BRecord(pymarc.Record):
         except TypeError:
             return normalize_year(self.pubyear())
     def first_publisher(self):
-        return self['260']['b']
+        try:
+            return self['260']['b']
+        except TypeError:
+            return None
+        except KeyError:
+            return None
     def first_place(self):
-        return self['260']['a']
+        try:
+            return self['260']['a']
+        except KeyError:
+            return None
+        except TypeError:
+            return None
     def lccn(self):
         try:
             return self['010'].value()
         except:
             raise
+    def cataloging_source(self):
+        try:
+            return self['040']['a']
+        except KeyError:
+            return None
+        except TypeError:
+            return None
     def author_age(self):
         try:
             self.parse_authors()
@@ -214,22 +272,13 @@ class BRecord(pymarc.Record):
         except IndexError:
             return {}
     
-    def cntry(self):
-        """
-        The country field from MARC 008.
-        Can be combined with publication place to locate any book quite
-        precisely.
-
-        I don't understand why this shows up in 12:15; sources say it should be
-        in bytes 14:17
-        """
-        a = F008(self)
-        return a.cntry()
-
     def bookworm_dict(self):
+        """
+        Reformat the record as a dictionary for use with Bookworm.
+        """
         master_record = dict()
         # Individual fields first.
-        for field in ["date","title","first_publisher","first_place"]:
+        for field in ["date","title","first_publisher","first_place","cataloging_source"]:
             try:
                 val = getattr(self,field)()
             except AttributeError:
@@ -239,6 +288,7 @@ class BRecord(pymarc.Record):
         # Then methods that return dicts
         dicts = [self.parse_lc_class()
                  ,self.first_author()
+                 ,self.parse_008()
                  ]
         for dicto in dicts:
             for (k,v) in dicto.iteritems():
@@ -292,6 +342,9 @@ class BRecord(pymarc.Record):
                 local_info['searchstring'] = "<a href=%(permalink)s><em>%(title)s</em> (%(date)s)" % local_info
             yield local_info
 
+
+_library_lookups = {u"mdp" : "University of Michigan", u"miu" : "University of Michigan", u"miua" : "University of Michigan", u"miun" : "University of Michigan", u"wu" : "University of Wisconsin", u"inu" : "Indiana University", u"uc1" : "University of California", u"uc2" : "University of California", u"pst" : "Penn State University", u"umn" : "University of Minnesota", u"nnc1" : "Columbia University", u"nnc2" : "Columbia University", u"nyp" : "New York Public Library", u"uiuc" : "University of Illinois", u"njp" : "Princeton University", u"yale" : "Yale University", u"chi" : "University of Chicago", u"coo" : "Cornell University", u"ucm" : "Universidad Complutense de Madrid", u"loc" : "Library of Congress", u"ien" : "Northwestern University", u"hvd" : "Harvard University", u"uva" : "University of Virginia", u"dul1" : "Duke University", u"ncs1" : "North Carolina State University", u"nc01" : "University of North Carolina", u"pur1" : "Purdue University", u"pur2" : "Purdue University", u"mdl" : "Minnesota Digital Library", u"usu" : "Utah State University Press", u"gri" : "Getty Research Institute", u"uiug" : "University of Illinois", u"psia" : "Penn State University", u"bc" : "Boston College", u"ufl1" : "University of Florida", u"ufl2" : "University of Florida", u"txa" : "Texas A&M University", u"keio" : "Keio University", u"osu" : "The Ohio State University", u"uma" : "University of Massachusets", u"udel" : "University of Delaware", u"caia" : "Clark Art Institute Library",u"pur":"Purdue University"}
+
 def scan_data(field):
     """
     field: a 974 field parsed by pymarc.Field.
@@ -303,11 +356,15 @@ def scan_data(field):
     3. Additional titles (eg, volume numbers)
     4. Date (for serial volumes bundled under a single MARC record)
     """
+    global _library_lookups
+    try:
+        library = _library_lookups[field['c'].lower()]
+    except:
+        library = field['c'].lower()
     return {
-        "libraryB":field['b'],
-        "libraryC":field['c'],
+        "contributing_library":library,
         # Field 'd' is for when the rights were changed. Who cares?
-        #"ingest_date":"-".join([field['d'][:4], field['d'][4:6], field['d'][6:8]]),
+        "rights_changed_date":"-".join([field['d'][:4], field['d'][4:6], field['d'][6:8]]),
         "scanner":field['s'],
         "filename":field['u'],
         "additional_title":field['z'],
@@ -355,6 +412,9 @@ def parse_record(entry):
                 print field
                 raise
     for field in entryRaw['controlfield']:
-        fld = Field(tag=field['tag'],data=field['#text'])
+        try:
+            fld = Field(tag=field['tag'],data=field['#text'])
+        except KeyError:
+            fld = Field(tag=field['tag'],data="")
         rec.add_field(fld)
     return rec

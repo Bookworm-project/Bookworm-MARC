@@ -1,0 +1,333 @@
+uri,name,code,region
+info:lc/vocabulary/countries/af,Afghanistan,af,Asia
+info:lc/vocabulary/countries/alu,Alabama,alu,North America
+info:lc/vocabulary/countries/aku,Alaska,aku,North America
+info:lc/vocabulary/countries/aa,Albania,aa,Europe
+info:lc/vocabulary/countries/abc,Alberta,abc,North America
+info:lc/vocabulary/countries/ae,Algeria,ae,Africa
+info:lc/vocabulary/countries/as,American Samoa,as,Pacific Ocean
+info:lc/vocabulary/countries/an,Andorra,an,Europe
+info:lc/vocabulary/countries/ao,Angola,ao,Africa
+info:lc/vocabulary/countries/am,Anguilla,am,West Indies
+info:lc/vocabulary/countries/ay,Antarctica,ay,Other
+info:lc/vocabulary/countries/aq,Antigua and Barbuda,aq,West Indies
+info:lc/vocabulary/countries/ag,Argentina,ag,South America
+info:lc/vocabulary/countries/azu,Arizona,azu,North America
+info:lc/vocabulary/countries/aru,Arkansas,aru,North America
+info:lc/vocabulary/countries/ai,Armenia (Republic),ai,Asia
+info:lc/vocabulary/countries/aw,Aruba,aw,West Indies
+info:lc/vocabulary/countries/at,Australia,at,Australasia
+info:lc/vocabulary/countries/aca,Australian Capital Territory,aca,Australasia
+info:lc/vocabulary/countries/au,Austria,au,Europe
+info:lc/vocabulary/countries/aj,Azerbaijan,aj,Asia
+info:lc/vocabulary/countries/bf,Bahamas,bf,West Indies
+info:lc/vocabulary/countries/ba,Bahrain,ba,Asia
+info:lc/vocabulary/countries/bg,Bangladesh,bg,Asia
+info:lc/vocabulary/countries/bb,Barbados,bb,West Indies
+info:lc/vocabulary/countries/bw,Belarus,bw,Europe
+info:lc/vocabulary/countries/be,Belgium,be,Europe
+info:lc/vocabulary/countries/bh,Belize,bh,Central America
+info:lc/vocabulary/countries/dm,Benin,dm,Africa
+info:lc/vocabulary/countries/bm,Bermuda Islands,bm,Atlantic Ocean
+info:lc/vocabulary/countries/bt,Bhutan,bt,Asia
+info:lc/vocabulary/countries/bo,Bolivia,bo,South America
+info:lc/vocabulary/countries/bn,Bosnia and Herzegovina,bn,Europe
+info:lc/vocabulary/countries/bs,Botswana,bs,Africa
+info:lc/vocabulary/countries/bv,Bouvet Island,bv,Atlantic Ocean
+info:lc/vocabulary/countries/bl,Brazil,bl,South America
+info:lc/vocabulary/countries/bcc,British Columbia,bcc,North America
+info:lc/vocabulary/countries/bi,British Indian Ocean Territory,bi,Indian Ocean
+info:lc/vocabulary/countries/vb,British Virgin Islands,vb,West Indies
+info:lc/vocabulary/countries/bx,Brunei,bx,Asia
+info:lc/vocabulary/countries/bu,Bulgaria,bu,Europe
+info:lc/vocabulary/countries/uv,Burkina Faso,uv,Africa
+info:lc/vocabulary/countries/br,Burma,br,Asia
+info:lc/vocabulary/countries/bd,Burundi,bd,Africa
+info:lc/vocabulary/countries/cau,California,cau,North America
+info:lc/vocabulary/countries/cb,Cambodia,cb,Asia
+info:lc/vocabulary/countries/cm,Cameroon,cm,Africa
+info:lc/vocabulary/countries/xxc,Canada,xxc,North America
+info:lc/vocabulary/countries/cv,Cabo Verde,cv,Atlantic Ocean
+info:lc/vocabulary/countries/ca,Caribbean Netherlands,ca,West Indies
+info:lc/vocabulary/countries/cj,Cayman Islands,cj,West Indies
+info:lc/vocabulary/countries/cx,Central African Republic,cx,Africa
+info:lc/vocabulary/countries/cd,Chad,cd,Africa
+info:lc/vocabulary/countries/cl,Chile,cl,South America
+info:lc/vocabulary/countries/cc,China,cc,Asia
+info:lc/vocabulary/countries/ch,China (Republic : 1949- ),ch,Asia
+info:lc/vocabulary/countries/xa,Christmas Island (Indian Ocean),xa,Indian Ocean
+info:lc/vocabulary/countries/xb,Cocos (Keeling) Islands,xb,Indian Ocean
+info:lc/vocabulary/countries/ck,Colombia,ck,South America
+info:lc/vocabulary/countries/cou,Colorado,cou,North America
+info:lc/vocabulary/countries/cq,Comoros,cq,Indian Ocean
+info:lc/vocabulary/countries/cf,Congo (Brazzaville),cf,Africa
+info:lc/vocabulary/countries/cg,Congo (Democratic Republic),cg,Africa
+info:lc/vocabulary/countries/ctu,Connecticut,ctu,North America
+info:lc/vocabulary/countries/cw,Cook Islands,cw,Pacific Ocean
+info:lc/vocabulary/countries/xga,Coral Sea Islands Territory,xga,Australasia
+info:lc/vocabulary/countries/cr,Costa Rica,cr,Central America
+info:lc/vocabulary/countries/iv,Côte d'Ivoire,iv,Africa
+info:lc/vocabulary/countries/ci,Croatia,ci,Europe
+info:lc/vocabulary/countries/cu,Cuba,cu,West Indies
+info:lc/vocabulary/countries/co,Curaçao,co,West Indies
+info:lc/vocabulary/countries/cy,Cyprus,cy,Asia
+info:lc/vocabulary/countries/xr,Czech Republic,xr,Europe
+info:lc/vocabulary/countries/deu,Delaware,deu,North America
+info:lc/vocabulary/countries/dk,Denmark,dk,Europe
+info:lc/vocabulary/countries/dcu,District of Columbia,dcu,North America
+info:lc/vocabulary/countries/ft,Djibouti,ft,Africa
+info:lc/vocabulary/countries/dq,Dominica,dq,West Indies
+info:lc/vocabulary/countries/dr,Dominican Republic,dr,West Indies
+info:lc/vocabulary/countries/ec,Ecuador,ec,South America
+info:lc/vocabulary/countries/ua,Egypt,ua,Africa
+info:lc/vocabulary/countries/es,El Salvador,es,Central America
+info:lc/vocabulary/countries/enk,England,enk,Europe
+info:lc/vocabulary/countries/eg,Equatorial Guinea,eg,Africa
+info:lc/vocabulary/countries/ea,Eritrea,ea,Africa
+info:lc/vocabulary/countries/er,Estonia,er,Europe
+info:lc/vocabulary/countries/et,Ethiopia,et,Africa
+info:lc/vocabulary/countries/fk,Falkland Islands,fk,Atlantic Ocean
+info:lc/vocabulary/countries/fa,Faroe Islands,fa,Atlantic Ocean
+info:lc/vocabulary/countries/fj,Fiji,fj,Pacific Ocean
+info:lc/vocabulary/countries/fi,Finland,fi,Europe
+info:lc/vocabulary/countries/flu,Florida,flu,North America
+info:lc/vocabulary/countries/fr,France,fr,Europe
+info:lc/vocabulary/countries/fg,French Guiana,fg,South America
+info:lc/vocabulary/countries/fp,French Polynesia,fp,Pacific Ocean
+info:lc/vocabulary/countries/go,Gabon,go,Africa
+info:lc/vocabulary/countries/gm,Gambia,gm,Africa
+info:lc/vocabulary/countries/gz,Gaza Strip,gz,Asia
+info:lc/vocabulary/countries/gau,Georgia,gau,North America
+info:lc/vocabulary/countries/gs,Georgia (Republic),gs,Asia
+info:lc/vocabulary/countries/gw,Germany,gw,Europe
+info:lc/vocabulary/countries/gh,Ghana,gh,Africa
+info:lc/vocabulary/countries/gi,Gibraltar,gi,Europe
+info:lc/vocabulary/countries/gr,Greece,gr,Europe
+info:lc/vocabulary/countries/gl,Greenland,gl,North America
+info:lc/vocabulary/countries/gd,Grenada,gd,West Indies
+info:lc/vocabulary/countries/gp,Guadeloupe,gp,West Indies
+info:lc/vocabulary/countries/gu,Guam,gu,Pacific Ocean
+info:lc/vocabulary/countries/gt,Guatemala,gt,Central America
+info:lc/vocabulary/countries/gv,Guinea,gv,Africa
+info:lc/vocabulary/countries/pg,Guinea-Bissau,pg,Africa
+info:lc/vocabulary/countries/gy,Guyana,gy,South America
+info:lc/vocabulary/countries/ht,Haiti,ht,West Indies
+info:lc/vocabulary/countries/hiu,Hawaii,hiu,North America
+info:lc/vocabulary/countries/hm,Heard and McDonald Islands,hm,Indian Ocean
+info:lc/vocabulary/countries/ho,Honduras,ho,Central America
+info:lc/vocabulary/countries/hu,Hungary,hu,Europe
+info:lc/vocabulary/countries/ic,Iceland,ic,Europe
+info:lc/vocabulary/countries/idu,Idaho,idu,North America
+info:lc/vocabulary/countries/ilu,Illinois,ilu,North America
+info:lc/vocabulary/countries/ii,India,ii,Asia
+info:lc/vocabulary/countries/inu,Indiana,inu,North America
+info:lc/vocabulary/countries/io,Indonesia|Indonesia,io,Asia
+info:lc/vocabulary/countries/iau,Iowa,iau,North America
+info:lc/vocabulary/countries/ir,Iran,ir,Asia
+info:lc/vocabulary/countries/iq,Iraq,iq,Asia
+info:lc/vocabulary/countries/iy,Iraq-Saudi Arabia Neutral Zone,iy,Asia
+info:lc/vocabulary/countries/ie,Ireland,ie,Europe
+info:lc/vocabulary/countries/is,Israel,is,Asia
+info:lc/vocabulary/countries/it,Italy,it,Europe
+info:lc/vocabulary/countries/jm,Jamaica,jm,West Indies
+info:lc/vocabulary/countries/ja,Japan,ja,Asia
+info:lc/vocabulary/countries/ji,Johnston Atoll,ji,Pacific Ocean
+info:lc/vocabulary/countries/jo,Jordan,jo,Asia
+info:lc/vocabulary/countries/ksu,Kansas,ksu,North America
+info:lc/vocabulary/countries/kz,Kazakhstan,kz,Asia
+info:lc/vocabulary/countries/kyu,Kentucky,kyu,North America
+info:lc/vocabulary/countries/ke,Kenya,ke,Africa
+info:lc/vocabulary/countries/gb,Kiribati,gb,Pacific Ocean
+info:lc/vocabulary/countries/kn,Korea (North),kn,Asia
+info:lc/vocabulary/countries/ko,Korea (South),ko,Asia
+info:lc/vocabulary/countries/kv,Kosovo,kv,Europe
+info:lc/vocabulary/countries/ku,Kuwait,ku,Asia
+info:lc/vocabulary/countries/kg,Kyrgyzstan,kg,Asia
+info:lc/vocabulary/countries/ls,Laos,ls,Asia
+info:lc/vocabulary/countries/lv,Latvia,lv,Europe
+info:lc/vocabulary/countries/le,Lebanon,le,Asia
+info:lc/vocabulary/countries/lo,Lesotho,lo,Africa
+info:lc/vocabulary/countries/lb,Liberia,lb,Africa
+info:lc/vocabulary/countries/ly,Libya,ly,Africa
+info:lc/vocabulary/countries/lh,Liechtenstein,lh,Europe
+info:lc/vocabulary/countries/li,Lithuania,li,Europe
+info:lc/vocabulary/countries/lau,Louisiana,lau,North America
+info:lc/vocabulary/countries/lu,Luxembourg,lu,Europe
+info:lc/vocabulary/countries/xn,Macedonia,xn,Europe
+info:lc/vocabulary/countries/mg,Madagascar,mg,Africa
+info:lc/vocabulary/countries/meu,Maine,meu,North America
+info:lc/vocabulary/countries/mw,Malawi,mw,Africa
+info:lc/vocabulary/countries/my,Malaysia,my,Asia
+info:lc/vocabulary/countries/xc,Maldives,xc,Indian Ocean
+info:lc/vocabulary/countries/ml,Mali,ml,Africa
+info:lc/vocabulary/countries/mm,Malta,mm,Europe
+info:lc/vocabulary/countries/mbc,Manitoba,mbc,North America
+info:lc/vocabulary/countries/xe,Marshall Islands,xe,Pacific Ocean
+info:lc/vocabulary/countries/mq,Martinique,mq,West Indies
+info:lc/vocabulary/countries/mdu,Maryland,mdu,North America
+info:lc/vocabulary/countries/mau,Massachusetts,mau,North America
+info:lc/vocabulary/countries/mu,Mauritania,mu,Africa
+info:lc/vocabulary/countries/mf,Mauritius,mf,Indian Ocean
+info:lc/vocabulary/countries/ot,Mayotte,ot,Indian Ocean
+info:lc/vocabulary/countries/mx,Mexico,mx,North America
+info:lc/vocabulary/countries/miu,Michigan,miu,North America
+info:lc/vocabulary/countries/fm,Micronesia (Federated States),fm,Pacific Ocean
+info:lc/vocabulary/countries/xf,Midway Islands,xf,Pacific Ocean
+info:lc/vocabulary/countries/mnu,Minnesota,mnu,North America
+info:lc/vocabulary/countries/msu,Mississippi,msu,North America
+info:lc/vocabulary/countries/mou,Missouri,mou,North America
+info:lc/vocabulary/countries/mv,Moldova,mv,Europe
+info:lc/vocabulary/countries/mc,Monaco,mc,Europe
+info:lc/vocabulary/countries/mp,Mongolia,mp,Asia
+info:lc/vocabulary/countries/mtu,Montana,mtu,North America
+info:lc/vocabulary/countries/mo,Montenegro,mo,Europe
+info:lc/vocabulary/countries/mj,Montserrat,mj,West Indies
+info:lc/vocabulary/countries/mr,Morocco,mr,Africa
+info:lc/vocabulary/countries/mz,Mozambique,mz,Africa
+info:lc/vocabulary/countries/sx,Namibia,sx,Africa
+info:lc/vocabulary/countries/nu,Nauru,nu,Pacific Ocean
+info:lc/vocabulary/countries/nbu,Nebraska,nbu,North America
+info:lc/vocabulary/countries/np,Nepal,np,Asia
+info:lc/vocabulary/countries/ne,Netherlands,ne,Europe
+info:lc/vocabulary/countries/nvu,Nevada,nvu,North America
+info:lc/vocabulary/countries/nkc,New Brunswick,nkc,North America
+info:lc/vocabulary/countries/nl,New Caledonia,nl,Pacific Ocean
+info:lc/vocabulary/countries/nhu,New Hampshire,nhu,North America
+info:lc/vocabulary/countries/nju,New Jersey,nju,North America
+info:lc/vocabulary/countries/nmu,New Mexico,nmu,North America
+info:lc/vocabulary/countries/xna,New South Wales,xna,Australasia
+info:lc/vocabulary/countries/nyu,New York (State),nyu,North America
+info:lc/vocabulary/countries/nz,New Zealand,nz,Australasia
+info:lc/vocabulary/countries/nfc,Newfoundland and Labrador,nfc,North America
+info:lc/vocabulary/countries/nq,Nicaragua,nq,Central America
+info:lc/vocabulary/countries/ng,Niger,ng,Africa
+info:lc/vocabulary/countries/nr,Nigeria,nr,Africa
+info:lc/vocabulary/countries/xh,Niue,xh,Pacific Ocean
+info:lc/vocabulary/countries/xx,"No place, unknown, or undetermined",xx,Other
+info:lc/vocabulary/countries/nx,Norfolk Island,nx,Australasia
+info:lc/vocabulary/countries/ncu,North Carolina,ncu,North America
+info:lc/vocabulary/countries/ndu,North Dakota,ndu,North America
+info:lc/vocabulary/countries/nik,Northern Ireland,nik,Europe
+info:lc/vocabulary/countries/nw,Northern Mariana Islands,nw,Pacific Ocean
+info:lc/vocabulary/countries/xoa,Northern Territory,xoa,Australasia
+info:lc/vocabulary/countries/ntc,Northwest Territories,ntc,North America
+info:lc/vocabulary/countries/no,Norway,no,Europe
+info:lc/vocabulary/countries/nsc,Nova Scotia,nsc,North America
+info:lc/vocabulary/countries/nuc,Nunavut,nuc,North America
+info:lc/vocabulary/countries/ohu,Ohio,ohu,North America
+info:lc/vocabulary/countries/oku,Oklahoma,oku,North America
+info:lc/vocabulary/countries/mk,Oman,mk,Asia
+info:lc/vocabulary/countries/onc,Ontario,onc,North America
+info:lc/vocabulary/countries/oru,Oregon,oru,North America
+info:lc/vocabulary/countries/pk,Pakistan,pk,Asia
+info:lc/vocabulary/countries/pw,Palau,pw,Pacific Ocean
+info:lc/vocabulary/countries/pn,Panama,pn,Central America
+info:lc/vocabulary/countries/pp,Papua New Guinea,pp,Asia
+info:lc/vocabulary/countries/pf,Paracel Islands],pf,Asia
+info:lc/vocabulary/countries/py,Paraguay,py,South America
+info:lc/vocabulary/countries/pau,Pennsylvania,pau,North America
+info:lc/vocabulary/countries/pe,Peru,pe,South America
+info:lc/vocabulary/countries/ph,Philippines,ph,Asia
+info:lc/vocabulary/countries/pc,Pitcairn Island,pc,Pacific Ocean
+info:lc/vocabulary/countries/pl,Poland,pl,Europe
+info:lc/vocabulary/countries/po,Portugal,po,Europe
+info:lc/vocabulary/countries/pic,Prince Edward Island,pic,North America
+info:lc/vocabulary/countries/pr,Puerto Rico,pr,West Indies
+info:lc/vocabulary/countries/qa,Qatar,qa,Asia
+info:lc/vocabulary/countries/quc,Québec (Province),quc,North America
+info:lc/vocabulary/countries/qea,Queensland,qea,Australasia
+info:lc/vocabulary/countries/re,Réunion,re,Indian Ocean
+info:lc/vocabulary/countries/riu,Rhode Island,riu,North America
+info:lc/vocabulary/countries/rm,Romania,rm,Europe
+info:lc/vocabulary/countries/ru,Russia (Federation),ru,Europe
+info:lc/vocabulary/countries/rw,Rwanda,rw,Africa
+info:lc/vocabulary/countries/sc,Saint-Barthélemy,sc,West Indies
+info:lc/vocabulary/countries/xj,Saint Helena,xj,Atlantic Ocean
+info:lc/vocabulary/countries/xd,Saint Kitts-Nevis,xd,West Indies
+info:lc/vocabulary/countries/xk,Saint Lucia,xk,West Indies
+info:lc/vocabulary/countries/st,Saint-Martin,st,West Indies
+info:lc/vocabulary/countries/xl,Saint Pierre and Miquelon,xl,North America
+info:lc/vocabulary/countries/xm,Saint Vincent and the Grenadines,xm,West Indies
+info:lc/vocabulary/countries/ws,Samoa,ws,Pacific Ocean
+info:lc/vocabulary/countries/sm,San Marino,sm,Europe
+info:lc/vocabulary/countries/sf,Sao Tome and Principe,sf,Africa
+info:lc/vocabulary/countries/snc,Saskatchewan,snc,North America
+info:lc/vocabulary/countries/su,Saudi Arabia,su,Asia
+info:lc/vocabulary/countries/stk,Scotland,stk,Europe
+info:lc/vocabulary/countries/sg,Senegal,sg,Africa
+info:lc/vocabulary/countries/rb,Serbia,rb,Europe
+info:lc/vocabulary/countries/se,Seychelles,se,Indian Ocean
+info:lc/vocabulary/countries/sl,Sierra Leone,sl,Africa
+info:lc/vocabulary/countries/si,Singapore,si,Asia
+info:lc/vocabulary/countries/sn,Sint Maarten,sn,West Indies
+info:lc/vocabulary/countries/xo,Slovakia,xo,Europe
+info:lc/vocabulary/countries/xv,Slovenia,xv,Europe
+info:lc/vocabulary/countries/bp,Solomon Islands,bp,Pacific Ocean
+info:lc/vocabulary/countries/so,Somalia,so,Africa
+info:lc/vocabulary/countries/sa,South Africa,sa,Africa
+info:lc/vocabulary/countries/xra,South Australia,xra,Australasia
+info:lc/vocabulary/countries/scu,South Carolina,scu,North America
+info:lc/vocabulary/countries/sdu,South Dakota,sdu,North America
+info:lc/vocabulary/countries/xs,South Georgia and the South Sandwich Islands,xs,Atlantic Ocean
+info:lc/vocabulary/countries/sd,South Sudan,sd,Africa
+info:lc/vocabulary/countries/sp,Spain,sp,Europe
+info:lc/vocabulary/countries/sh,Spanish North Africa,sh,Africa
+info:lc/vocabulary/countries/xp,Spratly Island,xp,Asia
+info:lc/vocabulary/countries/ce,Sri Lanka,ce,Asia
+info:lc/vocabulary/countries/sj,Sudan,sj,Africa
+info:lc/vocabulary/countries/sr,Surinam,sr,South America
+info:lc/vocabulary/countries/sq,Swaziland,sq,Africa
+info:lc/vocabulary/countries/sw,Sweden,sw,Europe
+info:lc/vocabulary/countries/sz,Switzerland,sz,Europe
+info:lc/vocabulary/countries/sy,Syria,sy,Asia
+info:lc/vocabulary/countries/ta,Tajikistan,ta,Asia
+info:lc/vocabulary/countries/tz,Tanzania,tz,Africa
+info:lc/vocabulary/countries/tma,Tasmania,tma,Australasia
+info:lc/vocabulary/countries/tnu,Tennessee,tnu,North America
+info:lc/vocabulary/countries/fs,Terres australes et antarctiques françaises,fs,Indian Ocean
+info:lc/vocabulary/countries/txu,Texas,txu,North America
+info:lc/vocabulary/countries/th,Thailand,th,Asia
+info:lc/vocabulary/countries/em,Timor-Leste,em,Asia
+info:lc/vocabulary/countries/tg,Togo,tg,Africa
+info:lc/vocabulary/countries/tl,Tokelau,tl,Pacific Ocean
+info:lc/vocabulary/countries/to,Tonga,to,Pacific Ocean
+info:lc/vocabulary/countries/tr,Trinidad and Tobago,tr,West Indies
+info:lc/vocabulary/countries/ti,Tunisia,ti,Africa
+info:lc/vocabulary/countries/tu,Turkey,tu,Asia
+info:lc/vocabulary/countries/tk,Turkmenistan,tk,Asia
+info:lc/vocabulary/countries/tc,Turks and Caicos Islands,tc,West Indies
+info:lc/vocabulary/countries/tv,Tuvalu,tv,Pacific Ocean
+info:lc/vocabulary/countries/ug,Uganda,ug,Africa
+info:lc/vocabulary/countries/un,Ukraine,un,Europe
+info:lc/vocabulary/countries/ts,United Arab Emirates,ts,Asia
+info:lc/vocabulary/countries/xxk,United Kingdom,xxk,Europe
+info:lc/vocabulary/countries/uik,United Kingdom Misc. Islands,uik,Europe
+info:lc/vocabulary/countries/xxu,United States,xxu,North America
+info:lc/vocabulary/countries/uc,United States Misc. Caribbean Islands,uc,West Indies
+info:lc/vocabulary/countries/up,United States Misc. Pacific Islands,up,Pacific Ocean
+info:lc/vocabulary/countries/uy,Uruguay,uy,South America
+info:lc/vocabulary/countries/utu,Utah,utu,North America
+info:lc/vocabulary/countries/uz,Uzbekistan,uz,Asia
+info:lc/vocabulary/countries/nn,Vanuatu,nn,Pacific Ocean
+info:lc/vocabulary/countries/vp,Various places,vp,Other
+info:lc/vocabulary/countries/vc,Vatican City,vc,Europe
+info:lc/vocabulary/countries/ve,Venezuela,ve,South America
+info:lc/vocabulary/countries/vtu,Vermont,vtu,North America
+info:lc/vocabulary/countries/vra,Victoria,vra,Australasia
+info:lc/vocabulary/countries/vm,Vietnam,vm,Asia
+info:lc/vocabulary/countries/vi,Virgin Islands of the United States,vi,West Indies
+info:lc/vocabulary/countries/vau,Virginia,vau,North America
+info:lc/vocabulary/countries/wk,Wake Island,wk,Pacific Ocean
+info:lc/vocabulary/countries/wlk,Wales,wlk,Europe
+info:lc/vocabulary/countries/wf,Wallis and Futuna,wf,Pacific Ocean
+info:lc/vocabulary/countries/wau,Washington (State),wau,North America
+info:lc/vocabulary/countries/wj,West Bank of the Jordan River,wj,Asia
+info:lc/vocabulary/countries/wvu,West Virginia,wvu,North America
+info:lc/vocabulary/countries/wea,Western Australia,wea,Australasia
+info:lc/vocabulary/countries/ss,Western Sahara,ss,Africa
+info:lc/vocabulary/countries/wiu,Wisconsin,wiu,North America
+info:lc/vocabulary/countries/wyu,Wyoming,wyu,North America
+info:lc/vocabulary/countries/ye,Yemen|Yemen,ye,Asia
+info:lc/vocabulary/countries/ykc,Yukon Territory,ykc,North America
+info:lc/vocabulary/countries/za,Zambia,za,Africa
+info:lc/vocabulary/countries/rh,Zimbabwe,rh,Africa
