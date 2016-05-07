@@ -46,6 +46,8 @@ class LCClass(object):
             return False
         return True
     def split(self):
+        if self.field is None or self.string is None:
+            return dict()
         #LC classifications cannot include non-ascii characters, so we just coerce.
         lcclass = self.string.encode("ascii",'replace')
         #This regex defines an LC classification.
@@ -251,7 +253,7 @@ class BRecord(pymarc.Record):
         try:
             return self['010'].value()
         except:
-            raise
+            return None
     def cataloging_source(self):
         try:
             return self['040']['a']
@@ -259,6 +261,7 @@ class BRecord(pymarc.Record):
             return None
         except TypeError:
             return None
+        
     def author_age(self):
         try:
             self.parse_authors()
