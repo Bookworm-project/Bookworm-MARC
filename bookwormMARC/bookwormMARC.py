@@ -213,6 +213,11 @@ def normalize_year(year_string):
 
 class BRecord(pymarc.Record):
     def parse_authors(self):
+        """
+        THIS DOESN"T YET HANDLE CORPORATE AUTHORS
+        (FIELD 110)
+        """
+        
         if hasattr(self,"authors"):
             return self.authors
         self.authors = []
@@ -268,6 +273,14 @@ class BRecord(pymarc.Record):
             return self.date() - self.authors[0].birth
         except:
             raise
+
+    def subject_places(self):
+        fields = []
+        for field in self.get_fields('043'):
+            if 'a' in field:
+                fields.append(field['a'])
+        return fields
+        
     def first_author(self):
         authors = self.parse_authors()
         try:
@@ -281,7 +294,7 @@ class BRecord(pymarc.Record):
         """
         master_record = dict()
         # Individual fields first.
-        for field in ["date","title","first_publisher","first_place","cataloging_source"]:
+        for field in ["date","title","first_publisher","first_place","cataloging_source","subject_places"]:
             try:
                 val = getattr(self,field)()
             except AttributeError:
