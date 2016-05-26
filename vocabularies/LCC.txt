@@ -1,0 +1,225 @@
+AC	AC Collections. Series. Collected works
+A	A GENERAL WORKS
+AE	AE Encyclopedias
+AG	AG Dictionaries and other general reference works
+AI	AI Indexes
+AM	AM Museums. Collectors and collecting
+AN	AN Newspapers
+AP	AP Periodicals
+AS	AS Academies and learned societies
+AY	AY Yearbooks. Almanacs. Directories
+AZ	AZ History of scholarship and learning. The humanities
+B	B PHILOSOPHY. PSYCHOLOGY. RELIGION
+BC	BC Logic
+BD	BD Speculative philosophy
+BF	BF Psychology
+BH	BH Aesthetics
+BJ	BJ Ethics
+BL	BL Religions. Mythology. Rationalism
+BM	BM Judaism
+BP	BP Islam. Bahaism. Theosophy, etc.
+BQ	BQ Buddhism
+BR	BR Christianity
+BS	BS The Bible
+BT	BT Doctrinal Theology
+BV	BV Practical Theology
+BX	BX Christian Denominations
+C	C AUXILIARY SCIENCES OF HISTORY
+CB	CB History of Civilization
+CC	CC Archaeology
+CD	CD Diplomatics. Archives. Seals
+CE	CE Technical Chronology. Calendar
+CJ	CJ Numismatics
+CN	CN Inscriptions. Epigraphy
+CR	CR Heraldry
+CS	CS Genealogy
+CT	CT Biography
+D	D WORLD HISTORY
+DA	DA Great Britain
+DAW	DAW Central Europe
+DB	DB Austria - Liechtenstein - Hungary - Czechoslovakia
+DC	DC France - Andorra - Monaco
+DD	DD Germany
+DE	DE Greco-Roman World
+DF	DF Greece
+DG	DG Italy - Malta
+DH	DH Low Countries - Benelux Countries
+DJ	DJ Netherlands (Holland)
+DJK	DJK Eastern Europe (General)
+DK	DK Russia. Soviet Union. Former Soviet Republics - Poland
+DL	DL Northern Europe. Scandinavia
+DP	DP Spain - Portugal
+DQ	DQ Switzerland
+DR	DR Balkan Peninsula
+DS	DS Asia
+DT	DT Africa
+DU	DU Oceania (South Seas)
+DX	DX Gypsies
+E	E HISTORY OF THE AMERICAS
+F	F HISTORY OF THE AMERICAS
+G	G GEOGRAPHY. ANTHROPOLOGY. RECREATION
+GA	GA Mathematical geography. Cartography
+GB	GB Physical geography
+GC	GC Oceanography
+GE	GE Environmental Sciences
+GF	GF Human ecology. Anthropogeography
+GN	GN Anthropology
+GR	GR Folklore
+GT	GT Manners and customs (General)
+GV	GV Recreation. Leisure
+H	H SOCIAL SCIENCES
+HA	HA Statistics
+HB	HB Economic theory. Demography
+HC	HC Economic history and conditions
+HD	HD Industries. Land use. Labor
+HE	HE Transportation and communications
+HF	HF Commerce
+HG	HG Finance
+HJ	HJ Public finance
+HM	HM Sociology (General)
+HN	HN Social history and conditions. Social problems. Social reform
+HQ	HQ The family. Marriage. Women
+HS	HS Societies: secret, benevolent, etc.
+HT	HT Communities. Classes. Races
+HV	HV Social pathology. Social and public welfare. Criminology
+HX	HX Socialism. Communism. Anarchism
+J	J POLITICAL SCIENCE
+JA	JA Political science (General)
+JC	JC Political theory
+JF	JF Political institutions and public administration
+JJ	JJ Political institutions and public administration (North America)
+JK	JK Political institutions and public administration (United States)
+JL	JL Political institutions and public administration (Canada, Latin America, etc.)
+JN	JN Political institutions and public administration (Europe)
+JQ	JQ Political institutions and public administration (Asia, Africa, Australia, Pacific Area, etc.)
+JS	JS Local government. Municipal government
+JV	JV Colonies and colonization. Emigration and immigration. International migration
+JX	JX International law, see JZ and KZ (obsolete)
+JZ	JZ International relations
+K	K LAW
+KB	KB Religious law in general. Comparative religious law. Jurisprudence
+KBM	KBM Jewish law
+KBP	KBP Islamic law
+KBR	KBR History of canon law
+KBU	KBU Law of the Roman Catholic Church. The Holy See
+KDZ	KDZ America. North America
+KE	KE Canada
+KF	KF United States
+KG	KG Latin America - Mexico and Central America - West Indies. Caribbean area
+KH	KH South America
+KZ	KZ Law of nations
+L	L EDUCATION
+LA	LA History of education
+LB	LB Theory and practice of education
+LC	LC Special aspects of education
+LD	LD Individual institutions - United States
+LE	LE Individual institutions - America (except United States)
+LF	LF Individual institutions - Europe
+LG	LG Individual institutions - Asia, Africa, Indian Ocean islands, Australia, New Zealand, Pacific islands
+LH	LH College and school magazines and papers
+LJ	LJ Student fraternities and societies, United States
+LT	LT Textbooks
+M	M MUSIC AND BOOKS ON MUSIC
+ML	ML Literature on music
+MT	MT Instruction and study
+N	N FINE ARTS
+NA	NA Architecture
+NB	NB Sculpture
+NC	NC Drawing. Design. Illustration
+ND	ND Painting
+NE	NE Print media
+NK	NK Decorative arts
+NX	NX Arts in general
+P	P LANGUAGE AND LITERATURE
+PA	PA Greek language and literature. Latin language and literature
+PB	PB Modern languages. Celtic languages
+PC	PC Romanic languages
+PD	PD Germanic languages. Scandinavian languages
+PE	PE English language
+PF	PF West Germanic languages
+PG	PG Slavic languages and literatures. Baltic languages. Albanian language
+PH	PH Uralic languages. Basque language
+PJ	PJ Oriental languages and literatures
+PK	PK Indo-Iranian languages and literatures
+PL	PL Languages and literatures of Eastern Asia, Africa, Oceania
+PM	PM Hyperborean, Native American, and artificial languages
+PN	PN Literature (General)
+PQ	PQ French literature - Italian literature - Spanish literature - Portuguese literature
+PR	PR English literature
+PS	PS American literature
+PT	PT German and Germanic literature
+PZ	PZ Fiction and juvenile belles lettres
+Q	Q SCIENCE
+QA	QA Mathematics
+QB	QB Astronomy
+QC	QC Physics
+QD	QD Chemistry
+QE	QE Geology
+QH	QH Natural history - Biology
+QK	QK Botany
+QL	QL Zoology
+QM	QM Human anatomy
+QP	QP Physiology
+QR	QR Microbiology
+R	R MEDICINE
+RA	RA Public aspects of medicine
+RB	RB Pathology
+RC	RC Internal medicine
+RD	RD Surgery
+RE	RE Ophthalmology
+RF	RF Otorhinolaryngology
+RG	RG Gynecology and obstetrics
+RJ	RJ Pediatrics
+RK	RK Dentistry
+RL	RL Dermatology
+RM	RM Therapeutics. Pharmacology
+RS	RS Pharmacy and materia medica
+RT	RT Nursing
+RV	RV Botanic, Thomsonian, and eclectic medicine
+RX	RX Homeopathy
+RZ	RZ Other systems of medicine
+S	S AGRICULTURE
+SB	SB Plant culture
+SD	SD Forestry
+SF	SF Animal culture
+SH	SH Aquaculture. Fisheries. Angling
+SK	SK Hunting sports
+Sub	Sub Subclass - KD-KDK United Kingdom and Ireland
+T	T TECHNOLOGY
+TA	TA Engineering (General). Civil engineering
+TC	TC Hydraulic engineering. Ocean engineering
+TD	TD Environmental technology. Sanitary engineering
+TE	TE Highway engineering. Roads and pavements
+TF	TF Railroad engineering and operation
+TG	TG Bridge engineering
+TH	TH Building construction
+TJ	TJ Mechanical engineering and machinery
+TK	TK Electrical engineering. Electronics. Nuclear engineering
+TL	TL Motor vehicles. Aeronautics. Astronautics
+TN	TN Mining engineering. Metallurgy
+TP	TP Chemical technology
+TR	TR Photography
+TS	TS Manufactures
+TT	TT Handicrafts. Arts and crafts
+TX	TX Home economics
+U	U MILITARY SCIENCE
+UA	UA Armies: Organization, distribution, military situation
+UB	UB Military administration
+UC	UC Maintenance and transportation
+UD	UD Infantry
+UE	UE Cavalry. Armor
+UF	UF Artillery
+UG	UG Military engineering. Air forces
+UH	UH Other services
+V	V NAVAL SCIENCE
+VA	VA Navies: Organization, distribution, naval situation
+VB	VB Naval administration
+VC	VC Naval maintenance
+VD	VD Naval seamen
+VE	VE Marines
+VF	VF Naval ordnance
+VG	VG Minor services of navies
+VK	VK Navigation. Merchant marine
+VM	VM Naval architecture. Shipbuilding. Marine engineering
+Z	Z BIBLIOGRAPHY. LIBRARY SCIENCE.
+ZA	ZA Information resources (General)
