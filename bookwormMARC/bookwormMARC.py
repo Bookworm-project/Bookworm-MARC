@@ -13,8 +13,6 @@ Bookworm.
 """
 TODO
 
-1. Where is the serial/monograph distinction?
-
 2. Integrate any additional fields from
    https://github.com/aristus/copymine-harvard/blob/master/marc.py
 
@@ -41,10 +39,12 @@ class LCClass(object):
         if self.field is not None:
             self.indicator1 = self.field.indicator1
             self.string = self.field['a']
+            
     def from_loc(self):
         if not self.indicator1 in [0,"0",""]:
             return False
         return True
+    
     def split(self):
         if self.field is None or self.string is None:
             return dict()
@@ -65,11 +65,57 @@ class LCClass(object):
             value = self.split()
             value['lc_class_from_lc'] = self.from_loc()
             return value
+
         
+class Leader(object):
+    """
+    Parses elements out of the MARC leader.
+    """
+    def __init__(self,record):
+        self.data = record.leader
+
+    def resource_type(self):
+        """
+        I use the leader to determine the resource type according to this
+        table from MARC, except that I separate "manuscripts" from "books"
+
+            Dependencies
+
+            Field 008/18-34 Configuration
+            If Leader/06 = a and Leader/07 = a, c, d, or m: Books
+            If Leader/06 = a and Leader/07 = b, i, or s: Continuing Resources
+            If Leader/06 = t: Books
+            If Leader/06 = c, d, i, or j: Music
+            If Leader/06 = e, or f: Maps
+            If Leader/06 = g, k, o, or r: Visual Materials
+            If Leader/06 = m: Computer Files
+            If Leader/06 = p: Mixed Materials
+
+        """
+        L6 = self.data[6]
+        L7 = self.data[7]
+        if L6 == "a" and L7 in ["a","c","d","m"]:
+            return "book"
+        if L6 == "a" and L7 in ["b","i","s"]:
+            return "serial"
+        if L6 == "t":
+            return "manuscript"
+        if L6 in ["c","d","i","j"]:
+            return "music"
+        if L6 in ["e","f"]:
+            return "map"
+        if L6 in ["g","k","o","r"]:
+            return "visual materials"
+        if L6=="m":
+            return "computer files"
+        if L6=="p":
+            return "mixed materials"
+        return "not present"
+
 class F008(object):
     def __init__(self,record):
         self.data = record['008'].data
-      
+        
     def cataloging_source(self):
         return self.data[-1]
     
@@ -112,12 +158,14 @@ class F008(object):
             "marc_record_created"
             , "language"
             , "cntry" 
-            , "language"
             , "cataloging_source"
             , "government_document"
          ]:
-            value[attribute] = getattr(self,attribute)()
-
+            try:
+                value[attribute] = getattr(self,attribute)()
+            except IndexError:
+                # There are some malformed JSON even here.
+                pass
         return value
         
 class Author(object):
@@ -225,21 +273,30 @@ class BRecord(pymarc.Record):
             author = Author(field)
             self.authors.append(author)
         return self.authors
+    
     def parse_lc_class(self):
         classification = LCClass(self)
         return classification.parse()
+    
     def parse_008(self):
         f008 = F008(self)
         return f008.as_dict()
-    def date(self):
+    
+    def record_date(self):
         """
         Field 260 is the first place to look for year. But this can be
         overridden by field 945y in Hathi metadata.
         """
         try:
-            return normalize_year(self['260']['c'])
+            y =  normalize_year(self['260']['c'])
+            if y is None:
+                y = normalize_year(self.pubyear())                
         except TypeError:
-            return normalize_year(self.pubyear())
+            # when there is no self['260']
+            y = normalize_year(self.pubyear())
+        
+        return y
+        
     def first_publisher(self):
         try:
             return self['260']['b']
@@ -254,11 +311,13 @@ class BRecord(pymarc.Record):
             return None
         except TypeError:
             return None
+        
     def lccn(self):
         try:
             return self['010'].value()
         except:
             return None
+        
     def cataloging_source(self):
         try:
             return self['040']['a']
@@ -266,7 +325,10 @@ class BRecord(pymarc.Record):
             return None
         except TypeError:
             return None
-        
+    def resource_type(self):
+        leader = Leader(self)
+        return leader.resource_type()
+    
     def author_age(self):
         try:
             self.parse_authors()
@@ -280,7 +342,34 @@ class BRecord(pymarc.Record):
             if 'a' in field:
                 fields.append(field['a'])
         return fields
+
+    def serial_killer_guess(self):
+        """
+        Implements the Aiden-Michel serial-killer algorithm as described at
+
+        http://dx.doi.org/10.1126/science.1199644
+
+        http://science.sciencemag.org.ezproxy.neu.edu/content/331/6014/176.figures-only.
+
+        I don't think this is likely to be that useful for most users;
+        it's here to test the algorithm.
+        """
+
+        titles = set(re.findall(r"\w+",self.title().lower()))
+        try:
+            author = set(re.findall("\w+",self.first_author()["first_author_name"].lower()))
+        except KeyError:
+            author = set([])
+            
+        title_blacklist = set(["advances", "almanac", "annual", "bibliography", "biennial", "bulletin", "catalog", "catalogue", "census", "conference", "conferences", "congress", "congressional", "digest", "digest", "directory", "hearings", "index", "journal", "magazine", "meeting", "meetings", "monthly", "papers", "periodical", "proceedings", "progress", "quarterly", "report", "reports", "review", "revista", "serial", "society", "subcommittee", "symposium", "transactions", "volume", "yearbook", "yearly"])
         
+        author_blacklist = set(["the", "of", "and", "administration", "congress", "international", "national", "federal", "state", "american", "british", "consortium", "university", "office", "america", "united", "states", "britain", "ireland", "canada", "australia", "institute", "research", "committee", "subcommittee", "court", "association", "foundation", "board", "bureau", "house", "senate", "dept", "department", "state", "council", "club", "school", "network", "online", "company", "co", "us", "u.s.", "survey", "agency", "academy", "commission", "press", "publishing", "publishers", "academic", "cambridge", "sciencedirect", "kluwer", "oxford", "interscience", "library", "on", "society", "service", "affairs", "division", "commerce", "public", "foreign", "government", "agriculture", "science", "engineers", "stanford", "medical", "energy", "laboratory", "economic", "geological", "assembly", "alabama", "alaska", "american", "arizona", "arkansas", "california", "colorado", "connecticut", "delaware", "columbia", "district", "florida", "georgia", "guam", "hawaii", "idaho", "illinois", "indiana", "iowa", "kansas", "kentucky", "louisiana", "maine", "maryland", "massachusetts", "michigan", "minnesota", "mississippi", "missouri", "montana", "nebraska", "nevada", "hampshire", "jersey", "mexico", "york", "ohio", "oklahoma", "oregon", "pennsylvania", "north", "south", "tennessee", "texas", "utah", "vermont", "wisconsin", "wyoming"])
+
+        if len(titles.intersection(title_blacklist)) + len(author.intersection(author_blacklist)):
+            return "serial"
+        return "book"
+
+    
     def first_author(self):
         authors = self.parse_authors()
         try:
@@ -291,15 +380,20 @@ class BRecord(pymarc.Record):
     def bookworm_dict(self):
         """
         Reformat the record as a dictionary for use with Bookworm.
+
+        This does not include Hathi-specific fields.
         """
         master_record = dict()
         # Individual fields first.
-        for field in ["date","title","first_publisher","first_place","cataloging_source","subject_places"]:
+        for field in ["record_date","title","first_publisher","first_place","cataloging_source","subject_places","resource_type","serial_killer_guess"]:
             try:
                 val = getattr(self,field)()
             except AttributeError:
                 continue
-            if val is not None:
+            if val is not None and val!=[]:
+                master_record[field] = val
+            if val is None and field == "record_date":
+                # We need a date, even if we don't know it.
                 master_record[field] = val
         # Then methods that return dicts
         dicts = [self.parse_lc_class()
@@ -307,8 +401,9 @@ class BRecord(pymarc.Record):
                  ,self.parse_008()
                  ]
         for dicto in dicts:
-            for (k,v) in dicto.iteritems():
-                master_record[k] = v
+            for (k,val) in dicto.iteritems():
+                if val is not None and val != []:
+                    master_record[k] = val
         return master_record
         
     def hathi_bookworm_dicts(self):
@@ -321,9 +416,6 @@ class BRecord(pymarc.Record):
 
         # First, grab the normal MARC info.
         master_record = self.bookworm_dict()
-
-        if "date" in master_record:
-            master_record["date_source"] = "008"
         
         for field in self.get_fields('974'):
             """
@@ -333,29 +425,34 @@ class BRecord(pymarc.Record):
             local_info = dict()
 
             for (k,v) in master_record.iteritems():
-                if v is not None:
-                    local_info[k] = v
-            
+                local_info[k] = v
+        
             for (k,v) in scan_data(field).iteritems():
                 if v is not None:
                     if k == "additional_title":
                         local_info["title"] += ("--- " + v)
-                        # Don't overwrite the title, just append with a triple dash.
+                        # Don't overwrite the title, just append with a triple dash
                         continue
-                    elif k=="date" and "date" in master_record:
-                        # If we're overwriting the 008 field date, make a note of it
-                        # and stash the other date. Unlikely to be used.
-                        original = master_record["date"]
-                        if original != v and v is not None:
-                            local_info["date_source"] = "974"
-                            local_info["alternidate"] = original
                     local_info[k] = v
             local_info["permalink"] = "https://babel.hathitrust.org/cgi/pt?id=" + local_info["filename"]
+
+            try:
+                if local_info["item_date"] and local_info["item_date"] is not None:
+                    local_info["date"] = local_info["item_date"]
+                else:
+                    local_info["date"] = local_info["record_date"]
+            except KeyError:
+                local_info["date"] = local_info["record_date"]
+                
             try:
                 local_info["searchstring"] = "<a href=%(permalink)s>%(author)s,<em>%(title)s</em> (%(date)s)" % local_info
+                
             except KeyError:
+                try:
                 # There is no author; there should be a title, though
-                local_info['searchstring'] = "<a href=%(permalink)s><em>%(title)s</em> (%(date)s)" % local_info
+                    local_info['searchstring'] = "<a href=%(permalink)s><em>%(title)s</em> (%(date)s)" % local_info
+                except KeyError:
+                    local_info['searchstring'] = "<a href=%(permalink)s>[No title] (%(date)s)" % local_info
             yield local_info
 
 
@@ -384,7 +481,7 @@ def scan_data(field):
         "scanner":field['s'],
         "filename":field['u'],
         "additional_title":field['z'],
-        "date":normalize_year(field['y'])
+        "item_date":normalize_year(field['y'])
     }
 
 def subfield_reduce(subfields):
@@ -434,3 +531,5 @@ def parse_record(entry):
             fld = Field(tag=field['tag'],data="")
         rec.add_field(fld)
     return rec
+
+
