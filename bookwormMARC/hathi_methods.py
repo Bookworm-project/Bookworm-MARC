@@ -4,6 +4,23 @@ import random
 import sys
 import pymarc
 from bookwormMARC import BRecord
+import logging
+import json
+
+"""
+These define methods specific to Hathi Trust MARC record parser.
+
+Run as a standalone script, it will parse out the full 
+"""
+
+tarfile_location = "dpla_full_20160501.tar.gz"
+
+def hathi_item_yielder():
+    records = hathi_record_yielder()
+    for record in records:
+        for item in record.hathi_bookworm_dicts():
+            yield item
+    
 
 def hathi_record_yielder(sample_files=100,sample_records=100):
     """
@@ -19,10 +36,10 @@ def hathi_record_yielder(sample_files=100,sample_records=100):
     This method may not work on non-Hathi MARC files if they use different patterns of newlines.
     """
     
-    hathi_records = tarfile.open("dpla_full_20160501.tar.gz")    
+    hathi_records = tarfile.open(tarfile_location)    
     for file in hathi_records:
         if file.name.endswith(".xml") and random.random()<=(sample_files/float(100)):    
-            sys.stderr.write("Parsing new XML file " + file.name)
+            logging.info("Parsing new XML file " + file.name)
             buffer = ""
             in_record = False
             for line in hathi_records.extractfile(file):
@@ -38,3 +55,12 @@ def hathi_record_yielder(sample_files=100,sample_records=100):
                     for record in records:
                         record.__class__ = BRecord
                         yield record
+
+
+if __name__=="__main__":
+    jsoncatalog = open(sys.argv[1],"w")
+    for item in hathi_item_yielder():
+        try:
+            jsoncatalog.write(json.dumps(item) + "\n")
+        except KeyError, e:
+            sys.stderr.write("ignoring error: %s" %(str(e)))
