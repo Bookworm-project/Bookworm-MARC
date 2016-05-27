@@ -3,3 +3,4 @@ json
 .ipynb_checkpoints
 *.pyc
 *.gz
+jsoncatalog.txt
