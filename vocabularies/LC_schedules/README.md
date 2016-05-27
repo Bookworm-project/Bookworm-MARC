@@ -1,0 +1,1 @@
+I haven't gone fully down the road of parsing the LC schedules. But it looks quite doable; you could build a nice browser for the whole thing from the PDFS, and each of these entries could be attempted to drop into the structure I defined for the hierarchy one level up. The only question is: why would I do this right now?
