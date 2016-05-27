@@ -1,5 +1,3 @@
-LIBRARY OF CONGRESS CLASSIFICATION OUTLINE
-
 CLASS A - GENERAL WORKS
 
 Subclass AC
@@ -56,8 +54,7 @@ Subclass AY
 AY10-2001	Yearbooks.  Almanacs.  Directories
 AY10-29		Annuals
 AY30-1730		Almanacs
-AY2001		Directories
-Class directories by subject in B-Z
+AY2001		Directories.
 
 Subclass AZ
 
@@ -66,7 +63,7 @@ AZ101-(181)		Philosophy.  Theory
 AZ191-193		Evaluation
 AZ200-361		History
 AZ501-908		By region or country
-LIBRARY OF CONGRESS CLASSIFICATION OUTLINE
+
 
 CLASS B - PHILOSOPHY.  PSYCHOLOGY.  RELIGION
 
@@ -74,8 +71,7 @@ Subclass B
 
 B1-5802	Philosophy (General)
 B69-99		General works
-B108-5802		By period
-				Including individual philosophers and schools of philosophy
+B108-5802		By period Including individual philosophers and schools of philosophy
 B108-708			Ancient
 B720-765			Medieval
 B770-785			Renaissance
@@ -99,11 +95,8 @@ BD10-41		General philosophical works
 BD95-131		Metaphysics
 BD143-237		Epistemology.  Theory of knowledge
 BD240-260		Methodology
-BD300-450		Ontology
-				Including being, the soul, life, death
-BD493-701		Cosmology
-				Including teleology, space and time, structure of matter,
-					plurality of worlds
+BD300-450		Ontology Including being, the soul, life, death
+BD493-701		Cosmology Including teleology, space and time, structure of matter, plurality of worlds
 
 Subclass BF
 
@@ -115,10 +108,7 @@ BF180-198.7		Experimental psychology
 BF203		Gestalt psychology
 BF207-209		Psychotropic drugs and other substances
 BF231-299		Sensation.  Aesthesiology
-BF309-499		Consciousness.  Cognition
-				Including learning, attention, comprehension, memory,
-					imagination, genius, intelligence, thought and
-					thinking, psycholinguistics, mental fatigue
+BF309-499		Consciousness.  Cognition Including learning, attention, comprehension, memory, imagination, genius, intelligence, thought and thinking, psycholinguistics, mental fatigue
 BF501-505		Motivation
 BF511-593		Affection.  Feeling.  Emotion
 BF608-635		Will.  Volition.  Choice.  Control
@@ -129,9 +119,7 @@ BF692-692.5		Psychology of sex.  Sexual behavior
 BF697-697.5		Differential psychology.  Individuality.  Self
 BF698-698.9		Personality
 BF699-711		Genetic psychology
-BF712-724.85		Developmental psychology
-				Including infant psychology, child psychology, adolescence,
-					adulthood
+BF712-724.85		Developmental psychology Including infant psychology, child psychology, adolescence, adulthood
 BF725-727		Class psychology
 BF795-839		Temperament.  Character
 BF839.8-885		Physiognomy.  Phrenology
@@ -142,8 +130,7 @@ BF1001-1045		Psychic research.  Psychology of the conscious
 BF1048-1108		Hallucinations.  Sleep.  Dreaming.  Visions
 BF1111-1156		Hypnotism.  Suggestion.  Mesmerism.  Subliminal projection
 BF1161-1171		Telepathy.  Mind reading.  Thought transference
-BF1228-1389		Spiritualism
-				Including mediumship, spirit messages, clairvoyance
+BF1228-1389		Spiritualism Including mediumship, spirit messages, clairvoyance
 BF1404-2055	Occult sciences
 BF1444-1486		Ghosts.  Apparitions.  Hauntings
 BF1501-1562		Demonology.  Satanism.  Possession
@@ -153,8 +140,7 @@ BF1651-1729		Astrology
 BF1745-1779		Oracles.  Sibyls.  Divinations
 BF1783-1815		Seers.  Prophets.  Prophecies
 BF1845-1891		Fortune-telling
-BF2050-2055		Human-alien encounters.  Contact between humans and
-			extraterrestrials
+BF2050-2055		Human-alien encounters.  Contact between humans and extraterrestrials
 
 Subclass BH
 
@@ -165,8 +151,7 @@ BH301		Special topics
 Subclass BJ
 
 BJ1-1725	Ethics
-BJ71-1185		History and general works
-				Including individual ethical philosophers
+BJ71-1185		History and general works Including individual ethical philosophers
 BJ1188-1295		Religious ethics
 BJ1298-1335		Evolutionary and genetic ethics
 BJ1365-1385		Positivist ethics
@@ -174,21 +159,17 @@ BJ1388		Socialist ethics
 BJ1390-1390.5		Communist ethics
 BJ1392		Totalitarian ethics
 BJ1395		Feminist ethics
-BJ1518-1697		Individual ethics.  Character.  Virtue
-				Including practical and applied ethics, conduct of life, vices,
-					success, ethics for children
+BJ1518-1697		Individual ethics.  Character.  Virtue Including practical and applied ethics, conduct of life, vices, success, ethics for children
 BJ1725		Ethics of social groups, classes, etc.  Professional ethics
 BJ1801-2195	Social usages.  Etiquette
 BJ2021-2078		Etiquette of entertaining
 BJ2139-2156		Etiquette of travel
 BJ2195		Telephone etiquette
 
-Subclass BL
-							
+Subclass BL 
 BL1-2790	Religions.  Mythology.  Rationalism
 BL1-50		Religion (General)
-BL51-65		Philosophy of religion.  Psychology of religion.  Religion
-			in relation to other subjects
+BL51-65		Philosophy of religion.  Psychology of religion.  Religion in relation to other subjects
 BL70-71		Sacred books (General)
 BL71.5-73		Biography
 BL74-99		Religions of the world
@@ -261,8 +242,7 @@ BL1620-1625					Assyro-Babylonian
 BL1630					Chaldean
 BL1635					Harranian.  Pseudo-Sabian
 BL1640-1645					Syrian.  Palestinian.  Samaritan
-BL1650					Hebrew
-							For Judaism, see subclass BM
+BL1650					Hebrew For Judaism, see subclass BM
 BL1660-1665					Phoenician.  Carthaginian, etc.
 BL1670-1672					Canaanite
 BL1675					Moabite.  Philistine
@@ -280,8 +260,7 @@ BL2216-2227.8						Shinto
 BL2230-2240					Korea
 BL2390-2490			African
 BL2420-2460				Egyptian
-BL2500-2592			American
-					For American Indians, see classes E-F
+BL2500-2592			American For American Indians, see classes E-F
 BL2600-2630			Pacific Ocean islands.  Oceania
 BL2670			Arctic regions
 BL2700-2790		Rationalism
@@ -321,8 +300,7 @@ BM656-657			Forms of worship
 BM660-679			Liturgy and ritual
 BM690-695			Festivals and fasts
 BM700-720			Rites and customs
-BM723-729			Jewish way of life.  Spiritual life.  Mysticism.  Personal
-					religion.  Moral theology
+BM723-729			Jewish way of life.  Spiritual life.  Mysticism.  Personal religion.  Moral theology
 BM730-747			Preaching.  Homiletics
 BM750-755		Biography
 BM900-990		Samaritans
@@ -344,7 +322,7 @@ BP130-134					Works about the Koran
 BP135-136.9				Hadith literature.  Traditions.  Sunna
 BP137-137.5				Koranic and other Islamic legends
 BP160-165			General works on Islam
-BP165.5			Dogma (‘Aqa’id)
+BP165.5			Dogma ('Aqa'id)
 BP166-166.94			Theology (Kalam)
 BP167.5			Heresy, heresies, heretics
 BP168			Apostasy from Islam
@@ -358,8 +336,7 @@ BP174-190			The practice of Islam
 BP176-181				The five duties of a Moslem.  Pillars of Islam
 BP182				Jihad (Holy War)
 BP184-184.9				Religious ceremonies, rites, etc.
-BP186-186.97				Special days and seasons, fasts, feasts, 
-					festivals, etc.  Relics
+BP186-186.97				Special days and seasons, fasts, feasts,  festivals, etc.  Relics
 BP187-187.9				Shrines, sacred places, etc.
 BP188-190				Islamic religious life
 BP188.2-188.3					Devotional literature
@@ -375,8 +352,7 @@ BP500-585		Theosophy
 BP595-597		Anthroposophy
 BP600-610		Other beliefs and movements
 
-Subclass BQ
-	
+Subclass BQ 
 BQ1-9800	Buddhism
 BQ1-10		Periodicals.  Yearbooks (General)
 BQ12-93		Societies, councils, associations, clubs, etc.
@@ -520,12 +496,10 @@ BT126-127.5			Revelation
 BT130-153			Divine attributes
 BT198-590		Christology
 BT296-500			Life of Christ
-BT580			Miracles.  Apparitions.  Shrines, sanctuaries, images,
-				processions, etc.
+BT580			Miracles.  Apparitions.  Shrines, sanctuaries, images, processions, etc.
 BT587			Relics
 BT595-680		Mary, Mother of Jesus Christ.  Mariology
-BT650-660			Miracles.  Apparitions.  Shrines, sanctuaries, images,
-				processions, etc.
+BT650-660			Miracles.  Apparitions.  Shrines, sanctuaries, images, processions, etc.
 BT695-749		Creation
 BT750-811		Salvation.  Soteriology
 BT819-891		Eschatology.  Last things
@@ -542,9 +516,9 @@ BV1-5099	Practical Theology
 BV5-530		Worship (Public and private)
 BV30-135			Times and seasons.  The Church year
 BV43-64				Feast days
-BV65-70				Saints’ days
+BV65-70				Saints' days
 BV80-105				Fasts
-BV107-133				Lord’s Day.  Sunday.  Sabbath
+BV107-133				Lord's Day.  Sunday.  Sabbath
 BV150-168			Christian symbols and symbolism
 BV169-199			Liturgy and ritual
 BV200			Family worship
@@ -565,15 +539,15 @@ BV700-707			Parish.  Congregation.  The local church
 BV770-777			Church finance.  Church property
 BV800-873			Sacraments.  Ordinances
 BV803-814				Baptism
-BV823-828				Holy Communion.  Lord’s Supper.  Eucharist
+BV823-828				Holy Communion.  Lord's Supper.  Eucharist
 BV835-838				Marriage
 BV840-850				Penance
 BV895-896			Shrines.  Holy places
 BV900-1450			Religious societies, associations, etc.
 BV950-1280				Religious societies of men, brotherhoods, etc.
-BV1000-1220					Young Men’s Christian Associations
+BV1000-1220					Young Men's Christian Associations
 BV1300-1395				Religious societies of women
-BV1300-1393					Young Women’s Christian Associations
+BV1300-1393					Young Women's Christian Associations
 BV1460-1615			Religious education (General)
 BV1620-1652			Social life, recreation, etc., in the church
 BV2000-3705		Missions
@@ -608,16 +582,14 @@ BV5099			Quietism
 Subclass BX
 
 BX1-9999	Christian Denominations
-BX1-9.5		Church unity.  Ecumenical movement.  Interdenominational
-			cooperation
+BX1-9.5		Church unity.  Ecumenical movement.  Interdenominational cooperation
 BX100-189		Eastern churches.  Oriental churches
 BX100-107			General
 BX120-129			Armenian Church
 BX130-139			Coptic Church
 BX140-149			Ethiopic or Abyssinian Church
 BX150-159			Nestorian, Chaldean, or East Syrian Church
-BX160-169			St. Thomas Christians.  Malabar Christians.  Mar Thoma Syrian
-				Church
+BX160-169			St. Thomas Christians.  Malabar Christians.  Mar Thoma Syrian Church
 BX170-179			Syrian or Jacobite Church
 BX180-189			Maronite Church
 BX200-756		Orthodox Eastern Church
@@ -645,8 +617,7 @@ BX847			Atlases
 BX850-875			Documents
 BX880-891			General collected works
 BX895-939			Study and teaching
-BX940-1745			History
-					Including lives of popes
+BX940-1745			History Including lives of popes
 BX1746-1755			Theology.  Doctrine.  Dogmatics
 BX1756			Sermons
 BX1760-1779.5			Controversial works
@@ -674,8 +645,7 @@ BX4650-4698				Collective
 BX4654-4662					Saints and martyrs
 BX4700-4705				Individual
 BX4700					Saints
-BX4710.1-4715.95			Eastern churches in communion with Rome.  Catholics of the
-				Oriental rites.  Uniats
+BX4710.1-4715.95			Eastern churches in communion with Rome.  Catholics of the Oriental rites.  Uniats
 BX4716.4-4795			Dissenting sects other than Protestant
 BX4718.5-4735				Jansenists
 BX4737				French schisms of the 19th century
@@ -706,8 +676,7 @@ BX5137-5139				Creeds and catechisms, etc.
 BX5140.5-5147				Liturgy and ritual
 BX5148-5149				Sacraments
 BX5150-5182.5				Government.  Organization.  Discipline
-BX5183-5187				Religious communities.  Conventual life.  Religious
-					societies
+BX5183-5187				Religious communities.  Conventual life.  Religious societies
 BX5194-5195				Cathedrals, churches, etc. in England and Wales
 BX5197-5199				Biography
 BX5200-5207				Dissent and nonconformity
@@ -719,11 +688,7 @@ BX5601-5620					Anglican Church of Canada
 BX5800-5995			Protestant Episcopal Church in the United States of America
 BX5996-6030			Protestant Episcopal Church outside the United States
 BX6051-6093			Reformed Episcopal Church
-BX6101-9999			Other Protestant denominations
-					Alphabetical; only larger denominations listed
-					The subarrangement is essentially the same for
-						each sect, the primary features being 
-						indicated by way of example under Baptists
+BX6101-9999			Other Protestant denominations Alphabetical; only larger denominations listed The subarrangement is essentially the same for each sect, the primary features being  indicated by way of example under Baptists
 BX6101-6193				Adventists.  “Millerites”
 BX6195-6197				Arminians.  Remonstrants
 BX6201-6495				Baptists
@@ -742,8 +707,7 @@ BX6480-6490					Individual Baptist churches
 BX6493-6495					Biography
 BX6551-6593				Catholic Apostolic Church.  Irvingites
 BX6651-6693				Christadelphians.  Brothers of Christ
-BX6751-6793				Christian Church
-						See also Disciples of Christ
+BX6751-6793				Christian Church See also Disciples of Christ
 BX6801-6843				Christian Reformed Church
 BX6901-6997				Christian Science
 BX7003				Christian Union
@@ -756,18 +720,15 @@ BX7451-7493				Evangelical and Reformed Church
 BX7556				Evangelical United Brethren Church
 BX7580-7583				Free Congregations (Germany).  Freie Gemeinden
 BX7601-7795				Friends.  Society of Friends.  Quakers
-BX7801-7843				German Baptist Brethren.  Church of the Brethren.
-					Dunkards
-BX7850-7865				German Evangelical Protestant Church of North America. 
-					Evangelical Protestant Church of North America
+BX7801-7843				German Baptist Brethren.  Church of the Brethren. Dunkards
+BX7850-7865				German Evangelical Protestant Church of North America.  Evangelical Protestant Church of North America
 BX7901-7943				German Evangelical Synod of North America
 BX7990.H6-.H69				Holiness churches
 BX8001-8080				Lutheran churches
 BX8101-8144				Mennonites
 BX8201-8495				Methodism
-BX8525-8528				Millennial Dawnists.  Jehovah’s Witnesses
-BX8551-8593				Moravian Church.  United Brethren.  Unitas Fratrum. 
-					Herrnhuters
+BX8525-8528				Millennial Dawnists.  Jehovah's Witnesses
+BX8551-8593				Moravian Church.  United Brethren.  Unitas Fratrum.  Herrnhuters
 BX8601-8695				Mormons.  Church of Jesus Christ of Latter-Day Saints
 BX8701-8749				New Jerusalem Church.  New Church.  Swedenborgianism
 BX8762-8785				Pentecostal churches
@@ -779,8 +740,7 @@ BX9675				River Brethren.  Brethren in Christ
 BX9701-9743				Salvation Army
 BX9751-9793				Shakers.  United Society of Believers.  Millennial Church
 BX9801-9869				Unitarianism
-BX9875-9877.1				United Brethren in Christ.  Church of the United Brethren in
-					Christ
+BX9875-9877.1				United Brethren in Christ.  Church of the United Brethren in Christ
 BX9881-9882.95				United Church of Canada
 BX9884-9886				United Church of Christ
 BX9887				United Evangelical Church
@@ -790,7 +750,7 @@ BX9975				Volunteers of America
 BX9980				Walloon Church
 BX9998				Other beliefs and movements akin to Christianity
 BX9999				Independent churches, parishes, societies, etc.
-LIBRARY OF CONGRESS CLASSIFICATION OUTLINE
+
 
 CLASS C - AUXILIARY SCIENCES OF HISTORY
 
@@ -817,8 +777,7 @@ CC1-960	Archaeology
 CC72-81		Philosophy.  Theory
 CC73-81			Methodology
 CC83-97		Study and teaching.  Research
-CC135-137		Preservation, restoration, and conservation of antiquities.
-			Antiquities and state
+CC135-137		Preservation, restoration, and conservation of antiquities. Antiquities and state
 CC140		Forgeries of antiquities
 CC200-260		Bells.  Campanology.  Cowbells
 CC300-350		Crosses
@@ -916,13 +875,11 @@ CT210-3150		National biography
 CT3200-9999		Biography.  By subject
 CT3200-3830			Biography of women (Collective)
 CT3990			Academicians.  Scholars. Savants
-CT9960-9998			Other miscellaneous groups
-					Including adventurers, eccentrics, misers, etc.
+CT9960-9998			Other miscellaneous groups Including adventurers, eccentrics, misers, etc.
 CT9999			Blank books for personal records, diaries, etc.
-LIBRARY OF CONGRESS CLASSIFICATION OUTLINE
 
-CLASS D - WORLD HISTORY AND HISTORY OF EUROPE, ASIA, AFRICA, AUSTRALIA, NEW ZEALAND, ETC.
-													
+
+CLASS D - WORLD HISTORY AND HISTORY OF EUROPE, ASIA, AFRICA, AUSTRALIA, NEW ZEALAND, ETC. 
 Subclass D		
 
 D1-2027	History (General)
@@ -939,15 +896,15 @@ D200-203			Later medieval.  11th-15th centuries
 D(204)-(475)		Modern history, 1453-
 D219-234			1453-1648
 D242-283.5			1601-1715.  17th century
-D251-271				Thirty Years’ War, 1618-1648
-D274.5-6				Anglo-French War, 1666-1667
+D251-271				Thirty Years' War, 1618-1648
+D274.5-274.6				Anglo-French War, 1666-1667
 D275-276				War of Devolution, 1667-1668
 D277-278.5				Dutch War, 1672-1678
 D279-280.5				War of the Grand Alliance, 1688-1697
 D281-283.5				War of Spanish Succession, 1701-1714
 D284-297			1715-1789.  18th century
 D291-294				War of Austrian Succession, 1740-1748
-D297				Seven Years’ War, 1756-1763
+D297				Seven Years' War, 1756-1763
 D299-(475)			1789-
 D301-309				Period of the French Revolution
 D351-400				19th century.  1801-1914/1920
@@ -975,8 +932,7 @@ DA20-690		England
 DA20-27.5			General
 DA28-592			History
 DA28-35				General
-DA40-89.6				Political, military, naval, and Air Force history.
-					Foreign relations
+DA40-89.6				Political, military, naval, and Air Force history. Foreign relations
 DA90-125				Antiquities.  Social life and customs.  Ethnography
 DA129-592				By period
 DA129-260					Early and medieval to 1485
@@ -1060,8 +1016,7 @@ DB69.7-77    						1740-1815
 DB80-99.2						19th-20th centuries
 DB83							Revolution, 1848
 DB96-99.2							Republic, 1918-
-DB99-99.1								1938-1955.  German annexation.
-									Allied occupation
+DB99-99.1								1938-1955.  German annexation. Allied occupation
 DB99.2								1955-
 DB101-879			Local history and description
 DB101-785				Provinces, regions, etc.
@@ -1087,8 +1042,7 @@ DB974.9-999  			Local history and description
 DB974.9-975  				Counties, regions, etc.
 DB981-997				Budapest
 DB2000-3150		Czechoslovakia
-DB2000-2035			General.  Description and travel.  Antiquities.  Social
-				life and customs
+DB2000-2035			General.  Description and travel.  Antiquities.  Social life and customs
 DB2040-2043			Ethnography
 DB2044-2247			History
 DB2080-2247				By period
@@ -1116,8 +1070,8 @@ DC60-109				Early and medieval to 1515
 DC62-64					Gauls.  Celts.  Franks
 DC64.7-94  					476-1328.  Merovingians.  Carlovingians.  Capetians
 DC95-109					1328-1515
-DC96-101.7						Hundred Years’ War, 1339-1453
-DC101.9-109   						15th century.  Jeanne d’Arc, Saint
+DC96-101.7						Hundred Years' War, 1339-1453
+DC101.9-109   						15th century.  Jeanne d'Arc, Saint
 DC110-433				Modern, 1515-
 DC111-120					1515-1589.  16th century
 DC118						Massacre of St. Bartholomew, 1572
@@ -1163,11 +1117,10 @@ DD145-155						1125-1273.  Hohenstaufen period
 DD156-174.6					1273-1519.  Houses of Habsburg and Luxemburg
 DD175-257.4				Modern, 1519-
 DD176-189					1519-1648.  Reformation and Counter-reformation
-DD181-183						Peasants’ War, 1524-1525
+DD181-183						Peasants' War, 1524-1525
 DD184-184.7						Schmalkaldic League and War, 1530-1547
-DD189						Period of Thirty Years’ War, 1618-1648
-DD190-199					1648-1815.  18th century.  French Revolutionary
-						and Napoleonic period
+DD189						Period of Thirty Years' War, 1618-1648
+DD190-199					1648-1815.  18th century.  French Revolutionary and Napoleonic period
 DD201-257.4					19th-20th centuries
 DD206-216						1815-1871
 DD217-231						New Empire, 1871-1918
@@ -1271,14 +1224,10 @@ DG233-233.9						Foundations and kings, 753-510
 DG235-269						Republic, 509-27
 DG237-238							Subjection of Italy, 343-290
 DG241-253							Conquest of Mediterranean world.  264-133
-DG242-249.4								First and Second Punic Wars.  Illyrian
-									wars.  264-201
-DG250-253								Wars in the East and in the West.
-									200-133
-DG253.5-269   								Fall of the Republic and establishment
-									of the Empire.  133-27
-DG256-260								Period of Marius and Sulla (Pompey).
-									111-78
+DG242-249.4								First and Second Punic Wars.  Illyrian wars.  264-201
+DG250-253								Wars in the East and in the West. 200-133
+DG253.5-269   								Fall of the Republic and establishment of the Empire.  133-27
+DG256-260								Period of Marius and Sulla (Pompey). 111-78
 DG261-267								Julius Caesar.  First Triumvirate, 60
 DG268-269								Second Triumvirate, 43-31
 DG269.5-365   					Empire, 27 B.C. - 476 A.D.
@@ -1295,8 +1244,7 @@ DG480-499				Military, naval, and political history.  Foreign relations
 DG500-583.8				By period
 DG500-537.8					Medieval, 476-1492
 DG503-529						476-1268
-DG506-514.7							489-774.  Gothic and Lombard kingdoms.
-								Byzantine exarchate, 553-568
+DG506-514.7							489-774.  Gothic and Lombard kingdoms. Byzantine exarchate, 553-568
 DG515-529							774-1268.  Frankish and German emperors
 DG530-537.8						1268-1492
 DG532-537.8							Renaissance
@@ -1319,8 +1267,7 @@ DG670-684.72			Venice
 DG691-817.3		Central Italy
 DG691-694			General
 DG731-759.3			Tuscany.  Florence
-DG791-800			Papal States (States of the Church).  Holy See.  Vatican
-DG				City
+DG791-800			Papal States (States of the Church).  Holy See.  Vatican 			City
 DG803-817.3			Rome (Modern city)
 DG819-875		Southern Italy
 DG819-829			General
@@ -1405,7 +1352,7 @@ DK1-949.5	History of Russia.  Soviet Union.  Former Soviet Republics
 DK33-35.5		Ethnography
 DK36-293		History
 DK70-112.42			Early to 1613
-DK70-99.7				Rus’
+DK70-99.7				Rus'
 DK99.8-112.42  				Muscovy
 DK112.8-264.8  			House of Romanov, 1613-1917
 DK265-265.95			Revolution, 1917-1921
@@ -1454,7 +1401,7 @@ DK4123-4452		History
 DK4186-4348			To 1795
 DK4348.5-4395   			1795-1918.  19th century (General)
 DK4397-4420			1918-1945
-DK4429-4442			1945-1989.  People’s Republic
+DK4429-4442			1945-1989.  People's Republic
 DK4445-4452			1989-
 DK4600-4800		Local history and description
 DK4610-4645			Warsaw (Warszawa)
@@ -1617,7 +1564,7 @@ DP568-578					House of Burgundy, 1095-1383
 DP580					Interregnum, 1383-1385
 DP582-618					House of Aviz, 1385-1580
 DP620-682.2				1580-
-DP622-629					1580-1640.  Spanish dynasty (Sixty years’ captivity)
+DP622-629					1580-1640.  Spanish dynasty (Sixty years' captivity)
 DP632-644.9					1640-1816.  House of Braganza
 DP645-669					1816-1908
 DP650						Revolution of 1820
@@ -1776,8 +1723,7 @@ DS35.3-35.77		The Islamic World
 DS36-39.2		Arab countries
 DS36.9			Ethnography
 DS37-39.2			History
-DS41-66		Middle East.  Southwestern Asia.  Ancient Orient.  Arab East.  Near
-			East
+DS41-66		Middle East.  Southwestern Asia.  Ancient Orient.  Arab East.  Near East
 DS51-54.95			Local history and description
 DS54-54.95				Cyprus
 DS58-59			Ethnography
@@ -1951,8 +1897,7 @@ DT401-409			Somalia.  Somaliland and adjacent territory
 DT402.3-402.45				Ethnography
 DT402.5-407.3				History
 DT409				Local history and description
-DT411-411.9			Djibouti.  French Territory of the Afars and Issas.  French
-				Somaliland
+DT411-411.9			Djibouti.  French Territory of the Afars and Issas.  French Somaliland
 DT411.42-411.45				Ethnography
 DT411.5-411.83				History
 DT411.9				Local history and description
@@ -2026,8 +1971,7 @@ DT546.2-546.29					Congo (Brazaville).  Middle Congo
 DT546.242-546.245						Ethnography
 DT546.25-546.283						History
 DT546.29						Local history and description
-DT546.3-546.39					Central African Republic.  Central African Empire. 
-						Ubangi-Shari
+DT546.3-546.39					Central African Republic.  Central African Empire.  Ubangi-Shari
 DT546.342-546.345						Ethnography
 DT546.348-546.3852						History
 DT546.39						Local history and description
@@ -2185,11 +2129,11 @@ DU810-819			Samoan Islands
 Subclass DX
 
 DX101-301	History of Gypsies
-LIBRARY OF CONGRESS CLASSIFICATION OUTLINE
 
-CLASS E-F - HISTORY OF THE AMERICAS
 
-Class E
+
+
+CLASS E - HISTORY OF THE AMERICAS
 
 E11-143	America
 E11-29		General
@@ -2262,8 +2206,7 @@ E376-380					John Quincy Adams' administration, 1825-1829
 E381-385					Jackson's administrations, 1829-1837
 E384.3						Nullification
 E386-390					Van Buren's administration, 1837-1841
-E391-392					William H. Harrison's administration, March 4-April 4,
-						1841
+E391-392					William H. Harrison's administration, March 4-April 4, 1841
 E396-400					Tyler's administration, April 4, 1841-1845
 E398						Northeastern boundary disputes, 1783-1845
 E401-415.2				Mexican War, 1846-1848
@@ -2304,8 +2247,7 @@ E696-700			Cleveland's first administration, 1885-1889
 E701-705			Benjamin Harrison's administration, 1889-1893
 E706-710			Cleveland's second administration, 1893-1897
 E711-738			McKinley's first administration, 1897-1901
-E713				Annexation in 1898 of Hawaii, the Philippines, and Puerto
-					Rico
+E713				Annexation in 1898 of Hawaii, the Philippines, and Puerto Rico
 E714-735				War of 1898 (Spanish-American War)
 E740-837.7		Twentieth century
 E740-749			General
@@ -2351,7 +2293,7 @@ E885-889			Clinton's administrations, 1993-2001
 E895-904		Twenty-first century
 E902-904			George W. Bush's administrations, 2001-
 
-Class F
+CLASS F - HISTORY OF THE AMERICAS
 
 F1-975	United States local history
 F1-15		New England
@@ -2416,8 +2358,7 @@ F821-835			Utah
 F836-850			Nevada
 F850.5-851.5		Pacific States
 F851.7			Cascade Range
-F852-854			Pacific Northwest.  Columbia River and Valley.  Northwest
-				boundary since 1846
+F852-854			Pacific Northwest.  Columbia River and Valley.  Northwest boundary since 1846
 F856-870			California
 F871-885			Oregon
 F886-900			Washington
@@ -2425,9 +2366,7 @@ F901-951			Alaska
 F951				Bering Sea and Aleutian Islands
 F965		The territories of the United States (General)
 F970		Insular possessions of the United States (General)
-F975		Central American, West Indian, and other countries protected by and
-			having close political affiliations with the United States
-			(General)
+F975		Central American, West Indian, and other countries protected by and having close political affiliations with the United States (General)
 F1001-1145.2	British America
 F1001-1145.2		Canada
 F1001-1035			General
@@ -2454,30 +2393,8 @@ F1121-1139			Newfoundland
 F1135-1139				Labrador
 F1140			The Labrador Peninsula
 F1141-1145.2			Nunavut
-		Other than Canada
-			Bahamas, see F1650+
-			Bermudas, see F1630+
-			British East asnd West Florida, 1763-1783, see F301, F314
-			British Guiana, see F2361+
-			British Honduras (Belize), see F1441+
-			British West Indies, see F2131+
-			Falkland Islands, see F3031+
-			Thirteen North American Colonies before 1776, see E186+
-	Dutch America
-		Colony in Brazil, 1625-1661, see F2532
-		Dutch Guinea, see F2401+
-		Dutch West Indies, see F2141
-		New Netherlands to 1664, see F122.1
-		New Sweden (Dutch possession, 1655-1664), see F167
 F1170	French America
 F1170		Saint Pierre and Miquelon
-		Other French America
-			Colony in Brazil, 1555-1567, see F2529
-			Colony in Florida, 1562-1565, see F314
-			French Guinana, see F2441+
-			French West Indies, see F2151
-			Louisiana, 1698-1803, see F372
-			New France and Acadia, 1600-1763, see F1030, F1038
 F1201-3799	Latin America.  Spanish America
 F1201-1392		Mexico
 F1218.5-1221			Antiquities.  Indians
@@ -2505,12 +2422,12 @@ F1931-1941					Dominican Republic
 F1951-1983				Puerto Rico
 F1991				Navassa
 F2001-2151			Lesser Antilles
-				Groups of islands, by geographical distribution
+F2006-2129				Groups of islands, by geographical distribution
 F2006					Leeward islands
 F2011					Windward Islands
 F2016					Islands along Venezuela coast
 F2033-2129				Individual islands
-				Groups of islands, by political allegiance
+F2131-2151				Groups of islands, by political allegiance
 F2131-2133					British West Indies
 F2136					Virgin Islands of the United States
 F2141					Netherlands West Indies.  Dutch West Indies
@@ -2532,7 +2449,7 @@ F3031-3031.5			Falkland Islands
 F3051-3285			Chile
 F3301-3359			Bolivia
 F3401-3619			Peru
-F3701-3799			EcuadorLIBRARY OF CONGRESS CLASSIFICATION OUTLINE
+F3701-3799			Ecuador
 
 CLASS G - GEOGRAPHY.  ANTHROPOLOGY.  RECREATION
 
@@ -2542,8 +2459,7 @@ G1-922	Geography (General)
 G65-69		Geographers
 G70-70.6		Philosophy.  Relation to other topics.  Methodology
 G80-99		History of geography
-G100.5-108.5		Toponymy
-				Including gazetteers, geographic names and terms
+G100.5-108.5		Toponymy Including gazetteers, geographic names and terms
 G140		Great cities of the world
 G141		Historical geography
 G142		Aerial geography
@@ -2577,15 +2493,13 @@ G1600-1692					West Indies
 G1700-1779				South America
 G1780-2799			Eastern Hemisphere.  Eurasia, Africa, etc.
 G1791-2196				Europe
-G2110-2196					Former Soviet republics.  Union of Soviet Socialist
-						Republics (U.S.S.R.).  Russia (Empire)
+G2110-2196					Former Soviet republics.  Union of Soviet Socialist Republics (U.S.S.R.).  Russia (Empire)
 G2200-2444.84				Asia
 G2445-2739				Africa
 G2740-2799			Australasia
 G2800-3064			Oceans (General)
 G3100-3102			Antarctica
-G3122		Atlases of imaginary, literary, and mythological 
-			regions, etc., A-Z
+G3122		Atlases of imaginary, literary, and mythological  regions, etc., A-Z
 G3160-3171	Globes
 G3180-9980	Maps
 G3180-3182		Universe.  Solar system
@@ -2609,8 +2523,7 @@ G4900-5184					West Indies
 G5200-5667				South America
 G5670-8904			Eastern Hemisphere.  Eurasia, Africa, etc.
 G5700-7342				Europe
-G7000-7342					Former Soviet republics.  Union of Soviet Socialist
-						Republics (U.S.S.R.).  Russia (Empire)
+G7000-7342					Former Soviet republics.  Union of Soviet Socialist Republics (U.S.S.R.).  Russia (Empire)
 G7400-8198.54				Asia
 G8200-8904				Africa
 G8950-9084			Australasia
@@ -2644,8 +2557,7 @@ GB450-460			Coasts
 GB461-468.995			Reefs
 GB471-478.995			Islands
 GB500-555			Mountains.  Orography
-GB561-649			Other natural landforms: Floodplains, caves, 
-				deserts, dunes, etc.
+GB561-649			Other natural landforms: Floodplains, caves,  deserts, dunes, etc.
 GB651-2998		Hydrology.  Water
 GB980-2998			Ground and surface waters
 GB980-992				Watersheds.  Runoff.  Drainage
@@ -2705,26 +2617,20 @@ Subclass GN
 GN1-890	Anthropology
 GN49-298		Physical anthropology.  Somatology
 GN51-59			Anthropometry
-GN62.8-265			Human variation
-					Including growth, physical form, skeleton, 
-						nervous system, skin, etc.
+GN62.8-265			Human variation Including growth, physical form, skeleton,  nervous system, skin, etc.
 GN269-279			Race (General)
 GN280.7			Man as an animal.  Simian traits versus human traits
 GN281-289			Human evolution
 GN282-286.7				Fossil man.  Human paleontology
 GN296-296.5			Medical anthropology
 GN301-674		Ethnology.  Social and cultural anthropology
-GN357-367			Culture and cultural processes
-					Including social change, structuralism, diffusion, etc.
+GN357-367			Culture and cultural processes Including social change, structuralism, diffusion, etc.
 GN378-396			Collected ethnographies
 GN397-397.7			Applied anthropology
 GN406-517			Cultural traits, customs, and institutions
-GN406-442				Technology.  Material culture
-						Including food, shelter, fire, tools, etc.
+GN406-442				Technology.  Material culture Including food, shelter, fire, tools, etc.
 GN448-450.8				Economic organization.  Economic anthropology
-GN451-477.7				Intellectual life
-						Including communication, recreation, philosophy,
-							religion, knowledge, etc.
+GN451-477.7				Intellectual life Including communication, recreation, philosophy, religion, knowledge, etc.
 GN478-491.7				Social organization
 GN492-495.2				Political organization.  Political anthropology
 GN495.4-498				Societal groups, ethnocentrism, diplomacy, warfare, etc.
@@ -2736,17 +2642,13 @@ GN700-890		Prehistoric archaeology
 Subclass GR
 
 GR1-950	Folklore
-GR72-79		Folk literature (General)
-				Including folktales, legends
+GR72-79		Folk literature (General) Including folktales, legends
 GR81		Folk beliefs, superstitions, etc. (General)
 GR99.6-390		By region or country
 GR420-950		By subject
 GR420-426			Costume, jewelry
-GR430-488			Folklore relating to private life
-					Including dreams, love, children, nursery 
-						rhymes, etc.
-GR500-615			Supernatural beings, demonology, fairies, ghosts, 
-				charms, etc.
+GR430-488			Folklore relating to private life Including dreams, love, children, nursery  rhymes, etc.
+GR500-615			Supernatural beings, demonology, fairies, ghosts,  charms, etc.
 GR620-640			Cosmic phenomena, weather lore
 GR650-690			Geographical topics
 GR700-860			Animals, plants, and minerals
@@ -2763,12 +2665,8 @@ GT165-476		Houses.  Dwellings
 GT485		Churches and church going
 GT495-499		Human body and its parts.  Personal beauty
 GT500-2370		Costume.  Dress.  Fashion
-GT2400-3390.5		Customs relative to private life
-				Including children, marriage, eating and drinking, 
-					funeral customs, etc.
-GT3400-5090		Customs relative to public and social life
-				Including town life, court life, festivals, 
-					holidays, ceremonies of royalty, etc.
+GT2400-3390.5		Customs relative to private life Including children, marriage, eating and drinking,  funeral customs, etc.
+GT3400-5090		Customs relative to public and social life Including town life, court life, festivals,  holidays, ceremonies of royalty, etc.
 GT5220-5286		Customs relative to transportation and travel
 GT5320-6737		Customs relative to special classes
 GT5320-5690			By birth, rank, etc.
@@ -2787,16 +2685,11 @@ GV199.8-200.35			Mountaineering
 GV200.4-200.56			Orienteering.  Wilderness survival
 GV200.6-200.66			Caving.  Spelunking
 GV201-555		Physical education and training
-GV346-351.5			School and college athletics.  Intramural
-				and interscholastic athletics
-GV401-433			Physical education facilities.  Sports facilities
-					Including gymnasiums, athletic fields, 
-						playgrounds, etc.
+GV346-351.5			School and college athletics.  Intramural and interscholastic athletics
+GV401-433			Physical education facilities.  Sports facilities Including gymnasiums, athletic fields,  playgrounds, etc.
 GV435-436.7			Physical measurements.  Physical tests, etc.
 GV450-451.4			Nudism.  Sunbathing
-GV460-555			Gymnastics.  Gymnastic exercises
-					Including calisthenics, heavy exercises, 
-						acrobatics, etc.
+GV460-555			Gymnastics.  Gymnastic exercises Including calisthenics, heavy exercises,  acrobatics, etc.
 GV557-1198.995		Sports
 GV711			Coaching
 GV712-725			Athletic contests.  Sports events
@@ -2804,10 +2697,8 @@ GV733-734.5			Professionalism in sports.  Professional sports (General)
 GV735			Umpires.  Sports officiating
 GV743-749			Athletic and sporting goods, supplies, etc.
 GV750-770.27			Air sports: Airplane flying, kiteflying, bungee jumping, etc.
-GV770.3-840			Water sports: Canoeing, sailing, yachting, scuba 
-				diving, etc.
-GV840.7-857			Winter sports: Ice hockey, skiing, bobsledding,
-				snowmobiling, etc.
+GV770.3-840			Water sports: Canoeing, sailing, yachting, scuba  diving, etc.
+GV840.7-857			Winter sports: Ice hockey, skiing, bobsledding, snowmobiling, etc.
 GV861-1017			Ball games: Baseball, football, golf, etc.
 GV1020-1034			Automobile travel.  Motoring.  Automobile racing
 GV1040-1060.4			Cycling.  Bicycling.  Motorcycling
@@ -2822,16 +2713,14 @@ GV1218.5-1220.8				Toys
 GV1221-1469.63			Indoor games and amusements
 GV1232-1299				Card games: Poker, patience, whist, etc.
 GV1301-1311				Gambling.  Chance and banking games
-GV1312-1469				Board games.  Move games
-						Including chess, go, checkers, etc.
+GV1312-1469				Board games.  Move games Including chess, go, checkers, etc.
 GV1469.15-1469.62				Computer games.  Video games.  Fantasy games
 GV1470-1511			Parties.  Party games and stunts
 GV1491-1507				Puzzles
 GV1541-1561			Parlor magic and tricks
 GV1564-1565			Darts
 GV1580-1799.4		Dancing
-GV1800-1860		Circuses, spectacles, etc.
-				Including rodeos, waxworks, amusement parks, etc.LIBRARY OF CONGRESS CLASSIFICATION OUTLINE
+GV1800-1860		Circuses, spectacles, etc. Including rodeos, waxworks, amusement parks, etc.
 
 CLASS H - SOCIAL SCIENCES
 
@@ -2844,8 +2733,7 @@ Subclass HA
 HA1-4737	Statistics
 HA29-32		Theory and method of social science statistics
 HA36-37		Statistical services.  Statistical bureaus
-HA38-39		Registration of vital events.  Vital
-			records
+HA38-39		Registration of vital events.  Vital records
 HA154-4737		Statistical data
 HA154-155			Universal statistics
 HA175-473			By region or country
@@ -2853,15 +2741,10 @@ HA175-473			By region or country
 Subclass HB
 
 HB1-3840	Economic theory.  Demography
-HB71-74		Economics as a science.  Relation to other 
-			subjects
-HB75-130		History of economics.  History of economic 
-			theory
-				Including special economic schools
+HB71-74		Economics as a science.  Relation to other  subjects
+HB75-130		History of economics.  History of economic  theory Including special economic schools
 HB131-147		Methodology
-HB135-147			Mathematical economics.  Quantitative methods
-					Including econometrics, input-output
-						analysis, game theory
+HB135-147			Mathematical economics.  Quantitative methods Including econometrics, input-output analysis, game theory
 HB201-206		Value.  Utility
 HB221-236		Price
 HB238-251		Competition.  Production.  Wealth
@@ -2869,8 +2752,7 @@ HB501		Capital.  Capitalism
 HB522-715		Income.  Factor shares
 HB535-551			Interest
 HB601			Profit
-HB615-715			Entrepreneurship.  Risk and uncertainty.
-				Property
+HB615-715			Entrepreneurship.  Risk and uncertainty. Property
 HB801-843		Consumption.  Demand
 HB846-846.8		Welfare theory
 HB848-3697		Demography.  Population.  Vital events
@@ -2879,10 +2761,7 @@ HB3711-3840		Business cycles.  Economic fluctuations
 Subclass HC
 
 HC10-1085	Economic history and conditions
-HC79		Special topics
-				Including air pollution, automation, 
-					consumer demand, famines, flow of funds, 
-					etc.
+HC79		Special topics Including air pollution, automation,  consumer demand, famines, flow of funds,  etc.
 HC92		Economic geography of the oceans (General)
 HC94-1085		By region or country
 
@@ -2894,27 +2773,20 @@ HD39-40.7			Capital.  Capital investments
 HD41			Competition
 HD45-45.2			Technological innovations.  Automation
 HD47-47.4			Costs
-HD49-49.5			Crisis management.  Emergency management.
-				Inflation
-HD50-50.5			Delegation of authority.  Decentralization.
-				Span of control
+HD49-49.5			Crisis management.  Emergency management. Inflation
+HD50-50.5			Delegation of authority.  Decentralization. Span of control
 HD56-57.5			Industrial productivity
 HD58			Location of industry
-HD58.7-58.95			Organizational behavior, change and
-				effectiveness.  Corporate culture
+HD58.7-58.95			Organizational behavior, change and effectiveness.  Corporate culture
 HD59-59.6			Public relations.  Industrial publicity
 HD60-60.5			Social responsibility of business
 HD61			Risk in industry.  Risk management
 HD62			Standardization.  Simplification.  Waste
 HD62.2-62.8			Management of special enterprises
-HD66-66.2			Work groups.  Team work in industry.
-				Quality circles
-HD69			Other
-					Including business consultants, 
-						capacity, size of industries, etc.
+HD66-66.2			Work groups.  Team work in industry. Quality circles
+HD69			Other Including business consultants,  capacity, size of industries, etc.
 HD72-88		Economic growth, development, planning
-HD101-1395.5		Land use
-			Land tenure
+HD101-1395.5		Land use Land tenure
 HD1286-1289				Communal ownership
 HD1290-1291				Municipal ownership
 HD1301-1313				Nationalization (Agrarian socialism)
@@ -2922,8 +2794,7 @@ HD1326-1329				Large holdings
 HD1330-1331				Landlord and peasant
 HD1332-1333.5				Land reform.  Agrarian reform
 HD1334-1335				Consolidation of land holdings
-HD1336-1339				Small holdings.  Peasant proprietors.
-					Parcellation
+HD1336-1339				Small holdings.  Peasant proprietors. Parcellation
 HD1361-1395.5			Real estate business
 HD1401-2210		Agriculture
 HD1428-1431			International cooperation
@@ -2932,73 +2803,43 @@ HD1478			Sharecropping
 HD1483-1486			Agricultural associations, societies, etc.
 HD1491-1491.5			Cooperative agriculture
 HD1492-1492.5			Collective farms
-HD1493-1493.5			Government owned and operated farms.  State
-				farms.  Sovkhozes
-HD1501-1542			Agricultural classes
-					Including farm tenancy, agricultural 
-						laborers
+HD1493-1493.5			Government owned and operated farms.  State farms.  Sovkhozes
+HD1501-1542			Agricultural classes Including farm tenancy, agricultural  laborers
 HD1549			Gleaning
 HD1580			Reclamation of agricultural land.  Melioration
-HD1635-1702			Utilization and culture of special classes of
-				lands
-					Including pasture lands, water resources
-						development
+HD1635-1702			Utilization and culture of special classes of lands Including pasture lands, water resources development
 HD1711-1741			Irrigation
 HD2321-4730.9		Industry
 HD2329			Industrialization
 HD2330			Rural industries
 HD2331-2336			Home labor.  Home-based businesses
 HD2337-2339			Sweatshops
-HD2340.8-2346.5			Small and medium-sized businesses, artisans, 
-				handicrafts, trades
+HD2340.8-2346.5			Small and medium-sized businesses, artisans,  handicrafts, trades
 HD2350.8-2356		Large industry.  Factory system.  Big business
 HD2365-2385			Contracting.  Letting of contracts
 HD2421-2429			Trade associations
-HD2709-2930.7			Corporations
-					Including international business enter-
-						prises, diversification, industrial
-						concentration, public utilities
+HD2709-2930.7			Corporations Including international business enter- prises, diversification, industrial concentration, public utilities
 HD2951-3575			Cooperation.  Cooperative societies
-HD3611-4730.9			Industrial policy.  The state and industrial 
-				organization
-					Including licensing of occupations and
-						professions, subsidies, inspection,
-						government ownership, municipal 
-						services
+HD3611-4730.9			Industrial policy.  The state and industrial  organization Including licensing of occupations and professions, subsidies, inspection, government ownership, municipal  services
 HD4801-8943		Labor.  Work.  Working class
 HD4861-4895			Labor systems
 HD4909-5100.9			Wages
-HD5106-5267			Hours of labor
-					Including overtime, shift work, sick
-						leave, vacations
+HD5106-5267			Hours of labor Including overtime, shift work, sick leave, vacations
 HD5306-5474			Labor disputes.  Strikes and lockouts
-HD5481-5630.7			Industrial arbitration.  Mediation  and 
-				conciliation
-HD5650-5660			Employee participation in management.  
-				Employee ownership.  Industrial democracy.
-				Works councils
-HD5701-6000.9			Labor market.  Labor supply.  Labor demand
-					Including unemployment, manpower policy,
-						occupational training, employment
-						agencies
-HD6050-6305			Classes of labor
-					Including women, children, students, 
-						middle-aged and older persons, 
-						minorities
-HD6350-6940.7			Trade unions.  Labor unions.  Workers'
-				associations
+HD5481-5630.7			Industrial arbitration.  Mediation  and  conciliation
+HD5650-5660			Employee participation in management.   Employee ownership.  Industrial democracy. Works councils
+HD5701-6000.9			Labor market.  Labor supply.  Labor demand Including unemployment, manpower policy, occupational training, employment agencies
+HD6050-6305			Classes of labor Including women, children, students,  middle-aged and older persons,  minorities
+HD6350-6940.7			Trade unions.  Labor unions.  Workers' associations
 HD6941-6948			Employers' associations
-HD6951-6957			Industrial sociology.  Social conditions of 
-				labor
+HD6951-6957			Industrial sociology.  Social conditions of  labor
 HD6958.5-6976			Industrial relations
 HD6977-7080			Cost and standard of living
 HD7088-7252			Social insurance.  Social security.  Pension
-HD7255-7256			Vocational rehabilitation.  Employment of
-				people with disabilities
+HD7255-7256			Vocational rehabilitation.  Employment of people with disabilities
 HD7260-7780.8			Industrial hygiene. Industrial welfare
 HD7795-8027			Labor policy.  Labor and the state
-HD8031			Labor in politics.  Political activity of the
-				working class
+HD8031			Labor in politics.  Political activity of the working class
 HD8038			Professions (General).  Professional employees
 HD8039			By industry or trade
 HD8045-8943			By region or country
@@ -3008,9 +2849,7 @@ HD9502-9502.5			Energy industries.  Energy policy.  Fuel trade
 HD9506-9624			Mineral industries.  Metal trade
 HD9650-9663			Chemical industries
 HD9665-9675			Pharmaceutical industry
-HD9680-9714			Mechanical industries
-					Including electric utilities, electronic 
-						industries, and machinery
+HD9680-9714			Mechanical industries Including electric utilities, electronic  industries, and machinery
 HD9715-9717.5			Construction industry
 HD9720-9975			Manufacturing industries
 HD9999			Miscellaneous industries and trades
@@ -3022,20 +2861,16 @@ HE199-199.5		Freight (General)
 HE199.9		Passenger traffic (General)
 HE305-311		Urban transportation
 HE323-328		Transportation geography.  Trade routes
-HE331-380		Traffic engineering.  Roads and highways.  
-				Streets
+HE331-380		Traffic engineering.  Roads and highways.   Streets
 HE369-373			Traffic surveys (General)
 HE374-377			Bridges
 HE379-380			Tunnels.  Vehicular tunnels
 HE380.8-971		Water transportation
 HE380.8-560			Waterways
 HE561-971			Shipping
-HE730-943				Merchant marine.  Ocean shipping.  Coastwise
-					shipping
+HE730-943				Merchant marine.  Ocean shipping.  Coastwise shipping
 HE1001-5600		Railroads.  Rapid transit systems
-HE5601-5725		Automotive transportation
-				Including trucking, bus lines, and
-					taxicab service
+HE5601-5725		Automotive transportation Including trucking, bus lines, and taxicab service
 HE5746-5749		Stage lines
 HE5751-5870		Ferries
 HE5880-5990		Express service
@@ -3045,8 +2880,7 @@ HE7601-8700.9		Telecommunication industry.  Telegraph
 HE8660-8688			Wireless telegraph.  Radiotelegraphy
 HE8689-8700.95			Radio and television broadcasting
 HE8701-9680.7		Telephone industry
-HE9713-9715		Cellular telephone services industry.  Wireless 
-			telephone industry
+HE9713-9715		Cellular telephone services industry.  Wireless  telephone industry
 HE9719-9721		Artificial satellite telecommunications
 HE9723-9737		Signaling
 HE9751-9756		Messenger service
@@ -3055,8 +2889,7 @@ HE9761-9900		Air transportation.  Airlines
 Subclass HF
 
 HF1-6182	Commerce
-HF294-343		Boards of trade.  Chambers of commerce.
-			Merchants' associations
+HF294-343		Boards of trade.  Chambers of commerce. Merchants' associations
 HF1014		Balance of trade
 HF1021-1027		Commercial geography.  Economic geography
 HF1040-1054		Commodities.  Commercial products
@@ -3069,11 +2902,9 @@ HF5410-5417.5			Marketing.  Distribution of products
 HF5419-5422			Wholesale trade
 HF5428-5429.6			Retail trade
 HF5429.7-5430.6			Shopping centers.  Shopping malls
-HF5437-5444			Purchasing.  Selling.  Sales personnel.  Sales 
-				executives
+HF5437-5444			Purchasing.  Selling.  Sales personnel.  Sales  executives
 HF5446-5459			Canvassing.  Peddling
-HF5460-5469.5			Department stores.  Mail order business.
-				Supermarkets.  Convenience stores
+HF5460-5469.5			Department stores.  Mail order business. Supermarkets.  Convenience stores
 HF5469.7-5481		 	Markets.  Fairs
 HF5482-5482.4			Secondhand trade
 HF5482.6-5482.65			Black market
@@ -3081,14 +2912,10 @@ HF5484-5495			Warehouses.  Storage
 HF5520-5541			Office equipment and supplies
 HF5546-5548.6			Office management
 HF5548.7-5548.85			Industrial psychology
-HF5549-5549.5			Personnel management.  Employment 
-				management
+HF5549-5549.5			Personnel management.  Employment  management
 HF5601-5689			Accounting.  Bookkeeping
-HF5691-5716			Business mathematics.  Commercial arithmetic
-					Including tables, etc.
-HF5717-5734.7			Business communication
-					Including business report writing, 
-						business correspondence
+HF5691-5716			Business mathematics.  Commercial arithmetic Including tables, etc.
+HF5717-5734.7			Business communication Including business report writing,  business correspondence
 HF5735-5746			Business records management
 HF5761-5780			Shipment of goods.  Delivery of goods
 HF5801-6182			Advertising
@@ -3113,10 +2940,8 @@ HG1621-1638			Interest rates.  Interest tables
 HG1641-1643			Bank loans.  Bank credit.  Commercial loans
 HG1651-1654			Discount
 HG1655			Acceptances
-HG1656			Bank reserves.  Bank liquidity.  Loan loss 
-				reserves
-HG1660			Bank accounts.  Bank deposits.  Deposit 
-				banking
+HG1656			Bank reserves.  Bank liquidity.  Loan loss  reserves
+HG1660			Bank accounts.  Bank deposits.  Deposit  banking
 HG1662			Insurance of deposits.  Deposit insurance
 HG1685-1704			Drafts.  Checks
 HG1706-1708			Accounting.  Bookkeeping
@@ -3124,60 +2949,44 @@ HG1709			Data processing
 HG1710-1710.5			Electronic funds transfers
 HG1722			Bank mergers
 HG1723			Bank stocks.  Banking as an investment
-HG1725-1778			Banks and the state.  State supervision of
-				banks
-HG1811-2351			Special classes of banks and financial
-				institutions
+HG1725-1778			Banks and the state.  State supervision of banks
+HG1811-2351			Special classes of banks and financial institutions
 HG2397-3550			By region or country
-HG3691-3769		Credit.  Debt.  Loans
-				Including credit institutions, credit
-					instruments, consumer credit, bank-
-					ruptcy
-HG3810-4000		Foreign exchange.  International finance.
-			International monetary system
-HG4001-4285		Finance management.  Business finance.
-			Corporation finance
+HG3691-3769		Credit.  Debt.  Loans Including credit institutions, credit instruments, consumer credit, bank- ruptcy
+HG3810-4000		Foreign exchange.  International finance. International monetary system
+HG4001-4285		Finance management.  Business finance. Corporation finance
 HG4301-4480.9		Trust services.  Trust companies
 HG4501-6051		Investment, capital formation, speculation
-HG4530			Investment companies.  Investment trusts.  
-				Mutual funds
+HG4530			Investment companies.  Investment trusts.   Mutual funds
 HG4538			Foreign investments
 HG4551-4598			Stock exchanges
-HG4621			Stockbrokers.  Security dealers.  Investment 
-				advisers
-HG4701-4751			Government securities.  Industrial securities.
-				Venture capital
+HG4621			Stockbrokers.  Security dealers.  Investment  advisers
+HG4701-4751			Government securities.  Industrial securities. Venture capital
 HG4900-5993			By region or country
 HG6001-6051			Speculation
 HG6105-6270.9		Lotteries
 HG8011-9999		Insurance
-HG8053.5-8054.45			Insurance for professions.  Malpractice
-				insurance.  Professional liability insurance
+HG8053.5-8054.45			Insurance for professions.  Malpractice insurance.  Professional liability insurance
 HG8059			Business insurance
 HG8075-8107			Insurance business.  Insurance management
 HG8111-8123			Government policy.  State supervision
 HG8205-8220			Government insurance
 HG8501-8745			By region or country
 HG8751-9295			Life insurance
-HG8779-8793				Actuarial science.  Statistical theory and
-					methodology applied to insurance
+HG8779-8793				Actuarial science.  Statistical theory and methodology applied to insurance
 HG8799-8830				By class insured, by risk, by plan
 HG8835-8899				Life insurance business.  Management
 HG8901-8914				Government policy.  State supervision
 HG8941-9200.5				By region or country
-HG9201-9245				Mutual life insurance.  Assessment life
-					insurance.  Fraternal life insurance
+HG9201-9245				Mutual life insurance.  Assessment life insurance.  Fraternal life insurance
 HG9251-9262				Industrial life insurance
-HG9271				Child insurance.  Life insurance for
-					children
+HG9271				Child insurance.  Life insurance for children
 HG9291-9295			Maternity insurance
 HG9301-9343			Accident insurance
 HG9371-9399			Health insurance
 HG9651-9899			Fire insurance
 HG9956-9969			Casualty insurance
-HG9969.5-9999			Other insurance
-					Including automobile, burglary, credit,
-						disaster, title insurance
+HG9969.5-9999			Other insurance Including automobile, burglary, credit, disaster, title insurance
 
 Subclass HJ
 
@@ -3199,24 +3008,19 @@ HJ3863-3925			Direct taxation
 HJ4113-4601			Property tax
 HJ4629-4830			Income tax
 HJ4919-4936			Capitation.  Poll tax
-HJ5309-5510			Administrative fees.  User charges.  
-				License fees
+HJ5309-5510			Administrative fees.  User charges.   License fees
 HJ6603-7390		Customs administration
 HJ7461-7980		Expenditures.  Government spending
 HJ8001-8899		Public debts
 HJ8052			Sinking funds.  Amortization
 HJ8101-8899			By region or country
-HJ9103-9695		Local finance.  Municipal finance
-				Including the revenue, budget, expenditure, 
-					etc. of counties, boroughs, communes, 
-					municipalities, etc.
+HJ9103-9695		Local finance.  Municipal finance Including the revenue, budget, expenditure,  etc. of counties, boroughs, communes,  municipalities, etc.
 HJ9701-9940		Public accounting.  Auditing
 
 Subclass HM
 
 HM401-1281	Sociology (General)
-HM435-477		History of sociology.  History of sociological
-				theory
+HM435-477		History of sociology.  History of sociological theory
 HM461-473			Schools of sociology.  Schools of social thought
 HM481-554		Theory.  Method.  Relations to other subjects
 HM621-656		Culture
@@ -3230,16 +3034,13 @@ HM811-821		Deviant behavior.  Social deviance
 HM826		Social institutions
 HM831-901		Social change
 HM1001-1281		Social psychology
-HM1041-1101			Social perception.  Social cognition
-					Including perception of the self and
-						others, prejudices, stereotype
+HM1041-1101			Social perception.  Social cognition Including perception of the self and others, prejudices, stereotype
 HM1106-1171			Interpersonal relations.  Social behavior
 HM1176-1281			Social influence.  Social pressure
 
 Subclass HN
 
-HN1-995	Social history and conditions.  Social problems.
-			Social reform
+HN1-995	Social history and conditions.  Social problems. Social reform
 HN30-39		The church and social problems
 HN41-46		Community centers.  Social centers
 HN50-995		By region or country
@@ -3262,13 +3063,9 @@ HQ449			Emasculation.  Eunuchs, etc.
 HQ450-472		Erotica
 HQ503-1064		The family.  Marriage.  Home
 HQ750-755.5			Eugenics
-HQ755.7-759.92			Parents.  Parenthood
-					Including parent and child, husbands,
-						fathers, wives, mothers
+HQ755.7-759.92			Parents.  Parenthood Including parent and child, husbands, fathers, wives, mothers
 HQ760-767.7			Family size
-HQ767.8-792.2			Children.  Child development
-					Including child rearing, child life,
-						play, socialization, children's rights
+HQ767.8-792.2			Children.  Child development Including child rearing, child life, play, socialization, children's rights
 HQ793-799.2			Youth.  Adolescents.  Teenagers
 HQ799.5-799.9			Young men and women
 HQ799.95-799.97			Adulthood
@@ -3276,8 +3073,7 @@ HQ800-800.4			Single people
 HQ801-801.83			Man-woman relationships.  Courtship.  Dating
 HQ802			Matrimonial bureaus.  Marriage brokerage
 HQ802.5			Matrimonial advertisements
-HQ803			Temporary marriage.  Trial marriage.
-				Companionate marriage
+HQ803			Temporary marriage.  Trial marriage. Companionate marriage
 HQ804			Breach of promise
 HQ805			Desertion
 HQ806			Adultery
@@ -3289,15 +3085,13 @@ HQ998-999			Illegitimacy.  Unmarried mothers
 HQ1001-1006			The state and marriage
 HQ1051-1057			The church and marriage
 HQ1058-1058.5			Widows and widowers.  Widowhood
-HQ1060-1064			Aged.  Gerontology (Social aspects).  
-				Retirement
+HQ1060-1064			Aged.  Gerontology (Social aspects).   Retirement
 HQ1073-1073.5		Thanatology.  Death.  Dying
 HQ1075-1075.5		Sex role
 HQ1088-1090.7		Men
 HQ1101-2030.7		Women.  Feminism
 HQ1871-2030.7			Women's clubs
-HQ2035-2039		Life skills.  Coping skills.  Everyday living 
-			skills
+HQ2035-2039		Life skills.  Coping skills.  Everyday living  skills
 HQ2042-2044		Life style
 
 Subclass HS
@@ -3309,15 +3103,12 @@ HS951-1179		Odd Fellows
 HS1201-1350		Knights of Pythias
 HS1355		Other societies
 HS1501-2460.7		Other societies.  By classes
-HS1501-1510			Benevolent and "friendly" societies and
-				mutual assessment fraternities
+HS1501-1510			Benevolent and "friendly" societies and mutual assessment fraternities
 HS1525-1560			Religious societies
 HS1601-2265			Race societies
 HS2275			Occupation societies
 HS2301-2460.7			Political and "patriotic" societies
-HS2501-3371		Clubs.  Clubs and societies for special classes
-				Including boys' societies, Boy scouts,
-					girls' societies
+HS2501-3371		Clubs.  Clubs and societies for special classes Including boys' societies, Boy scouts, girls' societies
 
 Subclass HT
 
@@ -3327,13 +3118,11 @@ HT101-395		Urban groups.  The city.  Urban sociology
 HT161-165			Garden cities.  "The city beautiful"
 HT165.5-169.9			City planning
 HT170-178			Urban renewal.  Urban redevelopment
-HT201-221			City population
-					Including children in cities, immigration
+HT201-221			City population Including children in cities, immigration
 HT231			Effect of city life
 HT251-265			Mental and moral life
 HT281			Recreation.  Amusements
-HT321-325			The city as an economic factor.  City 
-				promotion
+HT321-325			The city as an economic factor.  City  promotion
 HT330-334			Metropolitan areas
 HT351-352			Suburban cities and towns
 HT361-384			Urbanization.  City and country
@@ -3342,25 +3131,17 @@ HT390-395			Regional planning
 HT401-485		Rural groups.  Rural sociology
 HT601-1445		Classes
 HT621-635			Origin of social classes
-HT641-657			Classes arising from birth
-					Including royalty, nobility, commons
+HT641-657			Classes arising from birth Including royalty, nobility, commons
 HT675-690			Classes arising from occupation
 HT713-725			Caste system
 HT731			Freedmen
 HT751-815			Serfdom
 HT851-1445			Slavery
-HT1501-1595		Races
-				Including race as a social group and race
-					relations in general
+HT1501-1595		Races Including race as a social group and race relations in general
 Subclass HV
 
-HV1-9960	Social pathology.  Social and public welfare.
-			Criminology
-HV40-69		Social service.  Social work.  Charity
-			organization and practice
-				Including social case work, private and
-					public relief, institutional care,
-					rural social work, work relief
+HV1-9960	Social pathology.  Social and public welfare. Criminology
+HV40-69		Social service.  Social work.  Charity organization and practice Including social case work, private and public relief, institutional care, rural social work, work relief
 HV85-525		By region or country
 HV530		The church and charity
 HV541		Women and charity
@@ -3374,15 +3155,13 @@ HV599-639				Special types of disasters
 HV640-645		Refugee problems
 HV650-670		Life saving
 HV675-677		Accidents.  Prevention of accidents
-HV680-696		Free professional services
-				Including medical charities
+HV680-696		Free professional services Including medical charities
 HV697-4959		Protection, assistance and relief
 HV697-3024			Special classes
 HV697-700.7				Families.  Mothers.  Widow's ­pensions
 HV701-1420.5				Children
 HV835-847					Foundlings
-HV873-887					Destitute, neglected, and abandoned
-						children.  Street children
+HV873-887					Destitute, neglected, and abandoned children.  Street children
 HV888-907					Children with disabilities
 HV931-941					Fresh-air funds
 HV959-1420.5					Orphanages.  Orphans
@@ -3390,9 +3169,7 @@ HV1421-1441				Young adults.  Youth.  Teenagers
 HV1442-1448				Women
 HV1449				Gay men.  Lesbians
 HV1450-1494				Aged
-HV1551-3024				People with disabilities
-						Including blind, deaf, ­people with
-							physical and mental disabilities
+HV1551-3024				People with disabilities Including blind, deaf, ­people with physical and mental disabilities
 HV3025-3174			Special classes.  By occupation
 HV3025-3163				Mariners
 HV3165-3173				Shop women, clerks, etc.
@@ -3400,20 +3177,15 @@ HV3174				Other.  By occupation
 HV3176-3199			Special classes.  By race or ethnic group
 HV4005-4013			Immigrants
 HV4023-4470.7			Poor in cities.  Slums
-HV4480-4630			Mendicancy.  Vagabondism.  Tramps.  
-				Homelessness
-HV4701-4890.9			Protection of animals.  Animal rights.  Animal
-				welfare
+HV4480-4630			Mendicancy.  Vagabondism.  Tramps.   Homelessness
+HV4701-4890.9			Protection of animals.  Animal rights.  Animal welfare
 HV4905-4959			Animal experimentation.  Anti-vivisection
 HV4961-4995		Degeneration
 HV5001-5720.5		Alcoholism.  Intemperance.  Temperance reform
 HV5725-5770		Tobacco habit
 HV5800-5840		Drug habits.  Drug abuse
 HV6001-7220.5		Criminology
-HV6035-6197			Criminal anthropology
-					Including criminal types, criminal
-						psychology, prison psychology, causes
-						of crime
+HV6035-6197			Criminal anthropology Including criminal types, criminal psychology, prison psychology, causes of crime
 HV6201-6249			Criminal classes
 HV6250-6250.4			Victims of crimes.  Victimology
 HV6251-6773.55			Crimes and offenses
@@ -3425,45 +3197,34 @@ HV7435-7439			Gun control
 HV7551-8280.7			Police.  Detectives.  Constabulary
 HV7935-8025				Administration and organization
 HV8031-8080				Police duty.  Methods of protection
-HV8035-8069					Special classes of crimes, offenses
-						and criminals
-HV8073-8079.35					Investigation of crimes.  Examination
-						and identification of prisoners
+HV8035-8069					Special classes of crimes, offenses and criminals
+HV8073-8079.35					Investigation of crimes.  Examination and identification of prisoners
 HV8079.2-8079.35					Police social work
-HV8079.5-8079.55					Traffic control.  Traffic accident
-						investigation
+HV8079.5-8079.55					Traffic control.  Traffic accident investigation
 HV8081-8099				Private detectives.  Detective bureaus
 HV8130-8280.7				By region or country
 HV8290-8291			Private security services
 HV8301-9920.7			Penology.  Prisons.  Corrections
-HV9051-9230.7				The juvenile offender.  Juvenile delinquency.
-					Reform schools, etc.
-HV9261-9430.7				Reformation and reclamation of adult 
-					prisoners
+HV9051-9230.7				The juvenile offender.  Juvenile delinquency. Reform schools, etc.
+HV9261-9430.7				Reformation and reclamation of adult  prisoners
 HV9441-9920.7				By region or country
 HV9950-9960			By region or country
 
 Subclass HX
 
 HX1-970.7	Socialism.  Communism.  Anarchism
-HX519-550		Communism/socialism in relation to special 
-			topics
-HX626-696		Communism: Utopian socialism, collective
-			settlements
+HX519-550		Communism/socialism in relation to special  topics
+HX626-696		Communism: Utopian socialism, collective settlements
 HX806-811		Utopias.  The ideal state
-HX821-970.9		AnarchismLIBRARY OF CONGRESS CLASSIFICATION OUTLINE
+HX821-970.9		Anarchism
 
 CLASS J - POLITICAL SCIENCE
 
-Subclass J
-													
+Subclass J 
 J(1)-981	General legislative and executive papers
 J(1)-(9)		Gazettes
-			The Library of Congress now classes this
-				material in K
 J80-87		United States
-J80-82			Presidents' messages and other executive
-				papers
+J80-82			Presidents' messages and other executive papers
 J100-981		Other regions and countries
 
 Subclass JA
@@ -3513,13 +3274,11 @@ JF2011-2112			Political parties
 
 Subclass JJ
 
-JJ1000-1019	Political institutions and public administration
-				(North America)
+JJ1000-1019	Political institutions and public administration (North America)
 
 Subclass JK
 
-JK1-9993	Political institutions and public administration
-			(United States)
+JK1-9993	Political institutions and public administration (United States)
 JK1-9593		United States
 JK404-1685			Government.  Public administration
 JK501-868				Executive branch
@@ -3527,8 +3286,7 @@ JK631-868					Civil Service.  Departments and agencies
 JK1012-1432				Congress.  Legislative branch
 JK1154-1276					Senate
 JK1308-1432					House of Representatives
-JK1606-1683				Capital.  Public buildings.  Government 
-						property.  Government purchasing
+JK1606-1683				Capital.  Public buildings.  Government  property.  Government purchasing
 JK1717-2217			Political rights.  Practical politics
 JK1758-1761				Citizenship
 JK1846-1929				Suffrage
@@ -3539,8 +3297,7 @@ JK9663-9993		Confederate States of America
 
 Subclass JL
 
-JL1-3899	Political institutions and public administration
-			(Canada, Latin America, etc.)
+JL1-3899	Political institutions and public administration (Canada, Latin America, etc.)
 JL1-500		Canada
 JL599.5-839		West Indies.  Caribbean Area
 JL1200-1299		Mexico
@@ -3586,18 +3343,12 @@ JN9600-9689		Balkan States
 
 Subclass JQ
 
-JQ21-6651	Political institutions and public administration (Asia, 
-			Africa, Australia, Pacific Area, etc.)
+JQ21-6651	Political institutions and public administration (Asia,  Africa, Australia, Pacific Area, etc.)
 JQ21-1852		Asia
 JQ200-620			India
-JQ1070-1199			Central Asia
-					Including former republics of the Soviet
-						Union
-JQ1499-1749			East Asia
-					Including China, Japan, Korea
-JQ1758-1852			Middle East
-					Including Turkey, Iran, Israel, Arabian
-						Peninsula
+JQ1070-1199			Central Asia Including former republics of the Soviet Union
+JQ1499-1749			East Asia Including China, Japan, Korea
+JQ1758-1852			Middle East Including Turkey, Iran, Israel, Arabian Peninsula
 JQ1850				Arab countries
 JQ1852				Islamic countries
 JQ1870-3981		Africa
@@ -3629,16 +3380,14 @@ JS8001-8490.9		Australia.  New Zealand.  Pacific Ocean islands
 
 Subclass JV
 
-JV1-9480	Colonies and colonization.  Emigration and
-			immigration.  International migration
+JV1-9480	Colonies and colonization.  Emigration and immigration.  International migration
 JV1-5397		Colonies and colonization
 JV1-9			Periodicals.  Serials
 JV10-19			Societies
 JV61-152			History
 JV412-461			Administration
 JV500-5397			Colonizing nations
-JV6001-9480		Emigration and immigration.  International
-				migration
+JV6001-9480		Emigration and immigration.  International migration
 JV6001-6006			Periodicals.  Serials
 JV6021-6033			History
 JV6091-6124			Emigration
@@ -3670,37 +3419,31 @@ Subclass JZ
 
 JZ5-6530	International relations
 JZ5.5-18		Periodicals
-JZ24-38		Societies, associations, academies, institutes, etc., 
-				for the study of international relations   
+JZ24-38		Societies, associations, academies, institutes, etc.,  for the study of international relations   
 JZ63-1153		Sources
 JZ221-1153			By region or country
 JZ1249-1254		Relation to other disciplines and topics
-JZ1305-2060		Scope of international relations. Political theory. 
-				Diplomacy   
+JZ1305-2060		Scope of international relations. Political theory.  Diplomacy   
 JZ1329.5-1395			By period
 JZ1400-1454			Diplomatic and consular service
-JZ1464-2060			Scope of international relations with regard to 
-					countries, territories, regions, etc.
+JZ1464-2060			Scope of international relations with regard to  countries, territories, regions, etc.
 JZ3674-3875		State territory and its parts
 JZ3685			Boundaries
 JZ3686-3875			International waters
 JZ4835-5490		International organizations and associations
-JZ4841-4848			Political non-governmental organizations.
-					NGOs
+JZ4841-4848			Political non-governmental organizations. NGOs
 JZ4850-5490			Intergovernmental organizations.  IGOs
 JZ4853-4934				League of Nations
 JZ4935-5160				United Nations
 JZ5511.2-6300		Promotion of peace.  Peaceful change
-JZ5514-5526			Societies, associations, academies, institutes, etc., 
-					for peace promotion, research and education   
+JZ5514-5526			Societies, associations, academies, institutes, etc.,  for peace promotion, research and education   
 JZ5527-5532			Congresses and conferences
 JZ5587-6009			International security.  Disarmament.  Global survival
 JZ6010-6060			Pacific settlement of international disputes
 JZ6360-6377		Non-military coercion
 JZ6385-6405		The armed conflict.  War and order
-JZ6422-6422.5		Neutrality.  Non-participation in wars.  Norms of 
-				neutrality
-JZ6530		Humanitarian aspects of warLIBRARY OF CONGRESS CLASSIFICATION OUTLINE
+JZ6422-6422.5		Neutrality.  Non-participation in wars.  Norms of  neutrality
+JZ6530		Humanitarian aspects of war
 
 CLASS K - LAW
 
@@ -3818,8 +3561,7 @@ K3476-3560             			Public property.  Public restraint on private property
 K3566-3578             			Public health
 K3581-(3598)           			Environmental law
 K3601-3611             			Medical legislation
-K3615-3622             			Veterinary laws.  Veterinary medicine and hygiene.  Prevention
-				of cruelty to animals
+K3615-3622             			Veterinary laws.  Veterinary medicine and hygiene.  Prevention of cruelty to animals
 K3625-3649             			Food.  Drugs.  Cosmetics
 K3651-3654             			Alcohol.  Alcoholic beverages
 K3661-3674             			Public safety
@@ -3839,8 +3581,7 @@ K4360-4375               				Professions and occupations
 K4430-4675             			Public finance
 K4453-4640               				National revenue
 K4650-4675               				State and local finance
-K4700-4705             			Government measures in time of war, national emergency, or
-				economic crisis
+K4700-4705             			Government measures in time of war, national emergency, or economic crisis
 K4720-4780             			National defense.  Military law
 K4725-4734               				The military establishment.  Armed forces
 K4740-4760               				Military criminal law and procedure
@@ -3882,20 +3623,17 @@ K7720                  			Recognition of foreign administrative acts
 
 Subclass KB
 
-KB1-4855	Religious law in general.  Comparative religious law. 
-			Jurisprudence
+KB1-4855	Religious law in general.  Comparative religious law.  Jurisprudence
 KB2-4		Bibliography
 KB7-68		Periodicals
 KB68		Annuals.  Annuaires
 KB70.A-Z		Monographic series.  By title, A-Z
 KB73		Collections.  Compilations (General and comprehensive)
 KB74-78		Auxiliary sciences
-KB90.A-Z		Encyclopedias.  Law dictionaries.  Terms and phrases. 
-			Vocabularies.  By author or title, A-Z
+KB90.A-Z		Encyclopedias.  Law dictionaries.  Terms and phrases.  Vocabularies.  By author or title, A-Z
 KB100.A-Z		Proverbia.  Legal maxims.  Brocardica juris.  Regulae juris.  			By author or title, A-Z
 KB122		Biography (Collective)
-KB130		Legal research.  Legal bibliography.  Methods of
-			bibliographic research
+KB130		Legal research.  Legal bibliography.  Methods of bibliographic research
 KB150		Conferences.  Symposia
 KB160		General works.  Treatises
 KB162-250		Legal systems compared
@@ -3917,10 +3655,8 @@ KB1270-1278 			Labor laws and legislation
 KB1468-1550 			Social laws and legislation. Welfare. Charities
 KB1572-1690 			Courts and procedure 
 KB2000-2035 			Public law. The State
-KB2101-2862 			Constitutions and religion. Constitutional and
-				administrative law 
-KB2870 			Civil service. Employees of state, communal agencies,
-				and religious corporations 
+KB2101-2862 			Constitutions and religion. Constitutional and administrative law 
+KB2870 			Civil service. Employees of state, communal agencies, and religious corporations 
 KB3000-3034 			Police and public safety 
 KB3040.5-3056 			Public property. Government property 
 KB3075-3096.5 			Public health 
@@ -3933,15 +3669,13 @@ KB3190-3429 			Economic law
 KB3440-3500.7 			Transportation and communication
 KB3515-3522 			Professions. Intelligentsia 
 KB3526-3694			Public finance 
-KB3709-3726 			Government measures in time of war, national emergency,
-				or economic crisis 
+KB3709-3726 			Government measures in time of war, national emergency, or economic crisis 
 KB3735-3780 			Military law 
 KB3790-4855 			Criminal law and procedure
 
 Subclass KBM
 
-KBM1-4855	Jewish law.  Halakah
-		Halakah
+KBM1-4855	Jewish law.  Halakah Halakah
 KBM523.6			Even ha-‘ezer law (General)
 KBM523.72			Hoshen mishpat law (General)
 KBM523.8-4855 		Mishpat Ivri 
@@ -3967,13 +3701,11 @@ KBM639-1424 			Dinei mamonot
 KBM1468-1547 			Social laws and legislation 
 KBM1572-1942 			Courts and procedure 
 KBM2000-2024 			Public law. The state and the Jewish community. Kehillah
-KBM2070-2614 			Constitutional law. Constitutional principles of the Jewish
-				community
+KBM2070-2614 			Constitutional law. Constitutional principles of the Jewish community
 KBM2711-2840 			Administrative law and process of communal agencies
 KBM2970 			Civil service. Employees of communal agencies
 KBM3000-3036.5 			Police and public safety 
-KBM3040.5-3073 			Public property. Communal property. Restraints on private
-				property 
+KBM3040.5-3073 			Public property. Communal property. Restraints on private property 
 KBM3075-3097 			Public health 
 KBM3098-3122 			Medical legislation 
 KBM3124-3125 			Birth control. Family planning 
@@ -3983,8 +3715,7 @@ KBM3190-3436 			Economic law
 KBM3440-3504.5 			Transportation and communication 
 KBM3515-3519 			Professions 
 KBM3526-3695 			Public finance 
-KBM3709-3729 			Measures in time of war, national emergency, or economic
-				crisis 
+KBM3709-3729 			Measures in time of war, national emergency, or economic crisis 
 KBM3738-3785 			Community defense. Military law 
 KBM3790-4855			Criminal law and procedure
 
@@ -4008,11 +3739,10 @@ KBP144 		General works
 KBP173.25-.6 		Islamic law and other disciplines or subjects
 KBP174-190.5 		Observances and practice of Islam
 KBP250-420		Schools of thought. Islamic legal schools. Madhahib
-KBP425-466.3 		Usul al-fiqh. Jurisprudence and theory of law. Science of
-			legal reasoning 
+KBP425-466.3 		Usul al-fiqh. Jurisprudence and theory of law. Science of legal reasoning 
 KBP469 		Influence of other legal systems on Islamic law
 KBP470 		Law reform. Criticism. Tanz_m
-KBP480-485 		Conflict of laws. Tanazu’ al-qawan_n
+KBP480-485 		Conflict of laws. Tanazu' al-qawan_n
 KBP490-4860 		Furu‘ al-fiqh. Substantive law. Branches of law
 KBP490.2-.95 			General works. Treatises
 KBP491-497.95			Particular genres 
@@ -4026,8 +3756,7 @@ KBP1468-1569 			Social laws and legislation
 KBP1572-1942 			Courts and procedure 
 KBP2000-2035 			Public law. The state and Islam
 KBP2101-2612 			Constitution of the state. Constitutional law
-KBP2730-2968 			Government and administration. Siyasah. Administrative
-				process 
+KBP2730-2968 			Government and administration. Siyasah. Administrative process 
 KBP2970 			Civil service. Employees of communal agencies
 KBP3000-3037 			Police and public safety 
 KBP3040.5-3072 			Public property. Government property 
@@ -4042,8 +3771,7 @@ KBP3190-3437			Economic law
 KBP3440-3512 			Transportation and communication 
 KBP3515-3521 			Professions. Intelligentsia 
 KBP3526-3705 			Public finance 
-KBP3709-3727 			Government measures in time of war, national emergency,
-				or economic crisis 
+KBP3709-3727 			Government measures in time of war, national emergency, or economic crisis 
 KBP3738-3785 			Military law 
 KBP3790-4860 			Criminal law and procedure 
 
@@ -4054,18 +3782,15 @@ KBR2-19		Bibliography
 KBR21		Annuals. Annuaires. Yearbooks
 KBR22		Monographic series
 KBR27-41.7		Official acts of the Holy See
-KBR42-54.5		Decisions of ecclesiastical tribunals and courts, and related
-			materials
-KBR56		Encyclopedias. Law dictionaries. Terms and phrases.
-			Vocabularia
+KBR42-54.5		Decisions of ecclesiastical tribunals and courts, and related materials
+KBR56		Encyclopedias. Law dictionaries. Terms and phrases. Vocabularia
 KBR64		Directories
 KBR74-83		Auxiliary sciences
 KBR100.A-Z		Proverbia. Legal maxims. Brocardica juris. Regulae juris
 KBR105.A-Z		Formularies. Clauses and forms. Formularia
 KBR122-124		Collective biography of canonists or jurists
 KBR127-129.5		Trials
-KBR130-132		Legal research. Legal bibliography. Methods of bibliographic
-			research
+KBR130-132		Legal research. Legal bibliography. Methods of bibliographic research
 KBR133-134		Legal education. Study and teaching
 KBR136-148		Societies. Associations. Academies, etc.
 KBR150		Conferences. Symposia
@@ -4078,20 +3803,15 @@ KBR2207		Law reform and policies. Criticism
 KBR2208.A-Z		General concepts and principles, A-Z
 KBR2224-2295		Ius ecclesiasticum privatum
 KBR2310-3026		Constitution of the Church
-KBR3040-3070		The teaching office of the church. Magisterium. De ecclesiae
-			munere docendi
-KBR3077-3165		Sacraments. Administration of sacraments. De sacramentis
-			et administratione
+KBR3040-3070		The teaching office of the church. Magisterium. De ecclesiae munere docendi
+KBR3077-3165		Sacraments. Administration of sacraments. De sacramentis et administratione
 KBR3180-3182		Sacramentals. Sacramentalia
 KBR3184-3256		Other acts of divine worship. De ceteris actibus Cultus Divini 
 KBR3264-3280		Social work of the Church. Public welfare. Caritas
-KBR3320-3460		Church property. Church economics and finance.
-			Administration
+KBR3320-3460		Church property. Church economics and finance. Administration
 KBR3500-3774		Penal (Criminal) law. De lege poenali
-KBR3780-3983		Judiciary. Ecclesiastical courts and procedure. De
-			processibus
-KBR4000-4090		Church and state relationships. De relationibus inter
-			ecclesiam et status. Ius publicum ecclesiae
+KBR3780-3983		Judiciary. Ecclesiastical courts and procedure. De processibus
+KBR4000-4090		Church and state relationships. De relationibus inter ecclesiam et status. Ius publicum ecclesiae
 
 Subclass KBU
 
@@ -4101,22 +3821,19 @@ KBU21		Annuals. Annuaires. Yearbooks
 KBU22		Monographic series
 KBU25-26		Official gazette of the Holy See
 KBU26.8-41.5 		Official acts of the Holy See
-KBU42-54.5		Decisions of ecclesiastical tribunals and courts, and related
-			materials
+KBU42-54.5		Decisions of ecclesiastical tribunals and courts, and related materials
 KBU56		Encyclopedias
 KBU56.5		Dictionaries. Terms and phrases. Vocabularies
 KBU64		Directories
 KBU102		Form books. Clauses and forms
 KBU127-129.5		Trials
-KBU130-132		Legal research. Legal bibliography. Methods of bibliographic
-			research
+KBU130-132		Legal research. Legal bibliography. Methods of bibliographic research
 KBU133		Legal education. Study and teaching
 KBU136-148		Societies. Associations. Academies, etc.
 KBU149		Academies. Institutes
 KBU150		Conferences. Symposia
 KBU160		General works
-KBU180.A-Z		Works on diverse aspects of a particular subject and falling
-			within several branches of the law. By subject, A-Z
+KBU180.A-Z		Works on diverse aspects of a particular subject and falling within several branches of the law. By subject, A-Z
 KBU195-1565		Collections. Compilations. Selections
 KBU2155-2157		Canon law and other disciplines or subjects
 KBU2160-2204		Canonical jurisprudence. Theory and science of canon law 
@@ -4126,20 +3843,16 @@ KBU2208.A-Z		Concepts applying to several branches of the law, A-Z
 KBU2210-2212		The codes of canon law
 KBU2215-2308		General norms and principles. De normis generalibus
 KBU2310-3026		Constitution of the Church
-KBU3040-3070		The teaching office of the Church. Magisterium. De
-			ecclesiae munere docendi
-KBU3075-3165		Sacraments. Administration of sacraments. De sacramentis
-			et administratione
+KBU3040-3070		The teaching office of the Church. Magisterium. De ecclesiae munere docendi
+KBU3075-3165		Sacraments. Administration of sacraments. De sacramentis et administratione
 KBU3180-3182		Sacramentals. Sacramentalia
 KBU3184-3256		Other acts of divine worship. De ceteris actibus Cultus Divini 
 KBU3264-3280		Social work of the Church. Public welfare. Caritas
 KBU3282-3310		Medical ethics and legislation. Church policy
 KBU3320-3460		Church property. Church economics and finance
-KBU3500-3774		Sanctions in the Church. Criminal law. De sanctionibus in
-			Ecclesia. De lege poenali
+KBU3500-3774		Sanctions in the Church. Criminal law. De sanctionibus in Ecclesia. De lege poenali
 KBU3780-3985		Courts and procedure. De processibus
-KBU4000-4097		Church and state relationships. De relationibus inter
-			ecclesiam et status. Ius publicum ecclesiae
+KBU4000-4097		Church and state relationships. De relationibus inter ecclesiam et status. Ius publicum ecclesiae
 KBU4112-4820		Local Church government
 
 Subclass KD
@@ -4166,7 +3879,7 @@ Subclass KE
 
 KE                 	Law of Canada
 KE1-9450             		Federal law.  Common and collective provincial law
-                   		Individual provinces and territories
+KEA-KEY                   		Individual provinces and territories
 KEA1-599                			Alberta
 KEB1-599                			British Columbia
 KEM1-599                			Manitoba
@@ -4184,8 +3897,7 @@ KEZ1-9999             		Individual cities, A-Z
 Subclass KF
 
 KF	Law of the United States
-KF1-9827             		Federal law.  Common and collective state law
-                   		Individual states
+KF1-9827             		Federal law.  Common and collective state law                		Individual states
 KFA1-599                			Alabama
 KFA1201-1799            			Alaska
 KFA2401-2999            			Arizona
@@ -4254,7 +3966,7 @@ KGF1-9900             		Mexico
 KGG1-9800             		Nicaragua
 KGH1-8000             		Panama
 KGH9001-9499          		Panama Canal Zone
-                 	West Indies.  Caribbean area
+KGJ-KGZ                 	West Indies.  Caribbean area
 KGJ1-999              		General
 KGJ7001-7499          		Anguilla
 KGK1-499              		Antigua and Barbuda
@@ -4311,9 +4023,7 @@ KHS1-9000             		Surinam
 KHU1-9800             		Uruguay
 KHW1-9900             		Venezuela
 
-Subclasses KJ-KKZ
-
-KJ                 	Europe
+KJ-KKZ       Europe
 KJ2-1040             		History of Law
 KJ160-1040             		Germanic law
 KJA2-3660             		Roman law
@@ -4329,11 +4039,11 @@ KJP1-4999             		Czechoslovakia
 KJR1-4999             		Denmark
 KJS1-4985             		Estonia
 KJT1-4999             		Finland
-                   		France
+KJV-KJW                   		France
 KJV2-9158               			National laws
 KJW51-4360              			Individual regions, provinces, departments, etc.
 KJW5201-9600            			Individual cities
-                   		Germany
+KK-KKC                   		Germany
 KK2-9799.3             			Germany and West Germany
 KKA7-9796               			East Germany 
 KKB-KKC                     			Individual states, provinces, and cities
@@ -4360,9 +4070,7 @@ KKX1-4999             		Turkey
 KKY1-4999             		Ukraine (1991-    )
 KKZ1-4999             		Yugoslavia
 
-Subclass KL
-
-                 	Asia and Eurasia, Africa, Pacific Area, and Antarctica
+KL-KW     Asia and Eurasia, Africa, Pacific Area, and Antarctica
 KL2-5915             		History of law.  The ancient orient
 KL2-135                			General
 KL147-177              			Ancient legal systems compared
@@ -4377,22 +4085,17 @@ KL4110-4399            			Greek law
 KL4700-4999            			Hittite law
 KL5300-5599            			Persia
 KL5900-6199            			Phoenicia
-            		Eurasia
-                     			Turkey, see KKX
+KLA-KLZ            		Eurasia
 KLA1-9999               			Russia.  Soviet Union
 KLB1-6499               			Russia (Federation, 1992-    )
 KLD1-490                			Armenian S.S.R. (to 1991)
 KLE1-490                			Azerbaijan
 KLF1-490                			Belarus (Republic)
-                     			Estonia, see KJS
 KLH1-490                			Georgia (Republic)
-                     			Latvia, see KKI
-                    			Lithuania, see KKJ
 KLM1-490                			Moldova
 KLN1-489                			Russian S.F.S.R. (to 1991)
 KLP1-4989               			Ukraine (1919-1991)
-KLP9001-9499            			Zakavkazskaia Sotsialisticheskaia Federativnaia Sovetskaia
-				Respublika (to 1936)
+KLP9001-9499            			Zakavkazskaia Sotsialisticheskaia Federativnaia Sovetskaia Respublika (to 1936)
 KLQ1-499                			Bukharskaia Narodnaia Sovetskaia Respublika (to 1924)
 KLR1-490                			Kazakhstan
 KLR1001-1499            			Khorezmskaia Sovetskaia Sotsialisticheskaia Respublika (to 1924)
@@ -4401,12 +4104,8 @@ KLT1-490                			Tadjikistan
 KLV1-490                			Turkmenistan
 KLW1-490                			Uzbekistan
 
-Subclass KM
-
-	Asia and Eurasia, Africa, Pacific Area, and Antarctica
-             		Asia
-KM1-999                			General
-              			Middle East.  Southwest Asia
+KM1-999                			Asia and Eurasia, Africa, Pacific Area, and Antarctica General
+KMC-KMY              			Middle East.  Southwest Asia
 KMC1-799                  				Regional comparative and uniform law
 KME10-799				Regional organization and integration
 KMF1-293.5                				Armenia (Republic)
@@ -4424,18 +4123,14 @@ KMP1-490                  				Lebanon
 KMQ1-490                  				Oman
 KMQ1001-1499              				Palestine (to 1948)
 KMS1-490                  				Qatar
-KMT1-4990                 				Saudi Arabia
-                       				Southern Yemen, see KMY
+KMT1-4990                 				Saudi Arabia                    				Southern Yemen, see KMY
 KMU1-490                  				Syria
 KMV1-9870                 				United Arab Emirates
 KMX1001-1526              				Yemen
 KMY1-489               				Yemen (People's Democratic Republic) (to 1990)
 
-Subclass KN
 
-	Asia and Eurasia, Africa, Pacific Area, and Antarctica
-		Asia
-              			South Asia.  Southeast Asia.  East Asia
+KN-KP            			South Asia.  Southeast Asia.  East Asia.
 KNC1-999                  				Regional comparative and uniform law
 KNE150-499                				Regional organization and integration
 KNF1-4990                 				Afghanistan
@@ -4455,11 +4150,7 @@ KNW1-4990                 				Indonesia
 KNX1-4999                 				Japan
 KNY10-220                   					Cities, etc.
 
-Subclass KP
-
-	Asia and Eurasia, Africa, Pacific Area, and Antarctica
-		Asia
-			South Asia.  Southeast Asia.  East Asia
+KPA-KPW             			South Asia.  Southeast Asia.  East Asia.
 KPA1-4990                 				Korea.  South Korea
 KPC1-4990                 				Democratic People's Republic of Korea.  North Korea
 KPE1-4990                 				Laos
@@ -4481,8 +4172,7 @@ KPW1-489        				Vietnam.  South Vietnam
 
 Subclass KQ
 
-	Asia and Eurasia, Africa, Pacific Area, and Antarctica
-             		Africa
+KQ-KQZ             		Africa
 KQ2-197                			History of law
 KQ2010-9000            			Law of indigenous peoples
 KQC1-999                			Regional comparative and uniform law
@@ -4501,8 +4191,7 @@ KQX1-490                			Cape Verde
 
 Subclass KR
 
-	Asia and Eurasia, Africa, Pacific Area, and Antarctica
-		Africa
+KR-KRZ             		Africa
 KRB1-490                			Central African Republic
 KRC1-490                			Chad
 KRE1-490                			Comoros
@@ -4522,8 +4211,7 @@ KRY1-499                			Gibraltar
 
 Subclass KS
 
-	Asia and Eurasia, Africa, Pacific Area, and Antarctica
-		Africa
+KS-KSZ                                         Africa
 KSA1-490                			Guinea
 KSC1-490                			Guinea-Bissau
 KSE1-490                			Equatorial Guinea
@@ -4548,8 +4236,7 @@ KSZ1-490                			Niger
 
 Subclass KT
 
-	Asia and Eurasia, Africa, Pacific Area, and Antarctica
-		Africa
+KT-KTZ                                            Africa
 KTA1-9150               			Nigeria
 KTC1-499                			Réunion
 KTD1-490                			Rwanda
@@ -4575,20 +4262,18 @@ KTZ1-490                			Zimbabwe
 
 Subclass KU
 
-	Asia and Eurasia, Africa, Pacific Area, and Antarctica
-		Pacific Area
+
+KU-KUZ		Pacific Area
 KU1-4999               			Australia
 KUA-KUH                				States and territories
-                       				External territories
+KUN501-3000                       				External territories
 KUN501-599                  					Norfolk Island
 KUN3001-3050              				Cities, communities, etc.
 KUQ1-4990               			New Zealand
 
 Subclass KV
 
-	Asia and Eurasia, Africa, Pacific Area, and Antarctica
-		Pacific Area
-			Pacific area jurisdictions
+KV-KVZ			Pacific area jurisdictions
 KVC1-999                  				Regional comparative and uniform law
 KVE200-349                				Regional organization and integration
 KVH1-490                  				American Samoa
@@ -4609,9 +4294,7 @@ KVW1-490                  				New Caledonia
 
 Subclass KW
 
-	Asia and Eurasia, Africa, Pacific Area, and Antarctica
-		Pacific Area
-			Pacific area jurisdictions
+KW-KWX			Pacific area jurisdictions
 KWA1-489                  				Niue
 KWC1-490                  				Northern Mariana Islands
 KWE1-499                  				Pacific Islands (Trust Territory)
@@ -4656,8 +4339,7 @@ KZ(1319)-(1327)        		International legal regimes
 KZ1329-3085            		Early/Medieval development to ca. 1900.  Ius Naturae et Gentium
 KZ1330-1339              			Peace of Westphalia to the French Revolution (1648-1789)
 KZ1345-1369              			French Revolution to the American Civil War (1789-1861)
-KZ1373-1387.2            			American Civil War to the First Conference of the Hague
-				(1861-1899)
+KZ1373-1387.2            			American Civil War to the First Conference of the Hague (1861-1899)
 KZ2064-3085              			Publicists.  Writers on public international law
 KZ3092-3405            		20th century
 KZ3110-3405              			Publicists.  Writers on public international law
@@ -4681,8 +4363,7 @@ KZ5687-5788.5                					Nuclear weapon free zones and zones of peace
 KZ5834-5865                  					Other weapons of mass destruction
 KZ5870-5893                  					Mutual and balanced reduction of armed forces
 KZ5900-5967              				Military pact systems for collective self-defense
-KZ6009-6299              				Pacific settlement of international disputes and conflict
-					resolution
+KZ6009-6299              				Pacific settlement of international disputes and conflict resolution
 KZ6115-6299                					Arbitration and adjudication
 KZ6350-6785            		Enforced settlement of international disputes
 KZ6360-6373              			Non-military coercion
@@ -4717,10 +4398,10 @@ KZD4030-4326                 			Public order in space and outer space
 KZD4080-4210                   				Space flight
 KZD(4301)-4310                 				Space communication
 KZD4320.2-4326               			Rescue operations in outer space
-KZD4440-4406                 			Liability for accidents
+KZD4400-4406                 			Liability for accidents
 KZD5614-6715               		Un-peaceful uses of outer space
 KZD5620-5622.2               			Treaties and other international agreements
-KZD5648-5680.2               			Disarmament and demilitarization regimes in outer spaceLIBRARY OF CONGRESS CLASSIFICATION OUTLINE
+KZD5648-5680.2               			Disarmament and demilitarization regimes in outer space
 
 CLASS L - EDUCATION
 
@@ -4762,8 +4443,7 @@ LB1555-1602		Elementary or public school education
 LB1603-1696.6		Secondary education.  High schools
 LB1705-2286		Education and training of teachers and administrators
 LB1771-1773			Certification of teachers
-LB1775-1785			Professional aspects of teaching and school administrators. 
-				Vocational guidance
+LB1775-1785			Professional aspects of teaching and school administrators.  Vocational guidance
 LB1805-2151			State teachers colleges
 LB1811-1987				United States
 LB1991-2151				Other regions or countries
@@ -4787,10 +4467,8 @@ LB2832-2844.1			Teaching personnel
 LB2844.52-2844.63			Trade unions
 LB3011-3095			School management and discipline
 LB3045-3048				Textbooks
-LB3050-3060.87				Educational tests, measurements, evaluations and
-					examinations
-LB3201-3325		School architecture and equipment.  School physical facilities. 
-			Campus planning
+LB3050-3060.87				Educational tests, measurements, evaluations and examinations
+LB3201-3325		School architecture and equipment.  School physical facilities.  Campus planning
 LB3401-3495		School hygiene.  School health services
 LB3497-3499		Hygiene in universities and colleges
 LB3525-3575		Special days
@@ -4813,8 +4491,7 @@ LC65-67.68			Economic aspects of education
 LC68-70			Demographic aspects of education
 LC71-120.4			Education and the state
 LC72-72.5				Academic freedom
-LC107-120.4				Public school question.  Secularization.  Religious instruction
-					in the public schools
+LC107-120.4				Public school question.  Secularization.  Religious instruction in the public schools
 LC129-139			Compulsory education
 LC142-148.5			Attendance.  Dropouts
 LC149-161			Literacy.  Illiteracy
@@ -4876,8 +4553,7 @@ LC3701-3740			Immigrants or ethnic and linguistic minorities.  Bilingual schools
 LC3745-3747			Children of immigrants (First generation)
 LC3950-4806.5			Exceptional children and youth.  Special education
 LC3991-4000				Gifted children and youth
-LC4001-4806.5				Children and youth with disabilities.  Learning disabled
-					children and youth
+LC4001-4806.5				Children and youth with disabilities.  Learning disabled children and youth
 LC4812-5160.3			Other special classes
 LC5161-5163		Fundamental education
 LC5201-6660.4		Education extension.  Adult education.  Continuing education
@@ -4888,8 +4564,7 @@ LC5800-5808			Distance education
 LC5900-6101			Correspondence schools
 LC6201-6401			University extension
 LC6501-6560.4			Lyceums and lecture courses.  Forums
-LC6571-6581			Radio and television extension courses.  Instruction by radio and
-				television
+LC6571-6581			Radio and television extension courses.  Instruction by radio and television
 LC6601-6660.4			Reading circles and correspondence clubs
 LC6681		Education and travel
 LC6691		Traveling educational exhibits
@@ -4924,8 +4599,7 @@ LE66-68				Peru
 LE71-73				Uruguay
 LE76-78				Venezuela
 
-Subclass LF
-	
+Subclass LF 
 LF14-5627	Individual institutions
 LF14-1257		Great Britain
 LF14-797			England
@@ -5051,10 +4725,7 @@ LJ3-165	Student fraternities and societies, United States
 
 Subclass LT
 
-LT6-(1001)	Textbooks
-			Class here textbooks covering several subjects.  For
-				textbooks on particular subjects, see the subject
-				in B-ZLIBRARY OF CONGRESS CLASSIFICATION OUTLINE
+LT6-(1001)	Textbooks Class here textbooks covering several subjects.  For textbooks on particular subjects, see the subject in B-Z
 
 CLASS M - MUSIC
 
@@ -5163,7 +4834,7 @@ MT3-5			History
 MT5.5-7			Music theory
 MT9-15			Printed pedagogical aids
 MT9				Examinations, exercises, etc.
-MT10				Teachers’ and supervisors’ manuals, etc.
+MT10				Teachers' and supervisors' manuals, etc.
 MT15				Charts, diagrams, etc.
 MT17			Music in special education
 MT18			Music in colleges and universities
@@ -5199,7 +4870,7 @@ MT930-948				Elementary schools. Junior high schools. High schools
 MT949.5			Whistling
 MT950				Music to accompany instruction in ballet, folk dancing, gymnastics, etc.
 MT955-956			Musical theater
-MT960			Music in the theaterLIBRARY OF CONGRESS CLASSIFICATION OUTLINE
+MT960			Music in the theater
 
 CLASS N - FINE ARTS
 
@@ -5251,8 +4922,7 @@ Subclass NB
 
 NB1-1952	Sculpture
 NB1-50		General
-NB60-1115		History
-				Including collective biography
+NB60-1115		History Including collective biography
 NB1120-1133		Study and teaching
 NB1134-1134.4		Competitions
 NB1135-1150		General works
@@ -5271,8 +4941,7 @@ NB1910-1952		Special subjects
 Subclass NC
 
 NC1-1940	Drawing.  Design.  Illustration
-NC1-45		General
-				Including collective biography
+NC1-45		General Including collective biography
 NC50-266		History of drawing
 NC390-670		Study and teaching
 NC673-677		Competitions
@@ -5369,8 +5038,7 @@ NK1505-1535			General works
 NK1548-1590			Special subjects for design
 NK1648-1678		Religious art
 NK1700-2195		Interior decoration.  House decoration
-NK1700-2138			General.  History, etc.
-					Including special rooms
+NK1700-2138			General.  History, etc. Including special rooms
 NK2140-2180			Decorative painting
 NK2190-2192			Church decoration
 NK2200-2750		Furniture
@@ -5399,7 +5067,7 @@ NX650-694		Special subjects, characters, persons, religious arts, etc.
 NX700-750		Patronage of the arts
 NX760-770		Administration of the arts
 NX775-777		Voluntarism in the arts
-NX798-820		Arts centers and facilitiesLIBRARY OF CONGRESS CLASSIFICATION OUTLINE
+NX798-820		Arts centers and facilities
 
 CLASS P - LANGUAGE AND LITERATURE
 
@@ -5440,8 +5108,7 @@ PA3051-3285		Literary history
 PA3300-3516		Collections
 PA3520-3564		Criticism, interpretation, etc.
 PA3601-3681		Translations
-PA3818-4505		Individual authors
-			Including:
+PA3818-4505		Individual authors Including:
 PA3825-3849				Aeschylus
 PA3851-3858				Aesop
 PA3890-3926				Aristotle
@@ -5460,8 +5127,7 @@ PA6001-6097		Literary history
 PA6100-6140		Collections
 PA6141-6144		Criticism, interpretation, etc.
 PA6155-6191		Translations
-PA6202-6971		Individual authors
-			Including:
+PA6202-6971		Individual authors Including:
 PA6235-6269				Caesar, Julius
 PA6278-6370				Cicero, Marcus Tullius
 PA6393-6444				Horace
@@ -5498,8 +5164,7 @@ Subclass PC
 PC1-5498	Romance
 PC1-400		General
 PC601-872		Romanian
-PC901-986		Raeto-Romance
-				Including Romansh
+PC901-986		Raeto-Romance Including Romansh
 PC1001-1977		Italian
 PC1981-1984		Sardinian
 PC2001-3761		French
@@ -5520,8 +5185,7 @@ PD1-780		General
 PD1001-1350		Old Germanic dialects
 PD1101-1211			Gothic
 PD1501-(7159)		North Germanic.  Scandinavian
-PD2201-2393			Old Norse.  Old Icelandic and Old
-					Norwegian
+PD2201-2393			Old Norse.  Old Icelandic and Old Norwegian
 PD2401-2446			Modern Icelandic
 PD(2501)-2999			Norwegian
 PD3001-3929			Danish
@@ -5574,8 +5238,7 @@ PG3001-3026					Special periods
 PG3041-3065					Poetry
 PG3071-3089					Drama
 PG3091-3099					Prose
-PG(3100)-(3155)					Folk literature
-						Including texts
+PG(3100)-(3155)					Folk literature Including texts
 PG3199-3299				Collections
 PG3199-3205					General
 PG(3211)-3219					Translations
@@ -5726,8 +5389,7 @@ PK1550-1569					Assamese
 PK1651-(1799)					Bengali
 PK1801-1831.95					Bihari
 PK1841-1870.95					Gujarati
-PK1931-2212					Hindi, Urdu, Hindustani languages and
-							literatures
+PK1931-2212					Hindi, Urdu, Hindustani languages and literatures
 PK1931-1970						Hindi language
 PK1971-1979.5						Urdu language
 PK1981-2000						Hindustani language
@@ -5811,8 +5473,7 @@ PL2450-2659				Collections
 PL2661-2979				Individual authors and works
 PL3030-3208				Provincial, local, colonial, etc.
 PL3301-3311		Non-Chinese languages of China
-PL3501-3509		Non-Aryan languages of India and Southeastern Asia in
-			general
+PL3501-3509		Non-Aryan languages of India and Southeastern Asia in general
 PL3512		Malaysian literature
 PL3515		Singapore literature
 PL3518		Languages of the Montagnards
@@ -5855,8 +5516,7 @@ PM1-94		Hperborean languages of Arctic Asia and America
 PM101-2711		American languages (Aboriginal)
 PM231-355			American languages of British North America
 PM(401)-501			American languages of the United States (and Mexico)
-PM549-2711			Special languages of the United States and Canada
-				(alphabetically)
+PM549-2711			Special languages of the United States and Canada (alphabetically)
 PM3001-4566		Languages of Mexico and Central America
 PM5001-7356		Languages of South America and the West Indies
 PM7801-7895		Mixed languages
@@ -5916,7 +5576,7 @@ PN1865-1988			Special types
 PN1990-1992.92			Broadcasting
 PN1991-1991.9				Radio broadcasts
 PN1992-1992.92				Television broadcasts
-PN1992.93-19 92.95			Nonbroadcast video recordings
+PN1992.93-1992.95			Nonbroadcast video recordings
 PN1993-1999			Motion pictures
 PN1997-1997.85				Plays, scenarios, etc.
 PN2000-3307			Dramatic representation.  The theater
@@ -5946,8 +5606,7 @@ PN4390		Diaries
 PN4400		Letters (Literary history)
 PN4500		Essays (Literary history)
 PN4699-5650		Journalism.  The periodical press, etc.
-PN4735-4748			Relation to the state.  Government and the press.  Liberty of the
-				press
+PN4735-4748			Relation to the state.  Government and the press.  Liberty of the press
 PN4775-4784			Technique.  Practical journalism
 PN4825-4830			Amateur journalism
 PN4832-4836			Magazines and other periodicals
@@ -6002,15 +5661,11 @@ PQ1100-1145			General
 PQ1160-1193			Poetry
 PQ1211-1241			Drama
 PQ1243-1297			Prose
-PQ1300-1595		Old French literature
-				Class here Old French literature 
-					to ca. 1500/1550
-PQ1300-1391			Collections
-			Individual authors and works
+PQ1300-1595		Old French literature Class here Old French literature  to ca. 1500/1550
+PQ1300-1391			Collections Individual authors and works
 PQ1411-1545				To 1350/1400
 PQ1551-1595				(14th-) 15th century (to ca. 1525)
-PQ1600-2726		Modern literature
-			Individual authors
+PQ1600-2726		Modern literature Individual authors
 PQ1600-1709				16th century
 PQ1710-1935				17th century
 PQ1947-2147				18th century
@@ -6130,8 +5785,7 @@ PR1330			Diaries
 PR1341-1349			Letters
 PR1361-1369			Essays
 PR1490-1799		Anglo-Saxon literature
-PR1803-2165		Anglo-Norman period.  Early English.  Middle
-PR			English
+PR1803-2165		Anglo-Norman period.  Early English.  Middle 			English
 PR2199-3195		English renaissance (1500-1640)
 PR3291-3785		17th and 18th centuries (1640-1770)
 PR3991-5990		19th century, 1770/1800-1890/1900
@@ -6372,7 +6026,7 @@ Subclass PZ
 
 PZ(1)-90	Fiction and juvenile belles lettres
 PZ(1)-(4)		Fiction in English
-PZ5-90		Juvenile belles lettresLIBRARY OF CONGRESS CLASSIFICATION OUTLINE
+PZ5-90		Juvenile belles lettres
 
 CLASS Q - SCIENCE
 
@@ -6420,9 +6074,7 @@ QC1-999	Physics
 QC1-75		General
 QC81-114		Weights and measures
 QC120-168.85		Descriptive and experimental mechanics
-QC170-197		Atomic physics.  Constitution and properties of matter
-				Including molecular physics, relativity, quantum theory, and
-					solid state physics
+QC170-197		Atomic physics.  Constitution and properties of matter Including molecular physics, relativity, quantum theory, and solid state physics
 QC221-246		Acoustics.  Sound
 QC251-338.5		Heat
 QC310.15-319			Thermodynamics
@@ -6441,8 +6093,7 @@ QC793-793.5			Elementary particle physics
 QC794.95-798			Radioactivity and radioactive substances
 QC801-809		Geophysics.  Cosmic physics
 QC811-849		Geomagnetism
-QC851-999		Meteorology.  Climatology
-				Including the earth's atmosphere
+QC851-999		Meteorology.  Climatology Including the earth's atmosphere
 QC974.5-976			Meteorological optics
 QC980-999			Climatology and weather
 QC994.95-999				Weather forecasting
@@ -6450,8 +6101,7 @@ QC994.95-999				Weather forecasting
 Subclass QD
 
 QD1-999	Chemistry
-QD1-65		General
-				Including alchemy
+QD1-65		General Including alchemy
 QD71-142		Analytical chemistry
 QD146-197		Inorganic chemistry
 QD241-441		Organic chemistry
@@ -6464,8 +6114,7 @@ QD901-999		Crystallography
 Subclass QE
 
 QE1-996.5	Geology
-QE1-350.62		General
-				Including geographical divisions
+QE1-350.62		General Including geographical divisions
 QE351-399.2		Mineralogy
 QE420-499		Petrology
 QE500-639.5		Dynamic and structural geology
@@ -6479,8 +6128,7 @@ QE901-996.5		Paleobotany
 Subclass QH
 
 QH1-278.5	Natural history (General)
-QH1-(199.5)		General
-				Including nature conservation, geographical distribution
+QH1-(199.5)		General Including nature conservation, geographical distribution
 QH201-278.5		Microscopy
 QH301-705.5	Biology (General)
 QH359-425		Evolution
@@ -6494,8 +6142,7 @@ QH705-705.5		Economic biology
 Subclass QK
 
 QK1-989	Botany
-QK1-474.5		General
-				Including geographical distribution
+QK1-474.5		General Including geographical distribution
 QK474.8-495		Spermatophyta.  Phanerogams
 QK494-494.5			Gymnosperms
 QK495			Angiosperms
@@ -6507,8 +6154,7 @@ QK900-989		Plant ecology
 Subclass QL
 
 QL1-991	Zoology
-QL1-355		General
-				Including geographical distribution
+QL1-355		General Including geographical distribution
 QL360-599.82		Invertebrates
 QL461-599.82			Insects
 QL605-739.8		Chordates.  Vertebrates
@@ -6533,8 +6179,7 @@ QM601-695		Human embryology
 Subclass QP
 
 QP1-(981)	Physiology
-QP1-345		General
-				Including influence of the environment
+QP1-345		General Including influence of the environment
 QP351-495		Neurophysiology and neuropsychology
 QP501-801		Animal biochemistry
 QP(901)-(981)		Experimental pharmacology
@@ -6548,7 +6193,7 @@ QR99.6-99.8		Cyanobacteria
 QR100-130		Microbial ecology
 QR171		Microorganisms in the animal body
 QR180-189.5		Immunology
-QR355-502		VirologyLIBRARY OF CONGRESS CLASSIFICATION OUTLINE
+QR355-502		Virology
 
 CLASS R - MEDICINE
 
@@ -6558,8 +6203,7 @@ R5-920	Medicine (General)
 R5-130.5		General works
 R131-687		History of medicine.  Medical expeditions
 R690-697		Medicine as a profession.  Physicians
-R702-703		Medicine and the humanities.  Medicine and disease in relation to
-			history, literature, etc.
+R702-703		Medicine and the humanities.  Medicine and disease in relation to history, literature, etc.
 R711-713.97		Directories
 R722-722.32		Missionary medicine.  Medical missionaries
 R723-726		Medical philosophy.  Medical ethics
@@ -6579,8 +6223,7 @@ RA1-1270	Public aspects of medicine
 RA1-418.5		Medicine and the state
 RA396			Regulation of medical education.  Licensure
 RA398			Registration of physicians, pharmacists, etc.
-RA399			Regulation of medical practice.  Evaluation and quality control
-				of medical care.  Medical audit
+RA399			Regulation of medical practice.  Evaluation and quality control of medical care.  Medical audit
 RA405			Death certification
 RA407-409.5			Health status indicators.  Medical statistics and surveys
 RA410-410.9			Medical economics.  Economics of medical care.  Employment
@@ -6589,13 +6232,10 @@ RA418-418.5			Medicine and society.  Social medicine.  Medical sociology
 RA421-790.95		Public health.  Hygiene.  Preventive medicine
 RA428-428.5			Public health laboratories, institutes, etc.
 RA440-440.87			Study and teaching.  Research
-RA565-600			Environmental health
-					Including sewage disposal, air pollution, nuisances,
-						water supply
+RA565-600			Environmental health Including sewage disposal, air pollution, nuisances, water supply
 RA601-602			Food and food supply in relation to public health
 RA604-618			Parks, public baths, public carriers, buildings, etc.
-RA619-637			Disposal of the dead.  Undertaking.  Burial.  Cremation. 
-				Cemeteries
+RA619-637			Disposal of the dead.  Undertaking.  Burial.  Cremation.  Cemeteries
 RA638			Immunity and immunization in relation to public health
 RA639-642			Transmission of disease
 RA643-645			Disease (Communicable and noninfectious) and public health
@@ -6604,13 +6244,10 @@ RA645.5-645.9			Emergency medical services
 RA646-648.3			War and public health
 RA648.5-767			Epidemics.  Epidemiology.  Quarantine.  Disinfection
 RA771-771.7			Rural health and hygiene.  Rural health services
-RA773-788			Personal health and hygiene
-					Including clothing, bathing, exercise, travel, nutrition,
-						sleep, sex hygiene
+RA773-788			Personal health and hygiene Including clothing, bathing, exercise, travel, nutrition, sleep, sex hygiene
 RA790-790.95			Mental health.  Mental illness prevention
 RA791-954		Medical geography.  Climatology.  Meteorology
-RA960-1000.5		Medical centers.  Hospitals.  Dispensaries.  Clinics
-				Including ambulance service, nursing homes, hospices
+RA960-1000.5		Medical centers.  Hospitals.  Dispensaries.  Clinics Including ambulance service, nursing homes, hospices
 RA1001-1171		Forensic medicine.  Medical jurisprudence.  Legal medicine
 RA1190-1270		Toxicology.  Poisons
 
@@ -6628,19 +6265,16 @@ Subclass RC
 
 RC31-1245	Internal medicine
 RC49-52		Psychosomatic medicine
-RC71-78.7		Examination.  Diagnosis
-				Including raiography
+RC71-78.7		Examination.  Diagnosis Including raiography
 RC81-82		Popular medicine
 RC86-88.9		Medical emergencies.  Critical care.  Intensive care.  First aid
 RC91-103		Disease due to physical and chemical agents
 RC109-216		Infectious and parasitic diseases
 RC251		Constitutional diseases (General)
-RC254-282		Neoplasms.  Tumors.  Oncology
-				Including cancer and carcinogens
+RC254-282		Neoplasms.  Tumors.  Oncology Including cancer and carcinogens
 RC306-320.5		Tuberculosis
 RC321-571		Neurosciences.  Biological psychiatry.  Neuropsychiatry
-RC346-429			Neurology.  Diseases of the nervous system
-					Including speech disorders
+RC346-429			Neurology.  Diseases of the nervous system Including speech disorders
 RC435-571				Psychiatry
 RC475-489					Therapeutics.  Psychotherapy
 RC490-499					Hypnotism and hypnosis.  Suggestion therapy
@@ -6648,9 +6282,7 @@ RC500-510					Psychoanalysis
 RC512-569.5					Psychopathology
 RC512-528						Psychoses
 RC530-552						Neuroses
-RC554-569.5						Personality disorders.  Behavior problems
-								Including sexual problems, drug abuse,
-									suicide, child abuse
+RC554-569.5						Personality disorders.  Behavior problems Including sexual problems, drug abuse, suicide, child abuse
 RC569.7-571					Mental retardation.  Developmental disabilities
 RC581-951		Specialties of internal medicine
 RC581-607			Immunologic diseases.  Allergy
@@ -6670,8 +6302,7 @@ RC955-962			Arctic medicine.  Tropical medicine
 RC963-969			Industrial medicine.  Industrial hygiene
 RC970-986			Military medicine.  Naval medicine
 RC1000-1020			Submarine medicine
-RC1030-1160			Transportation medicine
-					Including automotive, aviation, and space medicine
+RC1030-1160			Transportation medicine Including automotive, aviation, and space medicine
 RC1200-1245			Sports medicine
 
 Subclass RD
@@ -6683,8 +6314,7 @@ RD49-52		Surgical therapeutics.  Preoperative and postoperative care
 RD57		Surgical pathology
 RD58		Reparative processes after operations (Physiological)
 RD59		Surgical shock.  Traumatic shock
-RD63-76		Operating rooms and theaters.  Instruments, apparatus, and
-			appliances
+RD63-76		Operating rooms and theaters.  Instruments, apparatus, and appliances
 RD78.3-87.3		Anesthesiology
 RD91-91.5		Asepsis and antisepsis.  Sterilization (Operative)
 RD92-97.8		Emergency surgery.  Wounds and injuries
@@ -6757,8 +6387,7 @@ RJ240		Immunization of children (General)
 RJ242-243		Hospital care
 RJ245-247		Nursing of children.  Pediatric nursing
 RJ250-250.3		Premature infants
-RJ251-325		Newborn infants
-				Including physiology, care, treatment, diseases
+RJ251-325		Newborn infants Including physiology, care, treatment, diseases
 RJ370-550		Diseases of children and adolescents
 RJ499-507			Mental disorders.  Child psychiatry
 
@@ -6784,8 +6413,7 @@ RL130-169		Diseases of the glands, hair, nails
 RL201-331		Hyperemias, inflammations, and infections of the skin
 RL391-489		Atrophies.  Hypertrophies
 RL675		Chronic ulcer of the skin.  Bedsores
-RL701-751		Diseases due to psychosomatic and nerve disorders.
-			Dermatoneuroses
+RL701-751		Diseases due to psychosomatic and nerve disorders. Dermatoneuroses
 RL760-785		Diseases due to parasites
 RL790		Pigmentations.  Albinism
 RL793		Congenital disorders of the skin.  Nevi.  Moles
@@ -6797,9 +6425,7 @@ RM138		Drug prescribing
 RM139		Prescription writing
 RM146-146.7		Misuse of therapeutic drugs.  Medication errors
 RM147-180		Administration of drugs and other therapeutic agents
-RM182-190		Other therapeutic procedures
-				Including acupuncture, pneumatic aspiration, spinal
-					puncture, pericardial puncture
+RM182-190		Other therapeutic procedures Including acupuncture, pneumatic aspiration, spinal puncture, pericardial puncture
 RM214-258		Diet therapy.  Dietary cookbooks
 RM259		Vitamin therapy
 RM260-263		Chemotherapy
@@ -6808,10 +6434,7 @@ RM270-282		Immunotherapy.  Serotherapy
 RM283-298		Endocrinotherapy.  Organotherapy
 RM300-666		Drugs and their actions
 RM671-671.5		Nonprescription drugs.  Patent medicines
-RM695-893		Physical medicine.  Physical therapy
-				Including massage, exercise, occupational therapy,
-					hydrotherapy, phototherapy, radiotherapy,
-					thermotherapy, electrotherapy
+RM695-893		Physical medicine.  Physical therapy Including massage, exercise, occupational therapy, hydrotherapy, phototherapy, radiotherapy, thermotherapy, electrotherapy
 RM930-931		Rehabilitation therapy
 RM950		Rehabilitation technology
 
@@ -6822,8 +6445,7 @@ RS125-131.9		Formularies.  Collected prescriptions
 RS139-141.9		Pharmacopoeias
 RS151.2-151.9		Dispensatories
 RS153-441		Materia medica
-RS160-167			Pharmacognosy.  Pharmaceutical substances (Plant, animal, and
-				inorganic)
+RS160-167			Pharmacognosy.  Pharmaceutical substances (Plant, animal, and inorganic)
 RS189-190			Assay methods.  Standardization.  Analysis
 RS192-199			Pharmaceutical technology
 RS200-201			Pharmaceutical dosage forms
@@ -6854,9 +6476,7 @@ RZ201-275		Chiropractic
 RZ301-397.5		Osteopathy
 RZ399		Osteo-magnetics, neuropathy, etc., A-Z
 RZ400-408		Mental healing
-RZ409.7-999		Miscellaneous systems and treatments
-				Including magnetotherapy, mesmerism, naturopathy,
-					organomic medicine, phrenology, radiesthesiaLIBRARY OF CONGRESS CLASSIFICATION OUTLINE
+RZ409.7-999		Miscellaneous systems and treatments Including magnetotherapy, mesmerism, naturopathy, organomic medicine, phrenology, radiesthesia
 
 CLASS S - AGRICULTURE
 
@@ -6871,34 +6491,24 @@ S539.5-542.3			Research.  Experimentation
 S544-545.53			Agricultural extension work
 S548-548.6			Historic farms
 S550-559			Exhibitions.  Fairs
-S560-571.5		Farm economics.  Farm management.  Agricultural mathematics
-				Including production standards, record keeping, farmwork
-					rates, marketing
+S560-571.5		Farm economics.  Farm management.  Agricultural mathematics Including production standards, record keeping, farmwork rates, marketing
 S583-587.73		Agricultural chemistry.  Agricultural chemicals
-S588.4-589.6		Agricultural physics
-				Including radioisotopes in agriculture
+S588.4-589.6		Agricultural physics Including radioisotopes in agriculture
 S589.7		Agricultural ecology (General)
 S589.75-589.76		Agriculture and the environment
 S589.8-589.87		Plant growing media.  Potting soils
-S590-599.9		Soils.  Soil science
-				Including soil surveys, soil chemistry, soil structure,
-					soil-plant relationships
+S590-599.9		Soils.  Soil science Including soil surveys, soil chemistry, soil structure, soil-plant relationships
 S600-600.7		Agricultural meteorology.  Crops and climate
-S602.5-604.37		Methods and systems of culture.  Cropping systems
-				Including fallowing, rotation of crops, plowing
+S602.5-604.37		Methods and systems of culture.  Cropping systems Including fallowing, rotation of crops, plowing
 S604.5-604.64		Agricultural conservation
-S604.8-621.5		Melioration: Improvement, reclamation, fertilization, irrigation,
-			etc., of lands
+S604.8-621.5		Melioration: Improvement, reclamation, fertilization, irrigation, etc., of lands
 S605.5			Organic farming.  Organiculture
-S606-621.5			Special classes of lands and reclamation methods
-					Including woodlands, burning of lands, deserts, saline
-						environments, moors
+S606-621.5			Special classes of lands and reclamation methods Including woodlands, burning of lands, deserts, saline environments, moors
 S622-627		Soil conservation and protection
 S631-667		Fertilizers and improvement of the soil
 S671-760.5		Farm machinery and farm engineering
 S770-790.3		Agricultural structures.  Farm buildings
-S900-(972)		Conservation of natural resources
-				Including land conservation
+S900-(972)		Conservation of natural resources Including land conservation
 
 Subclass SB
 
@@ -6906,13 +6516,11 @@ SB1-1110	Plant culture
 SB39		Horticultural voyages, etc.
 SB71-87		History
 SB107-109		Economic botany 
-SB109.7-111		Methods for special areas
-				Including cold regions, dry farming, tropical agriculture
+SB109.7-111		Methods for special areas Including cold regions, dry farming, tropical agriculture
 SB112		Irrigation farming
 SB113.2-118.46		Seeds.  Seed technology
 SB118.48-118.75		Nurseries.  Nursery industry
-SB119-124		Propagation
-				Including breeding, selection, grafting, air layering
+SB119-124		Propagation Including breeding, selection, grafting, air layering
 SB125		Training and pruning
 SB126		Artificial light gardening
 SB126.5-126.57		Hydroponics.  Soilless agriculture
@@ -6921,10 +6529,7 @@ SB128		Growth regulators
 SB129-130		Harvesting, curing, storage
 SB169-172.5		Tree crops
 SB175-177		Food crops
-SB183-317		Field crops
-				Including cereals, forage crops, grasses, legumes, root crops,
-					sugar plants, textile plants, alkaloidal plants, medicinal
-					plants
+SB183-317		Field crops Including cereals, forage crops, grasses, legumes, root crops, sugar plants, textile plants, alkaloidal plants, medicinal plants
 SB317.5-319.864		Horticulture.  Horticultural crops
 SB320-353.5		Vegetables
 SB354-402		Fruit and fruit culture
@@ -6939,12 +6544,9 @@ SB414.6-417			Greenhouses and greenhouse culture
 SB418-418.4			Container gardening
 SB419-419.3			Indoor gardening and houseplants
 SB419.5			Roof gardening.  Balcony gardening
-SB421-439.8			Classes of plants
-					Including annuals, climbers, ferns, lawns, perennials,
-						shrubs
+SB421-439.8			Classes of plants Including annuals, climbers, ferns, lawns, perennials, shrubs
 SB441-441.75			Flower shows.  Exhibitions
-SB442.5			Care and preparation of cut flowers and ornamental plants for
-				market
+SB442.5			Care and preparation of cut flowers and ornamental plants for market
 SB442.8-443.4			Marketing.  Cut flower industry.  Florists
 SB446-446.6			Horticultural service industry
 SB447			Preservation and reproduction of flowers, fruits, etc.
@@ -6952,8 +6554,7 @@ SB447.5			Bonkei.  Tray landscapes
 SB449-450.87			Flower arrangement and decoration
 SB450.9-467.8		Gardens and gardening
 SB469-(476.4)		Landscape gardening.  Landscape architecture
-SB481-486		Parks and public reservations
-				Including theory, management, history
+SB481-486		Parks and public reservations Including theory, management, history
 SB599-990.5		Pests and diseases
 SB608			Individual or types of plants or trees
 SB610-615			Weeds, parasitic plants, etc.
@@ -6965,8 +6566,7 @@ SB950.9-970.4				Pesticides
 SB973-973.5				Soil disinfection
 SB974-978				Organic plant protection.  Biological control
 SB979.5-985				Inspection.  Quarantine
-SB992-998		Economic zoology applied to crops.  Agricultural zoology
-				Including animals injurious and beneficial to plants
+SB992-998		Economic zoology applied to crops.  Agricultural zoology Including animals injurious and beneficial to plants
 
 Subclass SD
 
@@ -6981,12 +6581,8 @@ SD389		Forest roads
 SD390-390.43		Forest soils
 SD390.5-390.7		Forest meteorology.  Forest microclimatology
 SD391-410.9		Sylviculture
-SD411-428		Conservation and protection
-				Including forest influences, damage by elements, fires,
-					forest reserves
-SD430-(559)		Exploitation and utilization
-				Including timber trees, fuelwood, logging, transportation,
-					valuation
+SD411-428		Conservation and protection Including forest influences, damage by elements, fires, forest reserves
+SD430-(559)		Exploitation and utilization Including timber trees, fuelwood, logging, transportation, valuation
 SD561-669.5		Administration.  Policy
 
 Subclass SF
@@ -7042,9 +6638,7 @@ SF521-539.8		Bee culture
 SF541-560		Sericulture.  Silk culture
 SF561		Lac-insects
 SF600-1100		Veterinary medicine
-SF756.5-769.5			Special preclinical sciences
-					Including veterinary genetics, ethology, anatomy,
-						physiology, embryology, pathology
+SF756.5-769.5			Special preclinical sciences Including veterinary genetics, ethology, anatomy, physiology, embryology, pathology
 SF780.2-780.7			Veterinary microbiology, bacteriology, virology, mycology
 SF780.9			Veterinary epidemiology.  Epizootiology
 SF781-809			Communicable diseases of animals (General)
@@ -7095,17 +6689,14 @@ SH388.7-391.5			Algae culture
 SH393			Seagrasses
 SH396			Sponge fisheries
 SH400-400.8		Seafood gathering
-SH401-691		Angling
-				Including tackle, casting, methods of angling, angling for
-					special kinds of fish
+SH401-691		Angling Including tackle, casting, methods of angling, angling for special kinds of fish
 
 Subclass SK
 
 SK1-664	Hunting sports
 SK37-39.5		Shooting
 SK40-268		By country
-SK281-293		Special methods and types of hunting
-				Including bolos, game calling, tracking, trapping, dressing
+SK281-293		Special methods and types of hunting Including bolos, game calling, tracking, trapping, dressing
 SK284-287			Fox hunting
 SK291-292			Coursing
 SK293			Ferreting
@@ -7114,10 +6705,9 @@ SK311-335		Bird hunting.  Fowling
 SK336		Varmint hunting (General)
 SK337		Predator hunting
 SK341		Other game
-SK351-579		Wildlife management.  Game protection
-				Including annual reports of game commissioners
+SK351-579		Wildlife management.  Game protection Including annual reports of game commissioners
 SK590-593		Wild animal trade
-SK650-664		Wildlife-related recreationLIBRARY OF CONGRESS CLASSIFICATION OUTLINE
+SK650-664		Wildlife-related recreation
 
 CLASS T - TECHNOLOGY
 
@@ -7165,8 +6755,7 @@ TA401-492		Materials of engineering and construction.  Mechanics of materials
 TA495		Disasters and engineering
 TA501-625		Surveying
 TA630-695		Structural engineering (General)
-TA703-712		Engineering geology.  Rock mechanics.  Soil mechanics. 
-			Underground construction
+TA703-712		Engineering geology.  Rock mechanics.  Soil mechanics.  Underground construction
 TA715-787		Earthwork.  Foundations
 TA800-820		Tunneling.  Tunnels
 TA1001-1280		Transportation engineering
@@ -7178,8 +6767,7 @@ Subclass TC
 TC1-978	Hydraulic engineering
 TC160-181		Technical hydraulics
 TC183-201		General preliminary operations.  Dredging.  Submarine building
-TC203-380		Harbors and coast protective works.  Coastal engineering. 
-			Lighthouses
+TC203-380		Harbors and coast protective works.  Coastal engineering.  Lighthouses
 TC401-506		River, lake, and water-supply engineering (General)
 TC530-537		River protective works.  Regulation.  Flood control
 TC540-558		Dams.  Barrages
@@ -7196,14 +6784,12 @@ TD172-193.5		Environmental pollution
 TD194-195		Environmental effects of industries and plants
 TD201-500		Water supply for domestic and industrial purposes
 TD419-428			Water pollution
-TD429.5-480.7	 		Water purification.  Water treatment and conditioning.  Saline
-				water conversion
+TD429.5-480.7	 		Water purification.  Water treatment and conditioning.  Saline water conversion
 TD481-493			Water distribution systems
 TD511-780		Sewage collection and disposal systems.  Sewerage
 TD783-812.5		Municipal refuse.  Solid wastes
 TD813-870		Street cleaning.  Litter and its removal
-TD878-894		Special types of environment
-				Including soil pollution, air pollution, noise pollution
+TD878-894		Special types of environment Including soil pollution, air pollution, noise pollution
 TD895-899		Industrial and factory sanitation
 TD896-899			Industrial and factory wastes
 TD920-934		Rural and farm sanitary engineering
@@ -7217,8 +6803,7 @@ TE175-176.5		Highway design.  Interchanges and intersections
 TE177-178.8		Roadside development.  Landscaping
 TE200-205		Materials for roadmaking
 TE206-209.5		Location engineering
-TE210-228.3		Construction details
-				Including foundations, maintenance, equipment
+TE210-228.3		Construction details Including foundations, maintenance, equipment
 TE250-278.8		Pavements and paved roads
 TE279		Streets
 TE279.5-298		Pedestrian facilities
@@ -7245,22 +6830,17 @@ Subclass TH
 TH1-9745	Building construction
 TH845-895		Architectural engineering.  Structural engineering of buildings
 TH900-915		Construction equipment in building
-TH1000-1725		Systems of building construction
-				Including fireproof construction, concrete construction
-TH2025-3000		Details in building design and construction
-				Including walls, roofs
+TH1000-1725		Systems of building construction Including fireproof construction, concrete construction
+TH2025-3000		Details in building design and construction Including walls, roofs
 TH3301-3411		Maintenance and repair
-TH4021-4977		Buildings: Construction with reference to use
-				Including public buildings, dwellings
+TH4021-4977		Buildings: Construction with reference to use Including public buildings, dwellings
 TH5011-5701		Construction by phase of the work (Building trades)
-TH6014-6081		Environmental engineering of buildings.  Sanitary engineering of
-			buildings
+TH6014-6081		Environmental engineering of buildings.  Sanitary engineering of buildings
 TH6101-6887		Plumbing and pipefitting
 TH7005-7699		Heating and ventilation.  Air conditioning
 TH7700-7975		Illumination.  Lighting
 TH8001-8581		Decoration and decorative furnishings
-TH9025-9745		Protection of buildings
-				Including protection from dampness, fire, burglary
+TH9025-9745		Protection of buildings Including protection from dampness, fire, burglary
 
 Subclass TJ
 
@@ -7269,8 +6849,7 @@ TJ163.13-163.25		Power resources
 TJ163.26-163.5		Energy conservation
 TJ170-179		Mechanics applied to machinery.  Dynamics
 TJ181-210		Mechanical movements
-TJ210.2-211.47		Mechanical devices and figures.  Automata.  Ingenious mechanisms. 
-			Robots (General)
+TJ210.2-211.47		Mechanical devices and figures.  Automata.  Ingenious mechanisms.  Robots (General)
 TJ212-225		Control engineering systems.  Automatic machinery (General)
 TJ227-240		Machine design and drawing
 TJ241-254.7		Machine construction (General)
@@ -7278,8 +6857,7 @@ TJ255-265		Heat engines
 TJ266-267.5		Turbines.  Turbomachines (General)
 TJ268-740		Steam engineering
 TJ603-695			Locomotives
-TJ751-805		Miscellaneous motors and engines
-				Including gas, gasoline, diesel engines
+TJ751-805		Miscellaneous motors and engines Including gas, gasoline, diesel engines
 TJ807-830		Renewable energy sources
 TJ836-927		Hydraulic machinery
 TJ940-940.5		Vacuum technology
@@ -7295,19 +6873,15 @@ Subclass TK
 
 TK1-9971	Electrical engineering.  Electronics.  Nuclear engineering
 TK301-399		Electric meters
-TK452-454.4		Electric apparatus and materials.  Electric circuits.  Electric
-			networks
-TK1001-1841		Production of electric energy or power.  Powerplants.  Central
-			stations
-TK2000-2891		Dynamoelectric machinery and auxiliaries
-				Including generators, motors, transformers
+TK452-454.4		Electric apparatus and materials.  Electric circuits.  Electric networks
+TK1001-1841		Production of electric energy or power.  Powerplants.  Central stations
+TK2000-2891		Dynamoelectric machinery and auxiliaries Including generators, motors, transformers
 TK2896-2985		Production of electricity by direct energy conversion
 TK3001-3521		Distribution or transmission of electric power
 TK4001-4102		Applications of electric power
 TK4125-4399		Electric lighting
 TK4601-4661		Electric heating
-TK5101-6720		Telecommunication
-				Including telegraphy, telephone, radio, radar, television
+TK5101-6720		Telecommunication Including telegraphy, telephone, radio, radar, television
 TK7800-8360		Electronics
 TK7885-7895			Computer engineering.  Computer hardware
 TK8300-8360			Photoelectronic devices (General)
@@ -7364,9 +6938,7 @@ TR504-508		Transparencies.  Diapositives
 TR510-545		Color photography
 TR550-581		Studio and laboratory
 TR590-620		Lighting
-TR624-835		Applied photography
-				Including artistic, commercial, medical photography,
-					photocopying processes
+TR624-835		Applied photography Including artistic, commercial, medical photography, photocopying processes
 TR845-899		Cinematography.  Motion pictures
 TR925-1050		Photomechanical processes
 
@@ -7401,16 +6973,14 @@ TT205-267		Metalworking
 TT300-382.8		Painting.  Wood finishing
 TT387-410		Soft home furnishings
 TT490-695		Clothing manufacture.  Dressmaking.  Tailoring
-TT697-927		Home arts.  Homecrafts
-				Including sewing, embroidery, decorative crafts
+TT697-927		Home arts.  Homecrafts Including sewing, embroidery, decorative crafts
 TT950-979		Hairdressing.  Beauty culture.  Barbers' work
 TT980-999		Laundry work
 
 Subclass TX
 
 TX1-1110	Home economics
-TX301-339		The house
-				Including arrangement, care, servants
+TX301-339		The house Including arrangement, care, servants
 TX341-641		Nutrition.  Foods and food supply
 TX642-840		Cookery
 TX851-885		Dining-room service
@@ -7418,7 +6988,7 @@ TX901-946.5		Hospitality industry.  Hotels, clubs, restaurants, etc.  Food servi
 TX950-953		Taverns, barrooms, saloons
 TX955-985		Building operation and housekeeping
 TX1100-1105		Mobile home living
-TX1110		Recreational vehicle livingLIBRARY OF CONGRESS CLASSIFICATION OUTLINE
+TX1110		Recreational vehicle living
 
 CLASS U - MILITARY SCIENCE
 
@@ -7505,8 +7075,7 @@ UD490-495	  	Airmobile operations
 
 Subclass UE
 
-UE1-500	Cavalry.  Armor
-			Including horse cavalry, armored cavalry, mechanized cavalry
+UE1-500	Cavalry.  Armor Including horse cavalry, armored cavalry, mechanized cavalry
 UE144-145		Horse cavalry
 UE147		Armored cavalry
 UE157-302	  	Tactics.  Maneuvers.  Drill regulations
@@ -7567,7 +7136,7 @@ UH520-(560)		Care of sick and wounded.  Relief societies
 UH600-629.5		Military hygiene and sanitation
 UH700-705	  	Public relations.  Press.  War correspondents
 UH750-769		Military social work.  Social welfare services
-UH800-910	  	Recreation and information servicesLIBRARY OF CONGRESS CLASSIFICATION OUTLINE
+UH800-910	  	Recreation and information services
 
 CLASS V - NAVAL SCIENCE
 
@@ -7588,7 +7157,6 @@ V720-743	  	Naval life, manners and customs, antiquities, etc.
 V750-995	  	War vessels: Construction, armament, etc.
 
 Subclass VA
-								
 VA10-750	Navies: Organization, distribution, naval situation
 VA49-395		United States
 VA400-750	  	Other regions or countries
@@ -7683,10 +7251,9 @@ VM298.5-301		Shipbuilding industry.  Shipyards
 VM311-466		Special types of vessels
 VM595-989		Marine engineering
 VM975-989			Diving
-LIBRARY OF CONGRESS CLASSIFICATION OUTLINE
 
-CLASS Z - BIBLIOGRAPHY.  LIBRARY SCIENCE.  
-INFORMATION RESOURCES (GENERAL)  
+
+CLASS Z - BIBLIOGRAPHY.  LIBRARY SCIENCE.  INFORMATION RESOURCES (GENERAL) 
 
 Subclass Z
 
@@ -7695,8 +7262,7 @@ Z4-8		History of books and bookmaking
 Z40-104.5		Writing
 Z41-42.5			Autographs.  Signatures
 Z43-45			Calligraphy.  Penmanship
-Z48			Duplicating processes.  Copying services
-Including mimeographing, multilithing
+Z48			Duplicating processes.  Copying services Including mimeographing, multilithing
 Z49-51.5			Typewriters.  Typewriting.  Keyboards.  Keyboarding
 Z52-52.5			Word processing
 Z53-102			Shorthand.  Stenography.  Phonography
@@ -7711,15 +7277,9 @@ Z231-234			Printers and printing establishments
 Z234				Medallic history of printing.  Tokens
 Z235-236			Printer's marks, mottoes, etc.
 Z237			Paper.  Watermarks, etc.
-Z240-241.5			Incunabula.  Block books
-Including broadsides, playing cards
-Z242.9-264.5			Practical printing
-Including printing as a business, layout, paper and ink,
-machinery, type and type founding, electrotyping,
-desktop publishing, typesetting, presswork
-Z265-265.5			Representation or reproduction of books, documents,
-etc., by photography, microphotography, or other
-means
+Z240-241.5			Incunabula.  Block books Including broadsides, playing cards
+Z242.9-264.5			Practical printing Including printing as a business, layout, paper and ink, machinery, type and type founding, electrotyping, desktop publishing, typesetting, presswork
+Z265-265.5			Representation or reproduction of books, documents, etc., by photography, microphotography, or other means
 Z266-276		Bookbinding.  Book decoration
 Z278-549		Bookselling and publishing
 Z551-656		Copyright
@@ -7733,14 +7293,10 @@ Z674.7-674.83			Library information networks
 Z675			Classes of libraries
 Z678-678.88			Library administration and organization.  Constitution
 Z678.89-678.892			Library service agencies
-
 Z678.9-Z678.93			Automation
-Z679-680			Library buildings.  Library architecture
-Including planning, space utilization, security, safety,
-lighting, etc.
+Z679-680			Library buildings.  Library architecture Including planning, space utilization, security, safety, lighting, etc.
 Z680.3-680.6			Library communication systems
-Z681-681.3			Reproduction of library materials.  Storage media of
-library materials
+Z681-681.3			Reproduction of library materials.  Storage media of library materials
 Z681.5-681.7			Trustees.  Library boards, committees, etc.
 Z682-682.4			Personnel
 Z683-683.5			Finance.  Insurance
@@ -7751,8 +7307,7 @@ Z688				Special collections
 Z688.5-Z688.6				Processing
 Z689-689.8				Acquisition (selection, purchase, gifts, duplicates)
 Z690				Exchanges
-Z691-692				Special classes of materials
-Including manuscripts, maps, microforms, serials
+Z691-692				Special classes of materials Including manuscripts, maps, microforms, serials
 Z693-695.83				Cataloging
 Z695.85				Library handwriting
 Z695.87				Printing of catalogs
@@ -7761,39 +7316,28 @@ Z695.95				Alphabetizing.  Filing
 Z695.98				Recataloging.  Reclassification
 Z696-697				Classification and notation
 Z698				Shelflisting.  Author notation
-Z699-699.5				Machine methods of information and retrieval.
-Mechanized bibliographic control
+Z699-699.5				Machine methods of information and retrieval. Mechanized bibliographic control
 Z699.7				Physical processing.  Shelf preparation
 Z700				Bookbinding
-Z700.9-701.5				Physical parameters, preservation, conservation and
-restoration of books and other library materials 
+Z700.9-701.5				Physical parameters, preservation, conservation and restoration of books and other library materials 
 Z702				Thefts and losses of books and other library materials
-Z703.5				Stack management. Disposition of books on shelves,
-etc.
+Z703.5				Stack management. Disposition of books on shelves, etc.
 Z703.6				Discarding.  Weeding
 Z711-711.95			Public services.  Reference services
 Z712-714			Circulation.  Loans.  Charging systems
-Z716-716.15			Library extension.  Library commissions.  Traveling
-libraries
-Z716.2-718.85			Libraries in relation to special topics
-Including libraries and community, libraries and
-television, children's libraries, libraries and
-students
+Z716-716.15			Library extension.  Library commissions.  Traveling libraries
+Z716.2-718.85			Libraries in relation to special topics Including libraries and community, libraries and television, children's libraries, libraries and students
 Z719-723		Libraries (General)
 Z729-875		Library reports.  History.  Statistics
 Z881-980		Library catalogs and bulletins
-Z987-997.2		Private libraries.  Book collecting
-Including bibliophilism, bookplates
+Z987-997.2		Private libraries.  Book collecting Including bibliophilism, bookplates
 Z998-1000.5		Booksellers' catalogs.  Book prices
 Z1001-1121	General bibliography
-Z1001		Introduction to bibliography. Theory, philosophy,
-psychology. Bibliography. Documentation   
+Z1001		Introduction to bibliography. Theory, philosophy, psychology. Bibliography. Documentation   
 Z1003-1003.5		Choice of books.  Books and reading.  Book reviews
 Z1003.8-Z1004		Biography of bibliographers
 Z1011-1017		General bibliographies
-Z1019-1033		Special classes of books
-Including prohibited books, rare books, paperbacks,
-reprints
+Z1019-1033		Special classes of books Including prohibited books, rare books, paperbacks, reprints
 Z1035-1035.9		Best books
 Z1036		Booksellers' general catalogs of modern books
 Z1037-1039		Books for special classes of persons, institutions, etc.
@@ -7808,10 +7352,8 @@ Z2000-2959		Europe
 Z3001-3496		Asia
 Z3501-3975		Africa
 Z4001-4980		Australia.  Oceania
-Z5051-7999	Subject bibliography
-Subjects arranged in alphabetical sequence
-Z8001-8999	Personal bibliography
-Names of individuals arranged in alphabetical sequence
+Z5051-7999	Subject bibliography Subjects arranged in alphabetical sequence
+Z8001-8999	Personal bibliography Names of individuals arranged in alphabetical sequence
 
 Subclass ZA
 
