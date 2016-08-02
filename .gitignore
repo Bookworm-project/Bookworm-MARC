@@ -1,6 +1,2 @@
-json
-.DS_Store
-.ipynb_checkpoints
-*.pyc
-*.gz
-jsoncatalog.txt
+vocabularies/LC_schedules
+vocabularies/LC_schedules

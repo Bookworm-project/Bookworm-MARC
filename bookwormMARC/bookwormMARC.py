@@ -28,6 +28,194 @@ TODO
    or something will be better.
 """
 
+def integerize(string,allow_cutter_numbers=True):
+    """
+    Turns a number into a string.
+    If the number is a Cutter number like "A435", extracts the letter part into a
+    tuple so the result is ("A",435).
+
+    This preserves sortability.
+    """
+    if string is None:
+        return None
+    try:
+        return int(string)
+    except ValueError:
+        return (string[0],int(string[1:]))
+
+class LCCallNumber(list):
+    """
+    An LCC is a tuple of six elements. (The exact number of elements is subject to change in later revisions.)
+
+    This means that they can be sorted and compared in a variety of useful ways
+    that the raw strings can not.
+    """
+    def __init__(self,string):
+        cleaned = self.clean(string)
+        components = self.split_number(cleaned)
+        return list.__init__(self,components)
+
+
+    def __cmp__(self,objecta):
+        print self
+        print objecta
+        a = tuple(self)
+        b = tuple(objecta)
+        if a > b: return 1
+        if a == b: return 0
+        if a < b: return -1
+    
+    def subsumes(self,other_call_number):
+        """
+        A call number can trail off into vagueness with a number of None
+        elements.
+
+        So "AK 101" is taken to subsume "AK 101.E35".
+
+        Any field includes itself. So be careful of infinite recursion.
+
+        I don't currently use this code.
+        """
+        truthiness = True
+        for (a,b) in zip(self,other_call_number):
+            if a != b:
+                if a is not None:
+                    truthiness = False
+        return truthiness
+                 
+    def next_unincluded_class(self):
+        vals = [i for i in self]
+        vals.reverse()
+
+        # Bump recursively, because some tuple elements
+        # are tuple themselves (such as Cutter Numbers)
+        
+        def bump(tuplee):
+            listed = list(tuplee)
+            listed.reverse()
+            for (i, element) in enumerate(listed):
+                if element is None:
+                    continue
+                if isinstance(element,int):
+                    listed[i] = element + 1
+                    break
+                if isinstance(element,str):
+                    listed[i] = increment(element)
+                    break
+                if isinstance(element,tuple):
+                    listed[i] = bump(element)
+                    break
+
+            listed.reverse()
+            return tuple(listed)
+        
+        new_version = bump(self)
+        # reclass
+        phony = self.__class__("A")
+        for (k,v) in enumerate(new_version):
+            phony[k] = v
+        return phony
+        
+
+    @staticmethod
+    def integerize(string,allow_cutter_numbers=True):
+        """
+        Turns a string into a sortable number.
+        If the number is a Cutter number, extracts the letter part.
+        Doesn't handle decimals.
+        """
+        if string is None:
+            return None
+        try:
+            return int(string)
+        except ValueError:
+            return (string[0],int(string[1:]))
+        
+    @staticmethod
+    def split_number(string):
+        alpha     = r'(?P<classalph>[A-Z]+)'
+        class_number = r'((?P<classno_whole>\d+)(\.(?P<classno_decimal>\w?\d+)?)?)?'
+        date1     = r'( ?(?P<date1>\d\w\w+))?'
+        cutter1   = r'( ?\.?(?P<cutter1>[A-Z]\d+))?'
+        date2     = r'(?P<date2>[\. ]\d\w+)?'
+        cutter2   = r'( ?\.?(?P<cutter2>[A-Z]\d+))?'        
+        # At this point, I punt. To extend, see
+        # https://www.oclc.org/bibformats/en/0xx/050.html
+        therest   = r'(?P<therest>[^\t]+)?'
+        
+        full_regex = alpha + " ?" + class_number + date1 + cutter1 + date2 + cutter2 + therest
+
+        mymatch = re.match(full_regex,string)
+        integerize = LCCallNumber.integerize
+        
+        try:
+            return [mymatch.group('classalph'),
+                integerize(mymatch.group('classno_whole')),
+                integerize(mymatch.group('classno_decimal')),
+                mymatch.group('date1'),                
+                integerize(mymatch.group('cutter1')),
+                mymatch.group('date2'),
+                integerize(mymatch.group('cutter2')),
+                mymatch.group('therest')
+            ]
+        
+        except AttributeError:
+            raise TypeError("Unparseable LC Number: '%s'" % string)
+            
+    @staticmethod
+    def clean(string):
+        string = string.encode("ascii","replace")
+        string = string.replace("(","")
+        string = string.replace(")","")
+        return string
+
+def increment(string):
+    """
+    for "A", return "B"
+    for "AC", return "AD"
+    After AZ comes `A[`. That's OK for my purposes.    
+    """
+    
+    rest = string[:-1]    
+    last = chr(ord(string[-1]) + 1)
+    #print rest+last
+    return rest + last
+
+def lcc_range(string):
+    """
+    Takes a string, returns a tuple of two LCClassNumbers, the start and
+    end of the range.
+    """
+    string = string.encode("ascii","replace")
+    string = string.replace("(","")
+    string = string.replace(")","")
+    if string.endswith("A-Z"):
+        # TMI in the schedules when they're alphabetical.
+        # I don't care.
+        string.replace("A-Z","")
+
+    if "-" not in string:
+        # A range of self length.
+        return (LCCallNumber(string), LCCallNumber(string))
+
+    parts = string.split("-")
+    if re.search(r"^\d",parts[1]):
+        header = re.sub("^([A-Z]+).*",r"\1",parts[0])
+    elif re.search(r"^\.",parts[1]):
+        header = re.sub(r"^([A-Z]+\d)+\..*",r"\1",parts[0])
+    elif re.search(r"^[A-Z]",parts[1]):
+        header = re.sub(r"^([A-Z]+\d)+\..[A-Z]*",r"\1.",parts[0])            
+    else:
+        header = " "
+
+    parts[1] = header + parts[1]
+    return (
+        LCCallNumber(parts[0]),
+        LCCallNumber(parts[1])
+    )
+
+
+
 class LCClass(object):
     def __init__(self, record):
         if record['050'] is not None:
@@ -44,13 +232,14 @@ class LCClass(object):
         if not self.indicator1 in [0,"0",""]:
             return False
         return True
-    
+
     def split(self):
         if self.field is None or self.string is None:
             return dict()
         #LC classifications cannot include non-ascii characters, so we just coerce.
         lcclass = self.string.encode("ascii",'replace')
         #This regex defines an LC classification.
+        
         mymatch = re.match(r"^(?P<lc1>[A-Z]+) ?(?P<lc2>[\.\d]+)", lcclass)
         if mymatch:
             returnt = {'lc0':lcclass[0],'lc1':mymatch.group('lc1'),'lc2':mymatch.group('lc2')}
@@ -122,14 +311,49 @@ class F008(object):
     def language(self):
         return self.data[35:38]
     
+    lit_lookup = {
+        "0": "Not fiction"
+        , "1": "Fiction"
+        , "d": "Dramas"
+        , "e": "Essays"
+        , "f": "Novels"
+        , "h": "Humor, satires, etc."
+        , "i": "Letters"
+        , "j": "Short stories"
+        , "m": "Mixed forms"
+        , "p": "Poetry"
+        , "s": "Speeches"
+        , "u": "Unknown"
+        , "|": "No attempt to code"
+    }
+
     def literary_form(self):
-        return self.data[33]
-    
+        try:
+            return self.lit_lookup[self.data[33]]
+        except KeyError:
+            return "Unknown"
+        
     def government_document(self):
         return self.data[28]
 
+    target_audience_lookup = {
+        "#": "Unknown or not specified"
+        , "a": "Preschool"
+        , "b": "Primary"
+        , "c": "Pre-adolescent"
+        , "d": "Adolescent"
+        , "e": "Adult"
+        , "f": "Specialized"
+        , "g": "General"
+        , "j": "Juvenile"
+        , "|": "No attempt to code"
+    }
+    
     def target_audience(self):
-        return self.data[22]
+        try:
+            return self.target_audience_lookup[self.data[22]]
+        except KeyError:
+            return "Unknown or not specified"
     
     def cntry(self):
         """
@@ -160,6 +384,8 @@ class F008(object):
             , "cntry" 
             , "cataloging_source"
             , "government_document"
+            , "literary_form"
+            , "target_audience"
          ]:
             try:
                 value[attribute] = getattr(self,attribute)()

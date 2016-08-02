@@ -13,7 +13,7 @@ These define methods specific to Hathi Trust MARC record parser.
 Run as a standalone script, it will parse out the full 
 """
 
-tarfile_location = "dpla_full_20160501.tar.gz"
+tarfile_location = "/drobo/dpla_full_20160701.tar.gz"
 
 def hathi_item_yielder():
     records = hathi_record_yielder()
