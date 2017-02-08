@@ -656,7 +656,10 @@ class BRecord(pymarc.Record):
             for (k,v) in scan_data(field).iteritems():
                 if v is not None:
                     if k == "additional_title":
-                        local_info["title"] += ("--- " + v)
+                        try:
+                            local_info["title"] += ("--- " + v)
+                        except KeyError:
+                            local_info["title"] = v
                         # Don't overwrite the title, just append with a triple dash
                         continue
                     local_info[k] = v
@@ -697,9 +700,10 @@ def scan_data(field):
     """
     global _library_lookups
     try:
-        library = _library_lookups[field['c'].lower()]
-    except:
-        library = field['c'].lower()
+        code = field['u'].split(".",1)[0]
+        library = _library_lookups[code]
+    except KeyError:
+        library = "Unknown"
     return {
         "contributing_library":library,
         # Field 'd' is for when the rights were changed. Who cares?
