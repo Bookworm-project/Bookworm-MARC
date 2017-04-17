@@ -1,3 +1,5 @@
 vocabularies/LC_schedules
 vocabularies/LC_schedules
 *.DS_Store
+.ipynb_checkpoints/
+*.pyc

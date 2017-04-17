@@ -6,15 +6,61 @@ import pymarc
 from bookwormMARC import BRecord
 import logging
 import json
+import bz2
 
 """
 These define methods specific to Hathi Trust MARC record parser.
-
-Run as a standalone script, it will parse out the full 
 """
 
-tarfile_location = "/drobo/dpla_full_20160701.tar.gz"
+def obj_to_marc(jobj):
+    """"
+    Coerces a dict into a MARC object.
+    """
+    rec = BRecord()
+    rec.leader = jobj['leader']
+    for field in jobj['fields']:
+        k,v = list(field.items())[0]
+        if 'subfields' in v and hasattr(v,'update'):
+            # flatten m-i-j dict to list in pymarc
+            subfields = []
+            for sub in v['subfields']:
+                for code,value in sub.items():
+                    subfields.extend((code,value))
+            fld = pymarc.Field(tag=k,subfields=subfields,indicators=[v['ind1'], v['ind2']])
+        else:
+            fld = pymarc.Field(tag=k,data=v)
+        rec.add_field(fld)
+    return rec
 
+class All_Hathi(object):
+    """
+    A generator that will yield, one at a time, a bookworm-suitable JSON file for every document in the Hathi Trust.
+    """
+    def __init__(self,root = "/drobo/hathi_metafiles"):
+        self.files = []
+        if not root.endswith("/"):
+            # I always forget to end dirs with a slash.
+            root = root + "/"
+        base_names = ["meta_ic.json.bz2","meta_pd_google.json.bz2",
+                      "meta_pd_open_access.json.bz2","meta_restricted.json.bz2"]
+        for name in base_names:
+            self.files.append(root + name)
+        
+    def __iter__(self):
+        """
+        The iterator goes through, in descending depth:
+        1. Every giant file of the Hathi dumps;
+        2. Every record in each file;
+        3. Every item in each record.
+        """
+        for fn in self.files:
+            sys.stdout.write("Reading fn\n")
+            file = bz2.BZ2File(fn)
+            for line in file:
+                record = obj_to_marc(json.loads(line))
+                for vol in record.hathi_bookworm_dicts():
+                    yield vol
+                
 def hathi_item_yielder():
     records = hathi_record_yielder()
     for record in records:
@@ -102,9 +148,9 @@ def hathi_record_yielder(
 
 
 if __name__=="__main__":
-    jsoncatalog = open(sys.argv[1],"w")
-    for item in hathi_item_yielder():
-        try:
-            jsoncatalog.write(json.dumps(item) + "\n")
-        except KeyError, e:
-            sys.stderr.write("ignoring error: %s" %(str(e)))
+    all_hathi = All_Hathi()
+    dump = gzip.open("/drobo/hathi_metafiles/jsoncatalog_full.txt.gz","w")
+    for i,vol in enumerate(all_hathi):
+        if i % 250000 == 0:
+            sys.stdout.write("Reading item no. " + str(i) + "\n")
+        dump.write(json.dumps(vol) + "\n")    
