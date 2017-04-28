@@ -3,6 +3,8 @@ import pymarc
 import json
 from pymarc import Record,Field
 import logging
+import os
+import csv
 
 
 """
@@ -29,6 +31,12 @@ TODO
    or something will be better.
 """
 
+with open(os.path.join(os.path.dirname(__file__), 'data', 'language-codes.csv'), mode='r') as f:
+    lang_lookup = dict(csv.reader(f))
+    
+with open(os.path.join(os.path.dirname(__file__), 'data', 'country-codes.csv'), mode='r') as f:
+    cntry_lookup = dict(csv.reader(f))
+    
 def integerize(string,allow_cutter_numbers=True):
     """
     Turns a number into a string.
@@ -302,7 +310,7 @@ class Leader(object):
             return "mixed materials"
         return "not present"
     
-
+       
 class F008(object):
     def __init__(self,record, resource_type="unknown"):
         self.data = record['008'].data
@@ -353,6 +361,9 @@ class F008(object):
         return self.data[-1]
     
     def language(self):
+        return lang_lookup[self.language_code()]
+    
+    def language_code(self):
         return self.data[35:38]
     
     lit_lookup = {
@@ -424,7 +435,27 @@ class F008(object):
         except KeyError:
             return "Unknown or not specified"
     
-    def cntry(self):
+    def country(self):
+        code = self.cntry_code()
+        
+        results = dict()
+
+        if code.strip() not in cntry_lookup:
+            return results
+
+        state_code, cntry_code = code[:2], code[2]
+
+        cntry_code_ref = dict(u='USA', c='Canada', k='United Kingdom', a='Australia', r='Soviet Union')
+        if cntry_code in cntry_code_ref:
+            results['publication_country'] = cntry_code_ref[cntry_code]
+            if state_code != 'xx':
+                 results['publication_state'] = cntry_lookup[code]
+        else:
+            results['publication_country'] = cntry_lookup[code.strip()]
+
+        return results
+
+    def cntry_code(self):
         """
         The marc-country is in 15:18
         """
@@ -453,7 +484,6 @@ class F008(object):
         for attribute in [
             "marc_record_created"
             , "language"
-            , "cntry" 
             , "cataloging_source"
             , "government_document"
             , "literary_form"
@@ -464,6 +494,18 @@ class F008(object):
             except IndexError:
                 # There are some malformed JSON even here.
                 pass
+        
+        # Attributes that return a dictionary with multiple keys
+        for attribute in [
+            "country"
+         ]:
+            try:
+                result = getattr(self,attribute)()
+                for key in result:
+                    value[key] = result[key]
+            except:
+                pass
+            
         return value
         
 class Author(object):
