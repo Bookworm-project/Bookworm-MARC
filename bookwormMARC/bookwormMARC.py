@@ -2,6 +2,7 @@ import regex as re
 import pymarc
 import json
 from pymarc import Record,Field
+import logging
 
 
 """
@@ -300,11 +301,54 @@ class Leader(object):
         if L6=="p":
             return "mixed materials"
         return "not present"
+    
 
 class F008(object):
-    def __init__(self,record):
+    def __init__(self,record, resource_type="unknown"):
         self.data = record['008'].data
+        self.resource_type = resource_type
+
+        if len(self.data) != 40:
+            self.correct_short()
+            
+        if 'U+' in self.data:
+            logging.warn('Malformed 008 field: %s' % self.data)
+            self.correct_malformed()
+
+    def correct_short(self):
+        l = len(self.data)
+        if len(self.data) == 38:
+            # Assume 38 and 39 are missing
+            self.data += '|u'
+        elif len(self.data) == 39:
+            # Assume 39 is missing
+            self.data += 'u'
+        else:
+            # throw your hands up and give up
+            # Actually, right pad to 40 chars, then pass to correct_malformed
+            logging.error("008 short in unaccountable way: %s" % self.data)
+            self.data = self.data.ljust(40, ' ')
+            self.correct_malformed()
         
+    def correct_malformed(self):
+        ''' Go backwards, and reset unexpected codes to 'Unknown' '''
+        errs = 0
+        if self.data[33] not in self.lit_lookup:
+            errs += 1
+            self.data = self.data[:33] + 'u' + self.data[34:]
+
+        if self.data[28] not in self.gov_lookup:
+            errs += 1
+            self.data = self.data[:28] + ' ' + self.data[29:]
+            
+        if self.data[22] not in self.target_audience_lookup:
+            errs += 1
+            self.data = self.data[:22] + '#' + self.data[23:]
+            
+        if errs >= 2:
+            # Set lang to 'No information provided'
+            self.data = self.data[:35] + '###' + self.data[39:]
+
     def cataloging_source(self):
         return self.data[-1]
     
@@ -333,8 +377,31 @@ class F008(object):
         except KeyError:
             return "Unknown"
         
+       
+    gov_lookup = {'#': 'Not a government publication',
+                 'a': 'Autonomous or semi-autonomous component',
+                 'c': 'Multilocal',
+                 'f': 'Federal/national',
+                 'i': 'International intergovernmental',
+                 'l': 'Local',
+                 'm': 'Multistate',
+                 'o': 'Government publication-level undetermined',
+                 's': 'State, provincial, territorial, dependent, etc.',
+                 'u': 'Unknown if item is government publication',
+                 'z': 'Other',
+                 '|': 'No attempt to code',
+                 ' ': 'Unknown'
+                 }
+        
     def government_document(self):
-        return self.data[28]
+        try:
+            if self.resource_type in ["mixed materials", "music"]:
+                return self.gov_lookup['|']
+            else:
+                return self.gov_lookup[self.data[28]]
+        except:
+            logging.exception("Bad government lookup. Often an indicator of malformed 008: %s" % self.data)
+            return "Unknown"
 
     target_audience_lookup = {
         "#": "Unknown or not specified"
@@ -350,6 +417,8 @@ class F008(object):
     }
     
     def target_audience(self):
+        if self.resource_type in ['maps', 'mixed materials']:
+            return "No attempt to code"
         try:
             return self.target_audience_lookup[self.data[22]]
         except KeyError:
@@ -359,7 +428,10 @@ class F008(object):
         """
         The marc-country is in 15:18
         """
-        return self.data[15:18]
+        code = self.data[15:18]
+        if code in ['|||']:
+            code = 'xx '
+        return code
     
     def marc_record_created(self):
         try:
@@ -505,7 +577,7 @@ class BRecord(pymarc.Record):
         return classification.parse()
     
     def parse_008(self):
-        f008 = F008(self)
+        f008 = F008(self, resource_type=self.resource_type())
         return f008.as_dict()
     
     def record_date(self):

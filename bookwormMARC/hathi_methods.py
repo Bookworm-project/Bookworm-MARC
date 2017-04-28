@@ -53,13 +53,20 @@ class All_Hathi(object):
         2. Every record in each file;
         3. Every item in each record.
         """
+        if not hasattr(self, '_record_iter'):
+            self._record_iter = self.records()
+            
+        for record in self._record_iter:
+            for vol in record.hathi_bookworm_dicts():
+                yield vol
+                    
+    def records(self):
         for fn in self.files:
             sys.stdout.write("Reading fn\n")
             file = bz2.BZ2File(fn)
             for line in file:
                 record = obj_to_marc(json.loads(line))
-                for vol in record.hathi_bookworm_dicts():
-                    yield vol
+                yield record
                 
 def hathi_item_yielder():
     records = hathi_record_yielder()
@@ -132,7 +139,8 @@ def hathi_record_yielder(
             logging.info("Parsing new XML file " + file)
             buffer = ""
             in_record = False
-            for line in open(file,"r"):#hathi_records.extractfile(file):
+            for line in open(file,"r"):
+                #hathi_records.extractfile(file):\
                 if "<record>" in line:
                     if random.random()<=(sample_records/float(100)):
                         in_record=True
