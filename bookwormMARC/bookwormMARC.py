@@ -312,9 +312,18 @@ class Leader(object):
     
        
 class F008(object):
-    def __init__(self,record, resource_type="unknown"):
+    def __init__(self,record, resource_type="unknown", warn_bad_value=True):
+        '''
+        
+        resource_type: For better handling of fields specific to a resource type like music or books.
+        
+        warn_bad_value: For closed class fields, warn when the value does not fit the lookup and return a
+            code. If False, throws an error.
+        
+        '''
         self.data = record['008'].data
         self.resource_type = resource_type
+        self.warn_bad_value = warn_bad_value
 
         if len(self.data) != 40:
             self.correct_short()
@@ -361,7 +370,15 @@ class F008(object):
         return self.data[-1]
     
     def language(self):
-        return lang_lookup[self.language_code()]
+        lcode = self.language_code()
+        try:
+            return lang_lookup[lcode]
+        except:
+            if self.warn_bad_value:
+                logging.warn("No language for %s, returning just the MARC code" % lcode)
+                return lcode
+            else:
+                raise
     
     def language_code(self):
         return self.data[35:38]
@@ -383,10 +400,15 @@ class F008(object):
     }
 
     def literary_form(self):
+        code = self.data[33]
         try:
-            return self.lit_lookup[self.data[33]]
-        except KeyError:
-            return "Unknown"
+            return self.lit_lookup[code]
+        except:
+            if self.warn_bad_value:
+                logging.warn("No literary form for code %s, returning just the MARC code" % code)
+                return code
+            else:
+                raise
         
        
     gov_lookup = {'#': 'Not a government publication',
@@ -405,35 +427,44 @@ class F008(object):
                  }
         
     def government_document(self):
+        code = self.data[28]
         try:
             if self.resource_type in ["mixed materials", "music"]:
                 return self.gov_lookup['|']
             else:
-                return self.gov_lookup[self.data[28]]
+                return self.gov_lookup[code]
         except:
-            logging.exception("Bad government lookup. Often an indicator of malformed 008: %s" % self.data)
-            return "Unknown"
+            if self.warn_bad_value:
+                logging.warn("Bad government lookup. Often an indicator of malformed 008: %s" % code)
+                return "Unknown"
+            else:
+                raise
 
     target_audience_lookup = {
-        "#": "Unknown or not specified"
-        , "a": "Preschool"
-        , "b": "Primary"
-        , "c": "Pre-adolescent"
-        , "d": "Adolescent"
-        , "e": "Adult"
-        , "f": "Specialized"
-        , "g": "General"
-        , "j": "Juvenile"
-        , "|": "No attempt to code"
+        "#": "Unknown or not specified",
+        "a": "Preschool",
+        "b": "Primary",
+        "c": "Pre-adolescent",
+        "d": "Adolescent",
+        "e": "Adult",
+        "f": "Specialized",
+        "g": "General",
+        "j": "Juvenile",
+        "|": "No attempt to code"
     }
     
     def target_audience(self):
+        code = self.data[22]
         if self.resource_type in ['maps', 'mixed materials']:
             return "No attempt to code"
         try:
-            return self.target_audience_lookup[self.data[22]]
+            return self.target_audience_lookup[code]
         except KeyError:
-            return "Unknown or not specified"
+            if self.warn_bad_value:
+                logging.warn("Bad target audience, %s" % code)
+                return "Unknown or not specified"
+            else:
+                raise
     
     def country(self):
         code = self.cntry_code()
@@ -447,12 +478,26 @@ class F008(object):
 
         cntry_code_ref = dict(u='USA', c='Canada', k='United Kingdom', a='Australia', r='Soviet Union')
         if cntry_code in cntry_code_ref:
-            results['publication_country'] = cntry_code_ref[cntry_code]
-            if state_code != 'xx':
-                 results['publication_state'] = cntry_lookup[code]
+            try:
+                results['publication_country'] = cntry_code_ref[cntry_code]
+                if state_code != 'xx':
+                     results['publication_state'] = cntry_lookup[code]
+            except:
+                if self.warn_bad_value:
+                    logging.warn("Illegal country sub-division for %s" % code)
+                    return results
+                else:
+                    raise
         else:
-            results['publication_country'] = cntry_lookup[code.strip()]
-
+            try:
+                results['publication_country'] = cntry_lookup[code.strip()]
+            except:
+                if self.warn_bad_value:
+                    logging.warn("Illegal publication country for %s" % code)
+                    results['publication_country'] = code
+                    return results
+                else:
+                    raise
         return results
 
     def cntry_code(self):
