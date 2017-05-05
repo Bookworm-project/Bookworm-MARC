@@ -36,6 +36,12 @@ with open(os.path.join(os.path.dirname(__file__), 'data', 'language-codes.csv'),
     
 with open(os.path.join(os.path.dirname(__file__), 'data', 'country-codes.csv'), mode='r') as f:
     cntry_lookup = dict(csv.reader(f))
+
+# Encoding unexpected values where the intent is clear
+for bad_code in ['xxx', '|||', '   ']:
+    lang_lookup[bad_code] = 'Unknown'
+for bad_code in ['xxx', '|||', '###', '   ']:
+    cntry_lookup[bad_code] = 'Unknown'
     
 def integerize(string,allow_cutter_numbers=True):
     """
@@ -384,23 +390,28 @@ class F008(object):
         return self.data[35:38]
     
     lit_lookup = {
-        "0": "Not fiction"
-        , "1": "Fiction"
-        , "d": "Dramas"
-        , "e": "Essays"
-        , "f": "Novels"
-        , "h": "Humor, satires, etc."
-        , "i": "Letters"
-        , "j": "Short stories"
-        , "m": "Mixed forms"
-        , "p": "Poetry"
-        , "s": "Speeches"
-        , "u": "Unknown"
-        , "|": "No attempt to code"
+        "0": "Not fiction",
+        "1": "Fiction",
+        "d": "Dramas",
+        "e": "Essays",
+        "f": "Novels",
+        "h": "Humor, satires, etc.",
+        "i": "Letters",
+        "j": "Short stories",
+        "m": "Mixed forms",
+        "p": "Poetry",
+        "s": "Speeches",
+         "u": "Unknown",
+        "|": "No attempt to code",
+        " ": "Unknown"
     }
 
     def literary_form(self):
         code = self.data[33]
+        
+        if self.resource_type in ['serials']:
+            return "Undefined"
+        
         try:
             return self.lit_lookup[code]
         except:
@@ -430,7 +441,7 @@ class F008(object):
         code = self.data[28]
         try:
             if self.resource_type in ["mixed materials", "music"]:
-                return self.gov_lookup['|']
+                return "Undefined"
             else:
                 return self.gov_lookup[code]
         except:
@@ -450,13 +461,15 @@ class F008(object):
         "f": "Specialized",
         "g": "General",
         "j": "Juvenile",
-        "|": "No attempt to code"
+        "|": "No attempt to code",
+        " ": "Unknown"
     }
+    
     
     def target_audience(self):
         code = self.data[22]
         if self.resource_type in ['maps', 'mixed materials']:
-            return "No attempt to code"
+            return "Undefined"
         try:
             return self.target_audience_lookup[code]
         except KeyError:
@@ -480,8 +493,9 @@ class F008(object):
         if cntry_code in cntry_code_ref:
             try:
                 results['publication_country'] = cntry_code_ref[cntry_code]
-                if state_code != 'xx':
-                     results['publication_state'] = cntry_lookup[code]
+                if state_code not in ['xx', '  ']:
+                    # '  x' shouldn't be valid, but the intent seems clear enough to assume the same as 'xx#'
+                    results['publication_state'] = cntry_lookup[code]
             except:
                 if self.warn_bad_value:
                     logging.warn("Illegal country sub-division for %s" % code)
