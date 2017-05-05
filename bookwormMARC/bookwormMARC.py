@@ -52,6 +52,225 @@ def integerize(string,allow_cutter_numbers=True):
     except ValueError:
         return (string[0],int(string[1:]))
 
+
+    
+class Classification(object):
+    
+    def __init__(self,record):
+        self.start = LCCallNumber(record["153"]["a"])
+        end = record["153"]["c"]
+        if end is not None:
+            self.end   = LCCallNumber(end)
+            self.type = "range"
+        else:
+            self.end = self.start
+            self.type = "point"
+        self.children = []
+        if self.start > self.end:
+            for a,b in zip(self.start,self.end):
+                print a,b
+            #print self.start
+            #print record["153"]["a"]
+            #print self.end
+            #print record["153"]["c"]            
+            raise TypeError("start is greater than end")
+
+        if self.start[0] in ["E","F"]:
+            class_and_subclass = [self.start[0]]            
+        else:
+            class_and_subclass = [self.start[0][0], self.start[0]]
+            
+        self.header = class_and_subclass + record["153"].get_subfields("h")
+        self.label = record["153"]["j"]
+        self.depth = len(self.header)
+
+    def __repr__(self):
+        return self.__str__() + "\n + {} children ".format(len(self.children)) 
+
+    def __str__(self):
+        if self.label is None:
+            self.label = "???"
+        if self.start==self.end:
+            return "{}: {}".format(self.start, self.label.encode("utf-8"))
+        else:
+            return "{}-{}: {}".format(self.start,self.end,self.label.encode("utf-8"))
+
+    def pprint(self, tabs,max):
+        endlab = self.end.__str__()
+        overlap = 0
+        for a,b in zip(str(self.start),endlab):
+            if a==b:
+                overlap += 1
+            else:
+                break
+        endlab = endlab[overlap:]
+        if len(endlab) > 0:
+            print "\t"*tabs + "{}-{}: {}".format(self.start,endlab,self.label.encode("utf-8"))
+        else:
+            print "\t"*tabs + "{}: {}".format(self.start,self.label.encode("utf-8"))            
+        if tabs < max:
+            for child in self.children:
+                child.pprint(tabs+1,max)
+      
+    def compare(self, objecta):
+        if self.start > objecta.end:
+            return "gt"
+        if self.end < objecta.start and not self.end.subsumes(objecta.start):
+            return "lt"
+        if self.start >= objecta.start and self.end <= objecta.end:
+            if self.start == objecta.start and self.end==objecta.end:
+                "Multiple cutter numbers for different subjects can cause this."
+                if self.label > objecta.label:
+                    return "gt"
+                elif self.label < objecta.label:
+                    return "lt"
+                else:
+                    return "identical"
+            else:
+                return "is contained"
+        if self.start <= objecta.start and self.end >= objecta.end:
+            return "contains"
+        if self.end.subsumes(objecta.end):
+            return "contains"
+        if objecta.end.subsumes(self.end):
+            return "is contained"
+        if objecta.start[0] == None:
+            # Why??
+            return
+        if self.start > objecta.start and self.end > objecta.end:
+            print "Bad data"
+            print self.start, self.end
+            print objecta.start, objecta.end
+
+            "Overlapping categories."
+            return "gt"
+        if self.start <= objecta.start and self.end <= objecta.end:
+            print "Bad data"
+            print self.start, self.end
+            print objecta.start, objecta.end
+
+            "Overlapping categories."
+            return "lt"        
+        print self.start, self.end
+        print objecta.start, objecta.end
+        print objecta.header
+        print self.header
+        raise TypeError
+        
+    def insert(self, newclass, possible_range = None):
+        if len(self.children) == 0:
+            self.children = [newclass]
+            return self
+        relations = []
+        
+        # The easy way: use labels
+
+        # I hack this way by prefacing every class with two labels: the class and subclass.
+        
+        if len(newclass.header) > 0:
+            for i,child in enumerate(self.children):
+                if child.label == newclass.header[0]:
+                    # Drop the header for the next descent
+                    newclass.header.pop(0)
+                    child.insert(newclass)
+                    return
+        
+        # the hard way: use numbers
+        
+        for i,child in enumerate(self.children):
+            relation = child.compare(newclass)
+            relations.append(relation)
+            if relation=="contains":
+                child.insert(newclass)
+                return
+            if relation=="identical":
+                print "skipping attempt to insert extant item"
+                print newclass
+                print "====== into existing item  ======="
+                print child
+                return
+            
+            if relation=="is contained":
+                """
+                This doesn't work.
+                """
+                newclass.insert(child)
+                self.children[i] = newclass
+                # raise TypeError
+                return
+            
+            if relation=="lt":
+                continue
+            
+            if relation=="gt":
+                self.children.insert(i,newclass)
+                return
+            
+        if relation == "lt":
+            # If it's higher than the last seen element.
+            self.children.append(newclass)
+            return
+        print "UNABLE TO INSERT"
+        print relations
+        print self.start,self.end
+        print newclass.start,newclass.end
+        raise IOError()
+
+    def to_dict(self):
+        dict = {
+#            "start":self.start,
+#            "end": self.end,
+            "name":self.__str__()
+            }
+        dict["children"] = [child.to_dict() for child in self.children]
+        if len(dict["children"])==0:
+            dict["n_children"] = 0
+        else:
+            dict["n_children"] = len(dict["children"]) + sum([c["n_children"] for c in dict["children"]])
+        return dict
+
+class ClassificationRoot(Classification):
+    def __init__(self):
+        self.start = LCCallNumber("A")
+        self.end   = LCCallNumber("Z")
+        self.children = ""
+        self.header   = ""
+        self.label    = ""
+        
+class ManualClassification(Classification):
+    """
+    LC Classes and subclasses aren't, apparently, in the records, and so must be created manually.
+    """
+    def __init__(self,code,description, level = None):
+        if level is None:
+            level = len(code)
+        self.start = LCCallNumber(code)
+        self.end = self.start
+        self.type="point"
+        self.children = []
+        if len(code)==1 and code not in ["E","F"] and level==1:
+            # There's a general class like "P--general" inside "P"
+            self.children = [ManualClassification(code,description + "--general", level = 2)]
+            self.header = []
+        elif len(code)>=2:
+            self.header = [code[0]]
+        else:
+            self.header = []
+
+        self.label = code
+        
+        self.depth = len(self.header)
+        
+        self.prefix = "Class"
+        
+        if level==2:
+            self.prefix = "Subclass"
+        #self.label = "{} {}".format(prefix,self.label)
+        
+        self.level = level
+
+                 
+        
 class LCCallNumber(list):
     """
     An LCC is a tuple of six elements. (The exact number of elements is subject to change in later revisions.)
@@ -66,13 +285,40 @@ class LCCallNumber(list):
 
 
     def __cmp__(self,objecta):
-        print self
-        print objecta
         a = tuple(self)
         b = tuple(objecta)
         if a > b: return 1
         if a == b: return 0
         if a < b: return -1
+
+    def __str__(self):
+        printing = []
+        for l in self:
+            if l is not None:
+                printing.append(l)
+            else:
+                printing.append("")
+        return "{}{}.{} {}".format(*printing)
+        return self[0] + str(self[1]) + "." + str(self[2])
+        l = u""
+        def to_string(c):
+            if isinstance(c,basestring):
+                return c
+            else:
+                return str(c)
+        for c in self:
+            if c is None:
+                continue
+            if isinstance(c,tuple):
+                for d in c:
+                    l += to_string(d)
+            else:
+                l+=to_string(c)
+                
+        return l
+    
+    def __repr__(self):
+        return self.__str__()
     
     def subsumes(self,other_call_number):
         """
@@ -87,6 +333,12 @@ class LCCallNumber(list):
         """
         truthiness = True
         for (a,b) in zip(self,other_call_number):
+            try:
+                if len(b) > len(a):
+                    # PR 855.3 subsumes PR 855.33
+                    b = b[:len(a)]
+            except TypeError:
+                pass
             if a != b:
                 if a is not None:
                     truthiness = False
@@ -138,19 +390,20 @@ class LCCallNumber(list):
         try:
             return int(string)
         except ValueError:
-            return (string[0],int(string[1:]))
+            return string
         
     @staticmethod
     def split_number(string):
         alpha     = r'(?P<classalph>[A-Z]+)'
         class_number = r'((?P<classno_whole>\d+)(\.(?P<classno_decimal>\w?\d+)?)?)?'
-        date1     = r'( ?(?P<date1>\d\w\w+))?'
-        cutter1   = r'( ?\.?(?P<cutter1>[A-Z]\d+))?'
+        class_number = r'((?P<classno_whole>\d+)(\.(?P<classno_decimal>\w?\d*)?)?)?'        
+        date1     = r' ?((?P<date1>\d\w\w+))?'
+        cutter1   = r' ?(\.?(?P<cutter1>[A-Z]\d*))?'
         date2     = r'(?P<date2>[\. ]\d\w+)?'
-        cutter2   = r'( ?\.?(?P<cutter2>[A-Z]\d+))?'        
+        cutter2   = r' ?(\.?(?P<cutter2>[A-Z]\d*))?'        
         # At this point, I punt. To extend, see
         # https://www.oclc.org/bibformats/en/0xx/050.html
-        therest   = r'(?P<therest>[^\t]+)?'
+        therest   = r' ?(?P<therest>[^\t]+)?'
         
         full_regex = alpha + " ?" + class_number + date1 + cutter1 + date2 + cutter2 + therest
 
@@ -160,8 +413,8 @@ class LCCallNumber(list):
         try:
             return [mymatch.group('classalph'),
                 integerize(mymatch.group('classno_whole')),
-                integerize(mymatch.group('classno_decimal')),
-                mymatch.group('date1'),                
+                mymatch.group('classno_decimal'),
+                mymatch.group('date1'),             
                 integerize(mymatch.group('cutter1')),
                 mymatch.group('date2'),
                 integerize(mymatch.group('cutter2')),
@@ -169,6 +422,7 @@ class LCCallNumber(list):
             ]
         
         except AttributeError:
+            #pass
             raise TypeError("Unparseable LC Number: '%s'" % string)
             
     @staticmethod
@@ -251,7 +505,7 @@ class LCClass(object):
         
         mymatch = re.match(r"^(?P<lc1>[A-Z]+) ?(?P<lc2>[\.\d]+)", lcclass)
         if mymatch:
-            returnt = {'lc0':lcclass[0],'lc1':mymatch.group('lc1'),'lc2':mymatch.group('lc2')}
+            returnt = {'lc0':lcclass[0],'lc1':mymatch.group('lc1'),'lc2':mymatch.group('lc2'), "lcc": lcclass}
             return returnt
         else:
             return(dict())
@@ -361,8 +615,11 @@ class F008(object):
         return self.data[-1]
     
     def language(self):
-        return lang_lookup[self.language_code()]
-    
+        try:
+            return lang_lookup[self.language_code()]
+        except KeyError:
+            return "Unknown"
+        
     def language_code(self):
         return self.data[35:38]
     
@@ -410,7 +667,7 @@ class F008(object):
                 return self.gov_lookup['|']
             else:
                 return self.gov_lookup[self.data[28]]
-        except:
+        except KeyError:
             logging.exception("Bad government lookup. Often an indicator of malformed 008: %s" % self.data)
             return "Unknown"
 
@@ -535,6 +792,9 @@ class Author(object):
         return {prefix + "name":self.name(),prefix + "birth":self.birth,prefix + "death":self.death}
 
 """
+THIS CODE IS TAKEN FROM SOMEWHERE ELSE: I THINK MAYBE A TED UNDERWOOD MODULE. BUT I'VE LOST
+THE REFERENCE AND CAN'T GOOGLE IT UP.
+
 From http://www.loc.gov/marc/bibliographic/bd260.html:
 Subfield $c ends with a period (.), hyphen (-) for open-ended dates,
 a closing bracket (]) or closing parenthesis ()). If subfield $c is
@@ -630,13 +890,16 @@ class BRecord(pymarc.Record):
         try:
             y =  normalize_year(self['260']['c'])
             if y is None:
-                y = normalize_year(self.pubyear())                
+                y = normalize_year(self.pubyear())
         except TypeError:
             # when there is no self['260']
             y = normalize_year(self.pubyear())
-        
-        return y
-        
+
+        try:
+            return y
+        except UnboundLocalError:
+            return None
+
     def first_publisher(self):
         try:
             return self['260']['b']
@@ -657,7 +920,7 @@ class BRecord(pymarc.Record):
             return self['010'].value()
         except:
             return None
-        
+    
     def cataloging_source(self):
         try:
             return self['040']['a']
@@ -725,7 +988,7 @@ class BRecord(pymarc.Record):
         """
         master_record = dict()
         # Individual fields first.
-        for field in ["record_date","title","first_publisher","first_place","cataloging_source","subject_places","resource_type","serial_killer_guess"]:
+        for field in ["record_date","title","first_publisher","first_place","cataloging_source","subject_places", "resource_type", "serial_killer_guess", "lccn"]:
             try:
                 val = getattr(self,field)()
             except AttributeError:
@@ -825,6 +1088,7 @@ def scan_data(field):
         "scanner":field['s'],
         "filename":field['u'],
         "additional_title":field['z'],
+        "rights":field["r"],
         "item_date":normalize_year(field['y'])
     }
 
@@ -875,5 +1139,4 @@ def parse_record(entry):
             fld = Field(tag=field['tag'],data="")
         rec.add_field(fld)
     return rec
-
 

@@ -4,18 +4,35 @@ import random
 import sys
 import pymarc
 from bookwormMARC import BRecord
+from bookwormMARC import LCCallNumber
 import logging
-import json
+import ujson as json
+import multiprocessing
+from multiprocessing import Process, Queue, Pool
+import multiprocessing as mp
 import bz2
+import Queue
+import glob
 
 """
 These define methods specific to Hathi Trust MARC record parser.
 """
 
-def obj_to_marc(jobj):
-    """"
-    Coerces a dict into a MARC object.
+
+
+                
+def hathi_item_yielder():
+    records = hathi_record_yielder()
+    for record in records:
+        for item in record.hathi_bookworm_dicts():
+            yield item
+
+def obj_to_marc(line):
     """
+    Converts a python dictionary object into a MARC record.
+    For when the data comes as JSON.
+    """
+    jobj = json.loads(line)    
     rec = BRecord()
     rec.leader = jobj['leader']
     for field in jobj['fields']:
@@ -32,49 +49,121 @@ def obj_to_marc(jobj):
         rec.add_field(fld)
     return rec
 
+def hathi_yielder(root,n_threads,mod,queue=None, full_lcc = False, base_record = False):
+    
+    if not root.endswith("/"):
+        # I always forget to end dirs with a slash.
+        root = root + "/"
+
+    # These are the four files Hathi gave me.
+    base_names = ["meta_pd_google.json.bz2","meta_ic.json.bz2",
+                  "meta_pd_open_access.json.bz2","meta_restricted.json.bz2"]
+
+    # Ensures that the threads will have a different order which means
+    # a random sample will draw from different files.
+    # Just a little useful.
+    random.shuffle(base_names)
+    
+    for name in base_names:
+        file = bz2.BZ2File(root + name)
+        for i,line in enumerate(file):
+            # i is defined for this thread.
+            # This
+            # enables parallelism.
+            if i % n_threads == mod:
+                record = obj_to_marc(line)
+                vols = record.hathi_bookworm_dicts()
+                lcc = False
+                if full_lcc:
+                    try:
+                        lcc = LCCallNumber(record["050"].value())
+                    except:
+                        pass
+                if base_record:
+                    queue.put(record)
+                else:
+                    for vol in vols:
+                        if lcc:
+                            vol["lcc"] = lcc
+                        queue.put(vol)
+
+def loc_yielder(root,n_threads,mod,queue=None, full_lcc = False, base_record = False):
+    if not root.endswith("/"):
+        # I always forget to end dirs with a slash.
+        root = root + "/"
+
+
+    # These are the four files Hathi gave me.
+    base_names = glob.glob(root + "*.utf8")
+    # Scrimp down to just a few of the files for this specific thread.
+    base_names = [name for name in base_names if ((hash(name) % n_threads) == mod)]
+
+    # Ensures that the threads will have a different order which means
+    # a random sample will draw from different files.
+    # Just a little useful.
+    random.shuffle(base_names)
+
+    for name in base_names:
+        print name
+        reader = pymarc.MARCReader(open(name))
+        for record in reader:
+            record.__class__ = BRecord
+            dicto = record.bookworm_dict()
+            if full_lcc:
+                try:
+                    dicto["lcc"] = LCCallNumber(record["050"].value())
+                except:
+                    pass
+            queue.put(dicto)
+
 class All_Hathi(object):
     """
-    A generator that will yield, one at a time, a bookworm-suitable JSON file for every document in the Hathi Trust.
-    """
-    def __init__(self,root = "/drobo/hathi_metafiles"):
-        self.files = []
-        if not root.endswith("/"):
-            # I always forget to end dirs with a slash.
-            root = root + "/"
-        base_names = ["meta_ic.json.bz2","meta_pd_google.json.bz2",
-                      "meta_pd_open_access.json.bz2","meta_restricted.json.bz2"]
-        for name in base_names:
-            self.files.append(root + name)
-        
-    def __iter__(self):
-        """
-        The iterator goes through, in descending depth:
-        1. Every giant file of the Hathi dumps;
-        2. Every record in each file;
-        3. Every item in each record.
-        """
-        if not hasattr(self, '_record_iter'):
-            self._record_iter = self.records()
-            
-        for record in self._record_iter:
-            for vol in record.hathi_bookworm_dicts():
-                yield vol
-                    
-    def records(self):
-        for fn in self.files:
-            sys.stdout.write("Reading fn\n")
-            file = bz2.BZ2File(fn)
-            for line in file:
-                record = obj_to_marc(json.loads(line))
-                yield record
-                
-def hathi_item_yielder():
-    records = hathi_record_yielder()
-    for record in records:
-        for item in record.hathi_bookworm_dicts():
-            yield item
-    
+    An iterable for Hathi books. Casually multithreaded.
 
+    full_lcc: return a full class for the lcc classification, not just the headline numbers
+
+    base_record: return not a bookworm_dict, but the underlying MARC record.
+    """
+    def __init__(self,root="/drobo/hathi_metafiles", n_threads=4, full_lcc=False, base_record = False, cat = "hathi"):
+        self.root = root
+        # Only let it get so long, just in case.
+        self.q = mp.Queue(100)
+        self.processes = []
+        self.n_threads = n_threads
+        for i in range(n_threads):
+            if cat == "hathi":
+                p2 = mp.Process(target=hathi_yielder,args=(root, n_threads, i, self.q, full_lcc, base_record))
+            elif cat == "LOC":
+                p2 = mp.Process(target=loc_yielder,args=(root, n_threads, i, self.q, full_lcc, base_record))
+            else:
+                raise TypeError("No method defined for {}".format(cat))
+
+            self.processes.append(p2)
+
+        for p in self.processes:
+            p.start()
+            
+    def __iter__(self):
+        import time
+        while True:
+            try:
+                # It should never take a full second to do this.
+                yield self.q.get(timeout=1)
+            except Queue.Empty:
+                all_empty = True
+                for p in self.processes:
+                    if p.is_alive():
+                        all_empty = False
+                    else:
+                        print "dead process"
+                if all_empty:
+                    for p in self.processes:
+                        # kill?
+                        pass
+                    break
+                else:
+                    continue
+                    
 def hathi_record_yielder(
         sample_files=100,
         sample_records=100,
@@ -141,6 +230,7 @@ def hathi_record_yielder(
             in_record = False
             for line in open(file,"r"):
                 #hathi_records.extractfile(file):\
+
                 if "<record>" in line:
                     if random.random()<=(sample_records/float(100)):
                         in_record=True
@@ -156,9 +246,4 @@ def hathi_record_yielder(
 
 
 if __name__=="__main__":
-    all_hathi = All_Hathi()
-    dump = gzip.open("/drobo/hathi_metafiles/jsoncatalog_full.txt.gz","w")
-    for i,vol in enumerate(all_hathi):
-        if i % 250000 == 0:
-            sys.stdout.write("Reading item no. " + str(i) + "\n")
-        dump.write(json.dumps(vol) + "\n")    
+    pass
