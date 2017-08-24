@@ -847,14 +847,14 @@ class BRecord(pymarc.Record):
                 local_info["date"] = local_info["record_date"]
                 
             try:
-                local_info["searchstring"] = "<a href=%(permalink)s>%(author)s,<em>%(title)s</em> (%(date)s)" % local_info
+                local_info["searchstring"] = "<a target='_blank' href=%(permalink)s>%(author)s,<em>%(title)s</em> (%(date)s)" % local_info
                 
             except KeyError:
                 try:
                 # There is no author; there should be a title, though
-                    local_info['searchstring'] = "<a href=%(permalink)s><em>%(title)s</em> (%(date)s)" % local_info
+                    local_info['searchstring'] = "<a target='_blank' href=%(permalink)s><em>%(title)s</em> (%(date)s)" % local_info
                 except KeyError:
-                    local_info['searchstring'] = "<a href=%(permalink)s>[No title] (%(date)s)" % local_info
+                    local_info['searchstring'] = "<a target='_blank' href=%(permalink)s>[No title] (%(date)s)" % local_info
             yield local_info
 
 
