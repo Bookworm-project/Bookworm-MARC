@@ -318,7 +318,7 @@ class Leader(object):
     
        
 class F008(object):
-    def __init__(self,record, resource_type="unknown", warn_bad_value=True):
+    def __init__(self, record, resource_type="unknown", warn_bad_value=True):
         '''
         
         resource_type: For better handling of fields specific to a resource type like music or books.
@@ -673,12 +673,12 @@ class BRecord(pymarc.Record):
             self.authors.append(author)
         return self.authors
     
-    def parse_lc_class(self):
+    def parse_lc_class(self, **kwargs):
         classification = LCClass(self)
         return classification.parse()
     
-    def parse_008(self):
-        f008 = F008(self, resource_type=self.resource_type())
+    def parse_008(self, **kwargs):
+        f008 = F008(self, resource_type=self.resource_type(), **kwargs)
         return f008.as_dict()
     
     def record_date(self):
@@ -769,14 +769,14 @@ class BRecord(pymarc.Record):
         return "book"
 
     
-    def first_author(self):
+    def first_author(self, **kwargs):
         authors = self.parse_authors()
         try:
             return authors[0].as_dict(prefix="first_author_")
         except IndexError:
             return {}
     
-    def bookworm_dict(self):
+    def bookworm_dict(self, **kwargs):
         """
         Reformat the record as a dictionary for use with Bookworm.
 
@@ -795,9 +795,9 @@ class BRecord(pymarc.Record):
                 # We need a date, even if we don't know it.
                 master_record[field] = val
         # Then methods that return dicts
-        dicts = [self.parse_lc_class()
-                 ,self.first_author()
-                 ,self.parse_008()
+        dicts = [self.parse_lc_class(**kwargs)
+                 ,self.first_author(**kwargs)
+                 ,self.parse_008(**kwargs)
                  ]
         for dicto in dicts:
             for (k,val) in dicto.iteritems():
@@ -805,7 +805,7 @@ class BRecord(pymarc.Record):
                     master_record[k] = val
         return master_record
         
-    def hathi_bookworm_dicts(self):
+    def hathi_bookworm_dicts(self, **kwargs):
         """
         Hathi does use one record for one book; instead, it stores many volumes under a record. 
         So we use field 974 to represent these.
@@ -814,7 +814,7 @@ class BRecord(pymarc.Record):
         """
 
         # First, grab the normal MARC info.
-        master_record = self.bookworm_dict()
+        master_record = self.bookworm_dict(**kwargs)
         
         for field in self.get_fields('974'):
             """

@@ -36,7 +36,7 @@ class All_Hathi(object):
     """
     A generator that will yield, one at a time, a bookworm-suitable JSON file for every document in the Hathi Trust.
     """
-    def __init__(self,root = "/drobo/hathi_metafiles"):
+    def __init__(self,root = "/drobo/hathi_metafiles", **kwargs):
         self.files = []
         if not root.endswith("/"):
             # I always forget to end dirs with a slash.
@@ -45,6 +45,7 @@ class All_Hathi(object):
                       "meta_pd_open_access.json.bz2","meta_restricted.json.bz2"]
         for name in base_names:
             self.files.append(root + name)
+        self.kwargs = kwargs
         
     def __iter__(self):
         """
@@ -57,7 +58,7 @@ class All_Hathi(object):
             self._record_iter = self.records()
             
         for record in self._record_iter:
-            for vol in record.hathi_bookworm_dicts():
+            for vol in record.hathi_bookworm_dicts(**self.kwargs):
                 yield vol
                     
     def records(self):
